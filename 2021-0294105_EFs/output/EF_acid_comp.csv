@@ -1,0 +1,76 @@
+"app.timing.dk","app.timing","app.mthd","incorp","t.incorp","man.source","man.name","FALSE","TRUE","red.acid"
+"April","April","bsth","deep",4,"cattle","Kvæggylle",0.047,NA,NA
+"April","April","bsth","deep",4,"mix","Agfasset biomasse",0.13,NA,NA
+"April","April","bsth","deep",4,"pig","Svinegylle",0.035,NA,NA
+"April","April","bsth","none",NA,"cattle","Kvæggylle",0.27,0.19,29.6296296296296
+"April","April","bsth","none",NA,"mix","Agfasset biomasse",0.29,0.17,41.3793103448276
+"April","April","bsth","none",NA,"pig","Svinegylle",0.15,0.11,26.6666666666667
+"April","April","bsth","shallow",4,"cattle","Kvæggylle",0.1,NA,NA
+"April","April","bsth","shallow",4,"mix","Agfasset biomasse",0.17,NA,NA
+"April","April","bsth","shallow",4,"pig","Svinegylle",0.062,NA,NA
+"April","April","cs","none",NA,"cattle","Kvæggylle",0.016,NA,NA
+"April","April","cs","none",NA,"mix","Agfasset biomasse",0.026,NA,NA
+"April","April","cs","none",NA,"pig","Svinegylle",0.018,NA,NA
+"April","April","os","none",NA,"cattle","Kvæggylle",0.14,NA,NA
+"April","April","os","none",NA,"mix","Agfasset biomasse",0.17,NA,NA
+"April","April","os","none",NA,"pig","Svinegylle",0.098,NA,NA
+"Efterår","Autumn","bsth","deep",4,"cattle","Kvæggylle",0.092,NA,NA
+"Efterår","Autumn","bsth","deep",4,"mix","Agfasset biomasse",0.19,NA,NA
+"Efterår","Autumn","bsth","deep",4,"pig","Svinegylle",0.058,NA,NA
+"Efterår","Autumn","bsth","none",NA,"cattle","Kvæggylle",0.32,0.26,18.75
+"Efterår","Autumn","bsth","none",NA,"mix","Agfasset biomasse",0.3,0.21,30
+"Efterår","Autumn","bsth","none",NA,"pig","Svinegylle",0.15,0.12,20
+"Efterår","Autumn","bsth","shallow",4,"cattle","Kvæggylle",0.15,NA,NA
+"Efterår","Autumn","bsth","shallow",4,"mix","Agfasset biomasse",0.21,NA,NA
+"Efterår","Autumn","bsth","shallow",4,"pig","Svinegylle",0.081,NA,NA
+"Efterår","Autumn","cs","none",NA,"cattle","Kvæggylle",0.016,NA,NA
+"Efterår","Autumn","cs","none",NA,"mix","Agfasset biomasse",0.026,NA,NA
+"Efterår","Autumn","cs","none",NA,"pig","Svinegylle",0.018,NA,NA
+"Efterår","Autumn","os","none",NA,"cattle","Kvæggylle",0.15,NA,NA
+"Efterår","Autumn","os","none",NA,"mix","Agfasset biomasse",0.17,NA,NA
+"Efterår","Autumn","os","none",NA,"pig","Svinegylle",0.1,NA,NA
+"Maj","May","bsth","deep",4,"cattle","Kvæggylle",0.072,NA,NA
+"Maj","May","bsth","deep",4,"mix","Agfasset biomasse",0.17,NA,NA
+"Maj","May","bsth","deep",4,"pig","Svinegylle",0.049,NA,NA
+"Maj","May","bsth","none",NA,"cattle","Kvæggylle",0.3,0.23,23.3333333333333
+"Maj","May","bsth","none",NA,"mix","Agfasset biomasse",0.3,0.2,33.3333333333333
+"Maj","May","bsth","none",NA,"pig","Svinegylle",0.15,0.12,20
+"Maj","May","bsth","shallow",4,"cattle","Kvæggylle",0.13,NA,NA
+"Maj","May","bsth","shallow",4,"mix","Agfasset biomasse",0.2,NA,NA
+"Maj","May","bsth","shallow",4,"pig","Svinegylle",0.074,NA,NA
+"Maj","May","cs","none",NA,"cattle","Kvæggylle",0.016,NA,NA
+"Maj","May","cs","none",NA,"mix","Agfasset biomasse",0.026,NA,NA
+"Maj","May","cs","none",NA,"pig","Svinegylle",0.018,NA,NA
+"Maj","May","os","none",NA,"cattle","Kvæggylle",0.15,NA,NA
+"Maj","May","os","none",NA,"mix","Agfasset biomasse",0.17,NA,NA
+"Maj","May","os","none",NA,"pig","Svinegylle",0.099,NA,NA
+"Marts","March","bsth","deep",4,"cattle","Kvæggylle",0.031,NA,NA
+"Marts","March","bsth","deep",4,"mix","Agfasset biomasse",0.087,NA,NA
+"Marts","March","bsth","deep",4,"pig","Svinegylle",0.024,NA,NA
+"Marts","March","bsth","none",NA,"cattle","Kvæggylle",0.22,0.15,31.8181818181818
+"Marts","March","bsth","none",NA,"mix","Agfasset biomasse",0.28,0.14,50
+"Marts","March","bsth","none",NA,"pig","Svinegylle",0.14,0.096,31.4285714285714
+"Marts","March","bsth","shallow",4,"cattle","Kvæggylle",0.081,NA,NA
+"Marts","March","bsth","shallow",4,"mix","Agfasset biomasse",0.14,NA,NA
+"Marts","March","bsth","shallow",4,"pig","Svinegylle",0.053,NA,NA
+"Marts","March","cs","none",NA,"cattle","Kvæggylle",0.016,NA,NA
+"Marts","March","cs","none",NA,"mix","Agfasset biomasse",0.026,NA,NA
+"Marts","March","cs","none",NA,"pig","Svinegylle",0.018,NA,NA
+"Marts","March","os","none",NA,"cattle","Kvæggylle",0.12,NA,NA
+"Marts","March","os","none",NA,"mix","Agfasset biomasse",0.16,NA,NA
+"Marts","March","os","none",NA,"pig","Svinegylle",0.097,NA,NA
+"Sommer","Summer","bsth","deep",4,"cattle","Kvæggylle",0.11,NA,NA
+"Sommer","Summer","bsth","deep",4,"mix","Agfasset biomasse",0.2,NA,NA
+"Sommer","Summer","bsth","deep",4,"pig","Svinegylle",0.067,NA,NA
+"Sommer","Summer","bsth","none",NA,"cattle","Kvæggylle",0.33,0.28,15.1515151515151
+"Sommer","Summer","bsth","none",NA,"mix","Agfasset biomasse",0.3,0.22,26.6666666666667
+"Sommer","Summer","bsth","none",NA,"pig","Svinegylle",0.16,0.12,25
+"Sommer","Summer","bsth","shallow",4,"cattle","Kvæggylle",0.17,NA,NA
+"Sommer","Summer","bsth","shallow",4,"mix","Agfasset biomasse",0.23,NA,NA
+"Sommer","Summer","bsth","shallow",4,"pig","Svinegylle",0.088,NA,NA
+"Sommer","Summer","cs","none",NA,"cattle","Kvæggylle",0.016,NA,NA
+"Sommer","Summer","cs","none",NA,"mix","Agfasset biomasse",0.026,NA,NA
+"Sommer","Summer","cs","none",NA,"pig","Svinegylle",0.018,NA,NA
+"Sommer","Summer","os","none",NA,"cattle","Kvæggylle",0.16,NA,NA
+"Sommer","Summer","os","none",NA,"mix","Agfasset biomasse",0.17,NA,NA
+"Sommer","Summer","os","none",NA,"pig","Svinegylle",0.1,NA,NA

@@ -74,18 +74,18 @@
 "Maj","May",12.4,3.565,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,73,0.026,2.6
 "Sommer","Summer",16.867,3.18167,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,74,0.026,2.6
 "Efterår","Autumn",14.6,3.45,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,75,0.026,2.6
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.6,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.1,10
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.6,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.12,12
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.6,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,78,0.12,12
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.6,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.13,13
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.6,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.13,13
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.4,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.14,14
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.4,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.18,18
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.4,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,83,0.22,22
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.4,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.27,27
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.4,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.25,25
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.6,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,86,0.15,15
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.6,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,87,0.18,18
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.6,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,88,0.21,21
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.6,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,89,0.23,23
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.6,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,90,0.22,22
+"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6
+"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11
+"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,78,0.12,12
+"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12
+"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12
+"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15
+"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19
+"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,83,0.23,23
+"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28
+"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26
+"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,86,0.14,14
+"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,87,0.17,17
+"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,88,0.2,20
+"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,89,0.22,22
+"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,90,0.21,21
