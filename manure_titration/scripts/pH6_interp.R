@@ -31,7 +31,7 @@ pHint2 <- merge(pHint2, setup[, -5], by = 'id')
 
 # Mean by interpolated pH
 # First by sample (n = 2)
-pHi2s <- as.data.frame(summarise(group_by(pHint2, animal, sample, pH), n = length(unique(id)), dose.kg.t.s = mean(dose.kg.t)))
+pHi2s <- as.data.frame(summarise(group_by(pHint2, animal, sample, pH), n = length(unique(id)), dose.kg.t.s = mean(dose.kg.t), .groups = 'drop'))
 # Then animal
-pHi2 <- as.data.frame(summarise(group_by(pHi2s, animal, pH), n = length(unique(sample)), dose.kg.t = mean(dose.kg.t.s), dose.kg.t.sd = sd(dose.kg.t.s)))
+pHi2 <- as.data.frame(summarise(group_by(pHi2s, animal, pH), n = length(unique(sample)), dose.kg.t = mean(dose.kg.t.s), dose.kg.t.sd = sd(dose.kg.t.s), .groups = 'drop'))
 

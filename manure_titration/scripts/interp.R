@@ -1,8 +1,10 @@
 # Interpolate all titration curves to set of fixed kg/t dose
 
 # Set dose levels, up to 30 kg/t
-dose.levels <- 0:60 / 2
 dose.levels <- 0:240 / 8
+
+# Add levels from legislation, to later extract change in pH (already present based on above, but for general approach, leave)
+dose.levels <- unique(c(dose.levels, c(2.9, 3.0, 11.0)))
 
 idat <- data.frame()
 

@@ -1,5 +1,6 @@
 # Bootstrap analysis for acid dose required to 6 or 6.6 (method 1)
 
+print('start bootstrap sims')
 nsim <- 1000
 set.seed(123)
 # Bootstrap interpolated pH
@@ -18,7 +19,7 @@ for (i in unique(adat$animal)) {
     # Sampled data
     ds <- subset(da, sample %in% csamp)
     # Take mean of each dose
-    dia <- as.data.frame(summarise(group_by(ds, animal, dose.kg.t), n.sub = sum(n), n.samp = length(unique(sample)), pH = mean(pH)))
+    dia <- as.data.frame(summarise(group_by(ds, animal, dose.kg.t), n.sub = sum(n), n.samp = length(unique(sample)), pH = mean(pH), .groups = 'drop'))
     dia <- as.data.frame(mutate(group_by(dia, animal), n.max = max(n.samp)))
     dia <- subset(dia, n.samp == n.max)
 
@@ -33,6 +34,8 @@ for (i in unique(adat$animal)) {
 
 # Summarize bootstrap results
 pHbsumm <- as.data.frame(summarise(group_by(pHbi, animal, pH), n.samp = n.samp[1], dose.kg.t.mean = mean(dose.kg.t), 
-                                   dose.kg.t.se = sd(dose.kg.t), dose.kg.t.90lcl = quantile(dose.kg.t, 0.1), dose.kg.t.90ucl = quantile(dose.kg.t, 0.9)))
+                                   dose.kg.t.se = sd(dose.kg.t), dose.kg.t.90lcl = quantile(dose.kg.t, 0.1), dose.kg.t.90ucl = quantile(dose.kg.t, 0.9), .groups = 'drop'))
 # Fudge an sd estimate
 pHbsumm$dose.kg.t.sd <- pHbsumm$dose.kg.t.se * sqrt(pHbsumm$n.samp)
+
+print('done')

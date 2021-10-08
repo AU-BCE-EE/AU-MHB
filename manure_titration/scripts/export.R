@@ -12,3 +12,7 @@ write.csv(pHi2, '../output/ave_pH6_interp_method2.csv', row.names = FALSE)
 # Curve counts
 cts <- as.data.frame(summarise(group_by(subset(adat, dose.kg.t == 0), animal), n.samp = length(unique(sample)), n.sub = sum(n)))
 write.csv(cts, '../output/n_curves.csv', row.names = FALSE)
+
+# Change in pH for legal acid doses
+write.csv(dpH.acidif, '../output/dpH_acid_doses.csv')
+
