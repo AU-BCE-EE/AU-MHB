@@ -5,6 +5,7 @@ ext <- data.frame(animal = c('Afgasset', 'Kvæg', 'Slagtesvin', 'So-/smågrise')
 
 ext <- merge(ext, adat, all = FALSE)
 
-dpH.acidif <- data.frame(tapply(ext$dpH, ext$animal, mean))
+dpH.acidif <- data.frame(aggregate(ext$dpH, list(ext$animal), mean))
+names(dpH.acidif) <- c('animal', 'dpH.mean')
 
 
