@@ -1,91 +1,91 @@
 "app.timing.dk","app.timing","air.temp","wind.2m","rain.rate","app.mthd","incorp","t.incorp","app.rate.ni","man.name","man.source","acid","man.dm","man.ph","man.source.pig","app.mthd.os","app.mthd.cs","incorp.deep","incorp.shallow","ct","tan.app","id","EF","EFp"
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,1,0.14,14
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,2,0.15,15
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,3,0.15,15
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,4,0.16,16
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,5,0.15,15
-"Marts","March",4.9,4.025,0.09,"bsth","shallow",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,6,0.053,5.3
-"April","April",8.5,3.91,0.09,"bsth","shallow",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,7,0.062,6.2
-"Maj","May",12.4,3.565,0.09,"bsth","shallow",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,8,0.074,7.4
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","shallow",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,9,0.088,8.8
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","shallow",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,10,0.081,8.1
-"Marts","March",4.9,4.025,0.09,"bsth","deep",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,11,0.024,2.4
-"April","April",8.5,3.91,0.09,"bsth","deep",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,12,0.035,3.5
-"Maj","May",12.4,3.565,0.09,"bsth","deep",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,13,0.049,4.9
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","deep",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,14,0.067,6.7
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","deep",4,30,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,15,0.058,5.8
-"Marts","March",4.9,4.025,0.09,"os","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,16,0.097,9.7
-"April","April",8.5,3.91,0.09,"os","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,17,0.098,9.8
-"Maj","May",12.4,3.565,0.09,"os","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,18,0.099,9.9
-"Sommer","Summer",16.867,3.18167,0.09,"os","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,19,0.1,10
-"Efterår","Autumn",14.6,3.45,0.09,"os","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,20,0.1,10
-"Marts","March",4.9,4.025,0.09,"cs","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,21,0.018,1.8
-"April","April",8.5,3.91,0.09,"cs","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,22,0.018,1.8
-"Maj","May",12.4,3.565,0.09,"cs","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,23,0.018,1.8
-"Sommer","Summer",16.867,3.18167,0.09,"cs","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,24,0.018,1.8
-"Efterår","Autumn",14.6,3.45,0.09,"cs","none",NA,0,"Svinegylle","pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,25,0.018,1.8
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,26,0.22,22
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,27,0.27,27
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,28,0.3,30
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,29,0.33,33
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,30,0.32,32
-"Marts","March",4.9,4.025,0.09,"bsth","shallow",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,31,0.081,8.1
-"April","April",8.5,3.91,0.09,"bsth","shallow",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,32,0.1,10
-"Maj","May",12.4,3.565,0.09,"bsth","shallow",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,33,0.13,13
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","shallow",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,34,0.17,17
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","shallow",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,35,0.15,15
-"Marts","March",4.9,4.025,0.09,"bsth","deep",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,36,0.031,3.1
-"April","April",8.5,3.91,0.09,"bsth","deep",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,37,0.047,4.7
-"Maj","May",12.4,3.565,0.09,"bsth","deep",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,38,0.072,7.2
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","deep",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,39,0.11,11
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","deep",4,30,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,40,0.092,9.2
-"Marts","March",4.9,4.025,0.09,"os","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,41,0.12,12
-"April","April",8.5,3.91,0.09,"os","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,42,0.14,14
-"Maj","May",12.4,3.565,0.09,"os","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,43,0.15,15
-"Sommer","Summer",16.867,3.18167,0.09,"os","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,44,0.16,16
-"Efterår","Autumn",14.6,3.45,0.09,"os","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,45,0.15,15
-"Marts","March",4.9,4.025,0.09,"cs","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,46,0.016,1.6
-"April","April",8.5,3.91,0.09,"cs","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,47,0.016,1.6
-"Maj","May",12.4,3.565,0.09,"cs","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,48,0.016,1.6
-"Sommer","Summer",16.867,3.18167,0.09,"cs","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,49,0.016,1.6
-"Efterår","Autumn",14.6,3.45,0.09,"cs","none",NA,0,"Kvæggylle","cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,50,0.016,1.6
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,51,0.28,28
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,52,0.29,29
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,53,0.3,30
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,54,0.3,30
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,55,0.3,30
-"Marts","March",4.9,4.025,0.09,"bsth","shallow",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,56,0.14,14
-"April","April",8.5,3.91,0.09,"bsth","shallow",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,57,0.17,17
-"Maj","May",12.4,3.565,0.09,"bsth","shallow",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,58,0.2,20
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","shallow",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,59,0.23,23
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","shallow",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,60,0.21,21
-"Marts","March",4.9,4.025,0.09,"bsth","deep",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,61,0.087,8.7
-"April","April",8.5,3.91,0.09,"bsth","deep",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,62,0.13,13
-"Maj","May",12.4,3.565,0.09,"bsth","deep",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,63,0.17,17
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","deep",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,64,0.2,20
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","deep",4,30,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,65,0.19,19
-"Marts","March",4.9,4.025,0.09,"os","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,66,0.16,16
-"April","April",8.5,3.91,0.09,"os","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,67,0.17,17
-"Maj","May",12.4,3.565,0.09,"os","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,68,0.17,17
-"Sommer","Summer",16.867,3.18167,0.09,"os","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,69,0.17,17
-"Efterår","Autumn",14.6,3.45,0.09,"os","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,70,0.17,17
-"Marts","March",4.9,4.025,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,71,0.026,2.6
-"April","April",8.5,3.91,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,72,0.026,2.6
-"Maj","May",12.4,3.565,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,73,0.026,2.6
-"Sommer","Summer",16.867,3.18167,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,74,0.026,2.6
-"Efterår","Autumn",14.6,3.45,0.09,"cs","none",NA,0,"Agfasset biomasse","mix",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,75,0.026,2.6
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,78,0.12,12
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Svinegylle","pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,83,0.23,23
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Kvæggylle","cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26
-"Marts","March",4.9,4.025,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,86,0.14,14
-"April","April",8.5,3.91,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,87,0.17,17
-"Maj","May",12.4,3.565,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,88,0.2,20
-"Sommer","Summer",16.867,3.18167,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,89,0.22,22
-"Efterår","Autumn",14.6,3.45,0.09,"bsth","none",NA,30,"Agfasset biomasse","mix",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,90,0.21,21
+"Marts","March",4.9,4.025,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,1,0.14,14
+"April","April",8.5,3.91,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,2,0.15,15
+"Maj","May",12.4,3.565,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,3,0.15,15
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,4,0.16,16
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,5,0.15,15
+"Marts","March",4.9,4.025,0.09,"Trailing hose","Shallow",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,6,0.053,5.3
+"April","April",8.5,3.91,0.09,"Trailing hose","Shallow",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,7,0.062,6.2
+"Maj","May",12.4,3.565,0.09,"Trailing hose","Shallow",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,8,0.074,7.4
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","Shallow",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,9,0.088,8.8
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","Shallow",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,10,0.081,8.1
+"Marts","March",4.9,4.025,0.09,"Trailing hose","Deep",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,11,0.024,2.4
+"April","April",8.5,3.91,0.09,"Trailing hose","Deep",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,12,0.035,3.5
+"Maj","May",12.4,3.565,0.09,"Trailing hose","Deep",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,13,0.049,4.9
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","Deep",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,14,0.067,6.7
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","Deep",4,30,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,15,0.058,5.8
+"Marts","March",4.9,4.025,0.09,"Open slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,16,0.097,9.7
+"April","April",8.5,3.91,0.09,"Open slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,17,0.098,9.8
+"Maj","May",12.4,3.565,0.09,"Open slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,18,0.099,9.9
+"Sommer","Summer",16.867,3.18167,0.09,"Open slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,19,0.1,10
+"Efterår","Autumn",14.6,3.45,0.09,"Open slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,TRUE,FALSE,FALSE,FALSE,168,100,20,0.1,10
+"Marts","March",4.9,4.025,0.09,"Closed slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,21,0.018,1.8
+"April","April",8.5,3.91,0.09,"Closed slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,22,0.018,1.8
+"Maj","May",12.4,3.565,0.09,"Closed slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,23,0.018,1.8
+"Sommer","Summer",16.867,3.18167,0.09,"Closed slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,24,0.018,1.8
+"Efterår","Autumn",14.6,3.45,0.09,"Closed slot injection","None",NA,0,"Svinegylle","Pig",FALSE,3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,25,0.018,1.8
+"Marts","March",4.9,4.025,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,26,0.22,22
+"April","April",8.5,3.91,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,27,0.27,27
+"Maj","May",12.4,3.565,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,28,0.3,30
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,29,0.33,33
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,30,0.32,32
+"Marts","March",4.9,4.025,0.09,"Trailing hose","Shallow",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,31,0.081,8.1
+"April","April",8.5,3.91,0.09,"Trailing hose","Shallow",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,32,0.1,10
+"Maj","May",12.4,3.565,0.09,"Trailing hose","Shallow",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,33,0.13,13
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","Shallow",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,34,0.17,17
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","Shallow",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,35,0.15,15
+"Marts","March",4.9,4.025,0.09,"Trailing hose","Deep",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,36,0.031,3.1
+"April","April",8.5,3.91,0.09,"Trailing hose","Deep",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,37,0.047,4.7
+"Maj","May",12.4,3.565,0.09,"Trailing hose","Deep",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,38,0.072,7.2
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","Deep",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,39,0.11,11
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","Deep",4,30,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,40,0.092,9.2
+"Marts","March",4.9,4.025,0.09,"Open slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,41,0.12,12
+"April","April",8.5,3.91,0.09,"Open slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,42,0.14,14
+"Maj","May",12.4,3.565,0.09,"Open slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,43,0.15,15
+"Sommer","Summer",16.867,3.18167,0.09,"Open slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,44,0.16,16
+"Efterår","Autumn",14.6,3.45,0.09,"Open slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,45,0.15,15
+"Marts","March",4.9,4.025,0.09,"Closed slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,46,0.016,1.6
+"April","April",8.5,3.91,0.09,"Closed slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,47,0.016,1.6
+"Maj","May",12.4,3.565,0.09,"Closed slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,48,0.016,1.6
+"Sommer","Summer",16.867,3.18167,0.09,"Closed slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,49,0.016,1.6
+"Efterår","Autumn",14.6,3.45,0.09,"Closed slot injection","None",NA,0,"Kvæggylle","Cattle",FALSE,6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,50,0.016,1.6
+"Marts","March",4.9,4.025,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,51,0.28,28
+"April","April",8.5,3.91,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,52,0.29,29
+"Maj","May",12.4,3.565,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,53,0.3,30
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,54,0.3,30
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,55,0.3,30
+"Marts","March",4.9,4.025,0.09,"Trailing hose","Shallow",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,56,0.14,14
+"April","April",8.5,3.91,0.09,"Trailing hose","Shallow",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,57,0.17,17
+"Maj","May",12.4,3.565,0.09,"Trailing hose","Shallow",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,58,0.2,20
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","Shallow",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,59,0.23,23
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","Shallow",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,60,0.21,21
+"Marts","March",4.9,4.025,0.09,"Trailing hose","Deep",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,61,0.087,8.7
+"April","April",8.5,3.91,0.09,"Trailing hose","Deep",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,62,0.13,13
+"Maj","May",12.4,3.565,0.09,"Trailing hose","Deep",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,63,0.17,17
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","Deep",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,64,0.2,20
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","Deep",4,30,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,65,0.19,19
+"Marts","March",4.9,4.025,0.09,"Open slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,66,0.16,16
+"April","April",8.5,3.91,0.09,"Open slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,67,0.17,17
+"Maj","May",12.4,3.565,0.09,"Open slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,68,0.17,17
+"Sommer","Summer",16.867,3.18167,0.09,"Open slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,69,0.17,17
+"Efterår","Autumn",14.6,3.45,0.09,"Open slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,TRUE,FALSE,FALSE,FALSE,168,100,70,0.17,17
+"Marts","March",4.9,4.025,0.09,"Closed slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,71,0.026,2.6
+"April","April",8.5,3.91,0.09,"Closed slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,72,0.026,2.6
+"Maj","May",12.4,3.565,0.09,"Closed slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,73,0.026,2.6
+"Sommer","Summer",16.867,3.18167,0.09,"Closed slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,74,0.026,2.6
+"Efterår","Autumn",14.6,3.45,0.09,"Closed slot injection","None",NA,0,"Afgasset biomasse","Digestate",FALSE,5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,75,0.026,2.6
+"Marts","March",4.9,4.025,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6
+"April","April",8.5,3.91,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11
+"Maj","May",12.4,3.565,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,78,0.12,12
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","None",NA,30,"Svinegylle","Pig",TRUE,3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12
+"Marts","March",4.9,4.025,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15
+"April","April",8.5,3.91,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19
+"Maj","May",12.4,3.565,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,83,0.23,23
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","None",NA,30,"Kvæggylle","Cattle",TRUE,6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26
+"Marts","March",4.9,4.025,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,86,0.14,14
+"April","April",8.5,3.91,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,87,0.17,17
+"Maj","May",12.4,3.565,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,88,0.2,20
+"Sommer","Summer",16.867,3.18167,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,89,0.22,22
+"Efterår","Autumn",14.6,3.45,0.09,"Trailing hose","None",NA,30,"Afgasset biomasse","Digestate",TRUE,5.1,6.52,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,90,0.21,21

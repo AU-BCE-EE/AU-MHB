@@ -7,15 +7,15 @@ dat <- cbind(weather[rep(1:nw, na), ], app[rep(1:na, each = nw), ])
 dat <- cbind(dat[rep(1:(nw * na), nc), ], comp[rep(1:nc, each = nw * na), ])
 
 # Drop acidification for all but trailing hose
-dat <- dat[(dat$app.mthd == 'bsth' & dat$incorp == 'none') | !dat$acid, ]
+dat <- dat[(dat$app.mthd == 'Trailing hose' & dat$incorp == 'None') | !dat$acid, ]
 rownames(dat) <- 1:nrow(dat)
 
 # Add application method info
-dat$man.source.pig <- ifelse(dat$man.source == 'pig', TRUE, FALSE)
-dat$app.mthd.os <- ifelse(dat$app.mthd == 'os', TRUE, FALSE)
-dat$app.mthd.cs <- ifelse(dat$app.mthd == 'cs', TRUE, FALSE)
-dat$incorp.deep <- !is.na(dat$incorp) & dat$incorp == 'deep'
-dat$incorp.shallow <- !is.na(dat$incorp) & dat$incorp == 'shallow'
+dat$man.source.pig <- ifelse(dat$man.source == 'Pig', TRUE, FALSE)
+dat$app.mthd.os <- ifelse(dat$app.mthd == 'Open slot injection', TRUE, FALSE)
+dat$app.mthd.cs <- ifelse(dat$app.mthd == 'Closed slot injection', TRUE, FALSE)
+dat$incorp.deep <- !is.na(dat$incorp) & dat$incorp == 'Deep'
+dat$incorp.shallow <- !is.na(dat$incorp) & dat$incorp == 'Shallow'
 
 # Add fixed time
 dat$ct <- 168
