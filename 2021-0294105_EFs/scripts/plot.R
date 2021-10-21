@@ -17,7 +17,7 @@ dat$man.source.nm <- factor(dat$man.source,
                             levels = c('Cattle', 'Pig', 'Digestate'),
                             labels = c('Kvæggylle', 'Svinegylle', 'Afgasset biomasse'),
 )
-dat$app.timing.dk <- factor(dat$app.timing.dk, levels = c('Marts', 'April', 'Maj', 'Sommer', 'Efterår'))
+dat$app.timing.dk <- factor(dat$app.timing.dk, levels = c('Marts', 'April', 'Maj', 'Sommer', 'Efterår'), ordered = TRUE)
 
 datw$app.mthd.nm <- factor(datw$app.mthd, 
                             levels = c('Trailing hose', 'Open slot injection', 'Closed slot injection')
@@ -28,13 +28,16 @@ datw$app.timing.dk <- factor(datw$app.timing.dk, levels = c('Marts', 'April', 'M
 datw$man.source.nm <- factor(datw$man.source, levels = c('Cattle', 'Pig', 'Digestate'))
 
 
-ggplot(dat, aes(app.timing.dk, EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
+plot(1:25, pch = 1:25)
+ggplot(dat, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
   geom_point() +
+  geom_line(lty = 1, alpha = 0.08) +
   facet_wrap(~ man.source.nm) +
   ylim(0, max(dat$EFp)) +
   labs(x = 'Udbringningsperiode', y = 'Emissionsfaktor (% af TAN)',
        shape = '', colour = '') + 
-  scale_shape_manual(values = c(19, 24, 1, 0, 6)) +
+  scale_shape_manual(values = c(19, 24, 6, 20, 1)) +
+  scale_x_continuous(breaks = unique(as.integer(dat$app.timing.dk)), labels= unique(dat$app.timing.dk)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = 'top')
 ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
