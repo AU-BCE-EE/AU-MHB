@@ -1,11 +1,23 @@
 
-dat$app.mthd.nm <- factor(paste0(dat$app.mthd, ifelse(dat$acid, ' + acid', '')), 
-                            levels = c('Trailing hose', 'Trailing hose + acid', 'Open slot injection', 'Closed slot injection')
-                           )
+# Drop shallow incorporation for plots
+dat <- subset(dat, incorp != 'Shallow')
 
-dat$incorp.nm <- factor(dat$incorp, levels = c('None', 'Shallow', 'Deep'))
+dat$app.mthd.nm <- factor(paste0(dat$app.mthd, ifelse(dat$acid, ' + acid', ifelse(dat$incorp == 'Deep', ' + deep', ''))), 
+                            levels = c('Trailing hose', 'Trailing hose + acid', 'Trailing hose + deep', 'Open slot injection', 'Closed slot injection'),
+                            labels = c('Slæbeslange', 'Slæbeslange +\nmarkforsuring', 'Slæbeslange +\nNedbringning\ninden 4 timer', 'Nedfældning\ni græs', 'Nedfældning\npå sort jord')
+                           )
+table(dat$app.mthd.nm)
+
+dat$incorp.nm <- factor(dat$incorp, 
+                        levels = c('None', 'Shallow', 'Deep'),
+                        labels = c('Ikke', 'Shallow', 'Nedbringning\ninden 4 timer'),
+)
 dat$app.timing <- factor(dat$app.timing, levels = c('March', 'April', 'May', 'Summer', 'Autumn'))
-dat$man.source.nm <- factor(dat$man.source, levels = c('Cattle', 'Pig', 'Digestate'))
+dat$man.source.nm <- factor(dat$man.source, 
+                            levels = c('Cattle', 'Pig', 'Digestate'),
+                            labels = c('Kvæggylle', 'Svinegylle', 'Afgasset biomasse'),
+)
+dat$app.timing.dk <- factor(dat$app.timing.dk, levels = c('Marts', 'April', 'Maj', 'Sommer', 'Efterår'))
 
 datw$app.mthd.nm <- factor(datw$app.mthd, 
                             levels = c('Trailing hose', 'Open slot injection', 'Closed slot injection')
@@ -16,15 +28,15 @@ datw$app.timing.dk <- factor(datw$app.timing.dk, levels = c('Marts', 'April', 'M
 datw$man.source.nm <- factor(datw$man.source, levels = c('Cattle', 'Pig', 'Digestate'))
 
 
-ggplot(dat, aes(app.timing, EFp, shape = incorp.nm, colour = factor(app.mthd.nm))) +
+ggplot(dat, aes(app.timing.dk, EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
   geom_point() +
   facet_wrap(~ man.source.nm) +
   ylim(0, max(dat$EFp)) +
-  labs(x = 'Application period', y = 'Emission factor (% applied TAN)',
-       shape = 'Incorporation (shape)', colour = 'Application method\n(color)') + 
-  scale_shape_manual(values = c(19, 24, 1)) +
+  labs(x = 'Udbringningsperiode', y = 'Emissionsfaktor (% af TAN)',
+       shape = '', colour = '') + 
+  scale_shape_manual(values = c(19, 24, 1, 0, 6)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-        legend.position = 'right')
+        legend.position = 'top')
 ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
 
 ggplot(datw, aes(app.timing.dk, red.acid, colour = man.name)) +
