@@ -8,11 +8,6 @@ dat <- cbind(dat[rep(1:(nw * na), nc), ], comp[rep(1:nc, each = nw * na), ])
 
 # Drop acidification for all but trailing hose
 dat <- dat[(dat$app.mthd == 'Trailing hose' & dat$incorp == 'None') | !dat$acid, ]
-
-# Drop inappropriate summer x app.mthd combinations 
-dat <- dat[dat$app.mthd.wthr == 'All' | dat$app.mthd.wthr == dat$app.mthd, ]
-
-# Row names
 rownames(dat) <- 1:nrow(dat)
 
 # Add application method info
