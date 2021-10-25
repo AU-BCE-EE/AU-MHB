@@ -8,8 +8,8 @@
 "April","Trailing hose","Cattle",FALSE,"Deep",4,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,37,0.047,4.7,"016-2010",4.7
 "April","Trailing hose","Cattle",FALSE,"None",NA,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,27,0.27,27,"018-2010",27
 "April","Trailing hose","Cattle",FALSE,"Shallow",4,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,32,0.1,10,"251-2010",10
-"April","Trailing hose","Cattle",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19,"121-2010",13
-"April","Trailing hose","Cattle",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19,"134-2010",13
+"April","Trailing hose","Cattle",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19,"187-2010",18
+"April","Trailing hose","Cattle",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,82,0.19,19,"200-2010",18
 "April","Trailing hose","Digestate",FALSE,"Deep",4,"April",8.5,3.91,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,62,0.13,13,"090-2010",13
 "April","Trailing hose","Digestate",FALSE,"None",NA,"April",8.5,3.91,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,52,0.29,29,"092-2010",29
 "April","Trailing hose","Digestate",FALSE,"Shallow",4,"April",8.5,3.91,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,57,0.17,17,"291-2010",17
@@ -17,8 +17,8 @@
 "April","Trailing hose","Pig",FALSE,"Deep",4,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,12,0.035,3.5,"053-2010",3.5
 "April","Trailing hose","Pig",FALSE,"None",NA,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,2,0.15,15,"055-2010",15
 "April","Trailing hose","Pig",FALSE,"Shallow",4,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,7,0.062,6.2,"271-2010",6.2
-"April","Trailing hose","Pig",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11,"167-2010",8.2
-"April","Trailing hose","Pig",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11,"154-2010",8.2
+"April","Trailing hose","Pig",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11,"233-2010",10
+"April","Trailing hose","Pig",TRUE,"None",NA,"April",8.5,3.91,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,77,0.11,11,"220-2010",10
 "Autumn","Closed slot injection","Cattle",FALSE,"None",NA,"Efterår",14.6,3.45,0.09,0,"Kvæggylle",6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,50,0.016,1.6,"008-2010",1.6
 "Autumn","Closed slot injection","Digestate",FALSE,"None",NA,"Efterår",14.6,3.45,0.09,0,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,75,0.026,2.6,"082-2010",2.6
 "Autumn","Closed slot injection","Pig",FALSE,"None",NA,"Efterår",14.6,3.45,0.09,0,"Svinegylle",3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,25,0.018,1.8,"045-2010",1.8
@@ -28,8 +28,8 @@
 "Autumn","Trailing hose","Cattle",FALSE,"Deep",4,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,40,0.092,9.2,"029-2010",9.2
 "Autumn","Trailing hose","Cattle",FALSE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,30,0.32,32,"025-2010",32
 "Autumn","Trailing hose","Cattle",FALSE,"Shallow",4,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,35,0.15,15,"259-2010",15
-"Autumn","Trailing hose","Cattle",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26,"128-2010",19
-"Autumn","Trailing hose","Cattle",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26,"136-2010",19
+"Autumn","Trailing hose","Cattle",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26,"194-2010",25
+"Autumn","Trailing hose","Cattle",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,85,0.26,26,"202-2010",25
 "Autumn","Trailing hose","Digestate",FALSE,"Deep",4,"Efterår",14.6,3.45,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,65,0.19,19,"103-2010",19
 "Autumn","Trailing hose","Digestate",FALSE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,55,0.3,30,"099-2010",30
 "Autumn","Trailing hose","Digestate",FALSE,"Shallow",4,"Efterår",14.6,3.45,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,60,0.21,21,"299-2010",21
@@ -37,8 +37,8 @@
 "Autumn","Trailing hose","Pig",FALSE,"Deep",4,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,15,0.058,5.8,"066-2010",5.8
 "Autumn","Trailing hose","Pig",FALSE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,5,0.15,15,"062-2010",15
 "Autumn","Trailing hose","Pig",FALSE,"Shallow",4,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,10,0.081,8.1,"279-2010",8.1
-"Autumn","Trailing hose","Pig",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12,"169-2010",9.9
-"Autumn","Trailing hose","Pig",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12,"161-2010",9.9
+"Autumn","Trailing hose","Pig",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12,"235-2010",12
+"Autumn","Trailing hose","Pig",TRUE,"None",NA,"Efterår",14.6,3.45,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,80,0.12,12,"227-2010",12
 "March","Closed slot injection","Cattle",FALSE,"None",NA,"Marts",4.9,4.025,0.09,0,"Kvæggylle",6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,46,0.016,1.6,"001-2010",1.6
 "March","Closed slot injection","Digestate",FALSE,"None",NA,"Marts",4.9,4.025,0.09,0,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,71,0.026,2.6,"075-2010",2.6
 "March","Closed slot injection","Pig",FALSE,"None",NA,"Marts",4.9,4.025,0.09,0,"Svinegylle",3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,21,0.018,1.8,"038-2010",1.8
@@ -48,8 +48,8 @@
 "March","Trailing hose","Cattle",FALSE,"Deep",4,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,36,0.031,3.1,"012-2010",3.1
 "March","Trailing hose","Cattle",FALSE,"None",NA,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,26,0.22,22,"017-2010",22
 "March","Trailing hose","Cattle",FALSE,"Shallow",4,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,31,0.081,8.1,"247-2010",8.1
-"March","Trailing hose","Cattle",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15,"133-2010",9.6
-"March","Trailing hose","Cattle",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15,"120-2010",9.6
+"March","Trailing hose","Cattle",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15,"199-2010",14
+"March","Trailing hose","Cattle",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,81,0.15,15,"186-2010",14
 "March","Trailing hose","Digestate",FALSE,"Deep",4,"Marts",4.9,4.025,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,61,0.087,8.7,"086-2010",8.7
 "March","Trailing hose","Digestate",FALSE,"None",NA,"Marts",4.9,4.025,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,51,0.28,28,"091-2010",28
 "March","Trailing hose","Digestate",FALSE,"Shallow",4,"Marts",4.9,4.025,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,56,0.14,14,"287-2010",14
@@ -57,8 +57,8 @@
 "March","Trailing hose","Pig",FALSE,"Deep",4,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,11,0.024,2.4,"049-2010",2.4
 "March","Trailing hose","Pig",FALSE,"None",NA,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,1,0.14,14,"054-2010",14
 "March","Trailing hose","Pig",FALSE,"Shallow",4,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,6,0.053,5.3,"267-2010",5.3
-"March","Trailing hose","Pig",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6,"166-2010",7
-"March","Trailing hose","Pig",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6,"153-2010",7
+"March","Trailing hose","Pig",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6,"232-2010",9.2
+"March","Trailing hose","Pig",TRUE,"None",NA,"Marts",4.9,4.025,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,76,0.096,9.6,"219-2010",9.2
 "May","Closed slot injection","Cattle",FALSE,"None",NA,"Maj",12.4,3.565,0.09,0,"Kvæggylle",6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,48,0.016,1.6,NA,NA
 "May","Closed slot injection","Digestate",FALSE,"None",NA,"Maj",12.4,3.565,0.09,0,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,73,0.026,2.6,NA,NA
 "May","Closed slot injection","Pig",FALSE,"None",NA,"Maj",12.4,3.565,0.09,0,"Svinegylle",3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,23,0.018,1.8,NA,NA
@@ -68,7 +68,7 @@
 "May","Trailing hose","Cattle",FALSE,"Deep",4,"Maj",12.4,3.565,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,38,0.072,7.2,NA,NA
 "May","Trailing hose","Cattle",FALSE,"None",NA,"Maj",12.4,3.565,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,28,0.3,30,"019-2010",30
 "May","Trailing hose","Cattle",FALSE,"Shallow",4,"Maj",12.4,3.565,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,33,0.13,13,NA,NA
-"May","Trailing hose","Cattle",TRUE,"None",NA,"Maj",12.4,3.565,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,83,0.23,23,"122-2010",17
+"May","Trailing hose","Cattle",TRUE,"None",NA,"Maj",12.4,3.565,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,83,0.23,23,"188-2010",22
 "May","Trailing hose","Digestate",FALSE,"Deep",4,"Maj",12.4,3.565,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,63,0.17,17,NA,NA
 "May","Trailing hose","Digestate",FALSE,"None",NA,"Maj",12.4,3.565,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,53,0.3,30,"093-2010",30
 "May","Trailing hose","Digestate",FALSE,"Shallow",4,"Maj",12.4,3.565,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,58,0.2,20,NA,NA
@@ -76,7 +76,7 @@
 "May","Trailing hose","Pig",FALSE,"Deep",4,"Maj",12.4,3.565,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,13,0.049,4.9,NA,NA
 "May","Trailing hose","Pig",FALSE,"None",NA,"Maj",12.4,3.565,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,3,0.15,15,"056-2010",15
 "May","Trailing hose","Pig",FALSE,"Shallow",4,"Maj",12.4,3.565,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,8,0.074,7.4,NA,NA
-"May","Trailing hose","Pig",TRUE,"None",NA,"Maj",12.4,3.565,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,78,0.12,12,"155-2010",9.3
+"May","Trailing hose","Pig",TRUE,"None",NA,"Maj",12.4,3.565,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,78,0.12,12,"221-2010",11
 "Summer","Closed slot injection","Cattle",FALSE,"None",NA,"Sommer",16.867,3.18167,0.09,0,"Kvæggylle",6.5,7,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,49,0.016,1.6,"006-2010",1.6
 "Summer","Closed slot injection","Digestate",FALSE,"None",NA,"Sommer",16.867,3.18167,0.09,0,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,TRUE,FALSE,FALSE,168,100,74,0.026,2.6,"080-2010",2.6
 "Summer","Closed slot injection","Pig",FALSE,"None",NA,"Sommer",16.867,3.18167,0.09,0,"Svinegylle",3.9,7.2,TRUE,FALSE,TRUE,FALSE,FALSE,168,100,24,0.018,1.8,"043-2010",1.8
@@ -86,8 +86,8 @@
 "Summer","Trailing hose","Cattle",FALSE,"Deep",4,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,39,0.11,11,"024-2010",11
 "Summer","Trailing hose","Cattle",FALSE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,29,0.33,33,"020-2010",33
 "Summer","Trailing hose","Cattle",FALSE,"Shallow",4,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,7,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,34,0.17,17,"255-2010",17
-"Summer","Trailing hose","Cattle",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28,"123-2010",22
-"Summer","Trailing hose","Cattle",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28,"135-2010",22
+"Summer","Trailing hose","Cattle",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28,"189-2010",27
+"Summer","Trailing hose","Cattle",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Kvæggylle",6.5,6.47,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,84,0.28,28,"201-2010",27
 "Summer","Trailing hose","Digestate",FALSE,"Deep",4,"Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,TRUE,FALSE,168,100,64,0.2,20,"098-2010",20
 "Summer","Trailing hose","Digestate",FALSE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,FALSE,168,100,54,0.3,30,"094-2010",30
 "Summer","Trailing hose","Digestate",FALSE,"Shallow",4,"Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse",5.1,7.9,FALSE,FALSE,FALSE,FALSE,TRUE,168,100,59,0.23,23,"295-2010",23
@@ -95,5 +95,5 @@
 "Summer","Trailing hose","Pig",FALSE,"Deep",4,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,TRUE,FALSE,168,100,14,0.067,6.7,"061-2010",6.7
 "Summer","Trailing hose","Pig",FALSE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,4,0.16,16,"057-2010",16
 "Summer","Trailing hose","Pig",FALSE,"Shallow",4,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,7.2,TRUE,FALSE,FALSE,FALSE,TRUE,168,100,9,0.088,8.8,"275-2010",8.8
-"Summer","Trailing hose","Pig",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12,"156-2010",10
-"Summer","Trailing hose","Pig",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12,"168-2010",10
+"Summer","Trailing hose","Pig",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12,"222-2010",12
+"Summer","Trailing hose","Pig",TRUE,"None",NA,"Sommer",16.867,3.18167,0.09,30,"Svinegylle",3.9,6.47,TRUE,FALSE,FALSE,FALSE,FALSE,168,100,79,0.12,12,"234-2010",12
