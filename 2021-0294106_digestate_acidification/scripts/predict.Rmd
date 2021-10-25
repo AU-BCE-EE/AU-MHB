@@ -27,7 +27,6 @@ With set 2 parameters
 
 ```{r}
 preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', group = 'id', warn = TRUE)
-digpreds <- ALFAM2mod(digdat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', group = 'id', warn = TRUE)
 ```
 
 Check reference condition.
@@ -39,13 +38,7 @@ ALFAM2mod(ref, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', time
 
 Add results to main df
 ```{r}
-#dat$EF <- signif(preds$er, 2)
-dat$EF <- preds$er
+dat$EF <- signif(preds$er, 2)
 dat$EFp <- 100 * signif(preds$er, 2)
 ```
-
-```{r}
-digdat$EF <- digpreds$er
-```
-
 

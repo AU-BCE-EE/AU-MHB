@@ -6,27 +6,21 @@ nc <- nrow(comp)
 dat <- cbind(weather[rep(1:nw, na), ], app[rep(1:na, each = nw), ])
 dat <- cbind(dat[rep(1:(nw * na), nc), ], comp[rep(1:nc, each = nw * na), ])
 
+# Drop acidification for all but trailing hose
+dat <- dat[(dat$app.mthd == 'Trailing hose' & dat$incorp == 'None') | !dat$acid, ]
+rownames(dat) <- 1:nrow(dat)
+
 # Add application method info
-dat$man.source.pig <- ifelse(dat$man.source == 'pig', TRUE, FALSE)
+dat$man.source.pig <- ifelse(dat$man.source == 'Pig', TRUE, FALSE)
+dat$app.mthd.os <- ifelse(dat$app.mthd == 'Open slot injection', TRUE, FALSE)
+dat$app.mthd.cs <- ifelse(dat$app.mthd == 'Closed slot injection', TRUE, FALSE)
+dat$incorp.deep <- !is.na(dat$incorp) & dat$incorp == 'Deep'
+dat$incorp.shallow <- !is.na(dat$incorp) & dat$incorp == 'Shallow'
 
 # Add fixed time
 dat$ct <- 168
 dat$tan.app <- 100
 dat$id <- 1:nrow(dat)
-
-# Digestate only data frame with variable pH
-dig <- subset(comp, man.source == 'digestate')
-pH <- seq(5, dig$man.ph, length.out = 50)
-dig <- data.frame(man.source = dig$man.source, man.dm = dig$man.dm, man.ph = pH)
-nd <- nrow(dig)
-
-# Add other inputs
-digdat <- cbind(weather[rep(1:nw, na), ], app[rep(1:na, each = nw), ])
-digdat <- cbind(digdat[rep(1:(nw * na), nd), ], dig[rep(1:nd, each = nw * na), ])
-
-digdat$ct <- 168
-digdat$tan.app <- 100
-digdat$id <- 1:nrow(digdat)
 
 # Add reference conditions for test of ALFAM2 calculations
 ref <- data.frame(ct = 168, t.incorp = NA,
