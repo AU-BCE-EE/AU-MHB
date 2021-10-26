@@ -3,24 +3,29 @@
 "April","Open slot injection","Digestate","None","April",8.5,3.91,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,TRUE,FALSE,168,100,7,0.17,17,"078-2010","None",NA,17
 "April","Trailing hose","Digestate","Field acidified","April",8.5,3.91,0.09,30,"Afgasset biomasse","11 kg/t",5.1,6.52,FALSE,FALSE,168,100,17,0.17,17,NA,NA,NA,NA
 "April","Trailing hose","Digestate","Field acidified","April",8.5,3.91,0.09,30,"Afgasset biomasse","2.1 kg/t",5.1,7.317,FALSE,FALSE,168,100,22,0.25,25,NA,NA,NA,NA
+"April","Trailing hose","Digestate","Field acidified","April",8.5,3.91,0.09,30,"Afgasset biomasse","5.7 kg/t",5.1,6.89,FALSE,FALSE,168,100,27,0.21,21,NA,NA,NA,NA
 "April","Trailing hose","Digestate","None","April",8.5,3.91,0.09,30,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,FALSE,168,100,2,0.29,29,"092-2010","None",NA,29
 "Autumn","Closed slot injection","Digestate","None","Efterår",14.6,3.45,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,TRUE,168,100,15,0.026,2.6,"082-2010","None",NA,2.6
 "Autumn","Open slot injection","Digestate","None","Efterår",14.6,3.45,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,TRUE,FALSE,168,100,10,0.17,17,"081-2010","None",NA,17
 "Autumn","Trailing hose","Digestate","Field acidified","Efterår",14.6,3.45,0.09,30,"Afgasset biomasse","11 kg/t",5.1,6.52,FALSE,FALSE,168,100,20,0.21,21,NA,NA,NA,NA
 "Autumn","Trailing hose","Digestate","Field acidified","Efterår",14.6,3.45,0.09,30,"Afgasset biomasse","2.1 kg/t",5.1,7.317,FALSE,FALSE,168,100,25,0.27,27,NA,NA,NA,NA
+"Autumn","Trailing hose","Digestate","Field acidified","Efterår",14.6,3.45,0.09,30,"Afgasset biomasse","5.7 kg/t",5.1,6.89,FALSE,FALSE,168,100,30,0.24,24,NA,NA,NA,NA
 "Autumn","Trailing hose","Digestate","None","Efterår",14.6,3.45,0.09,30,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,FALSE,168,100,5,0.3,30,"099-2010","None",NA,30
 "March","Closed slot injection","Digestate","None","Marts",4.9,4.025,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,TRUE,168,100,11,0.026,2.6,"075-2010","None",NA,2.6
 "March","Open slot injection","Digestate","None","Marts",4.9,4.025,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,TRUE,FALSE,168,100,6,0.16,16,"077-2010","None",NA,16
 "March","Trailing hose","Digestate","Field acidified","Marts",4.9,4.025,0.09,30,"Afgasset biomasse","11 kg/t",5.1,6.52,FALSE,FALSE,168,100,16,0.14,14,NA,NA,NA,NA
 "March","Trailing hose","Digestate","Field acidified","Marts",4.9,4.025,0.09,30,"Afgasset biomasse","2.1 kg/t",5.1,7.317,FALSE,FALSE,168,100,21,0.23,23,NA,NA,NA,NA
+"March","Trailing hose","Digestate","Field acidified","Marts",4.9,4.025,0.09,30,"Afgasset biomasse","5.7 kg/t",5.1,6.89,FALSE,FALSE,168,100,26,0.18,18,NA,NA,NA,NA
 "March","Trailing hose","Digestate","None","Marts",4.9,4.025,0.09,30,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,FALSE,168,100,1,0.28,28,"091-2010","None",NA,28
 "May","Closed slot injection","Digestate","None","Maj",12.4,3.565,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,TRUE,168,100,13,0.026,2.6,NA,NA,NA,NA
 "May","Open slot injection","Digestate","None","Maj",12.4,3.565,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,TRUE,FALSE,168,100,8,0.17,17,NA,NA,NA,NA
 "May","Trailing hose","Digestate","Field acidified","Maj",12.4,3.565,0.09,30,"Afgasset biomasse","11 kg/t",5.1,6.52,FALSE,FALSE,168,100,18,0.2,20,NA,NA,NA,NA
 "May","Trailing hose","Digestate","Field acidified","Maj",12.4,3.565,0.09,30,"Afgasset biomasse","2.1 kg/t",5.1,7.317,FALSE,FALSE,168,100,23,0.26,26,NA,NA,NA,NA
+"May","Trailing hose","Digestate","Field acidified","Maj",12.4,3.565,0.09,30,"Afgasset biomasse","5.7 kg/t",5.1,6.89,FALSE,FALSE,168,100,28,0.23,23,NA,NA,NA,NA
 "May","Trailing hose","Digestate","None","Maj",12.4,3.565,0.09,30,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,FALSE,168,100,3,0.3,30,"093-2010","None",NA,30
 "Summer","Closed slot injection","Digestate","None","Sommer",16.867,3.18167,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,TRUE,168,100,14,0.026,2.6,"080-2010","None",NA,2.6
 "Summer","Open slot injection","Digestate","None","Sommer",16.867,3.18167,0.09,0,"Afgasset biomasse","0 kg/t",5.1,7.9,TRUE,FALSE,168,100,9,0.17,17,"079-2010","None",NA,17
 "Summer","Trailing hose","Digestate","Field acidified","Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse","11 kg/t",5.1,6.52,FALSE,FALSE,168,100,19,0.22,22,NA,NA,NA,NA
 "Summer","Trailing hose","Digestate","Field acidified","Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse","2.1 kg/t",5.1,7.317,FALSE,FALSE,168,100,24,0.27,27,NA,NA,NA,NA
+"Summer","Trailing hose","Digestate","Field acidified","Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse","5.7 kg/t",5.1,6.89,FALSE,FALSE,168,100,29,0.25,25,NA,NA,NA,NA
 "Summer","Trailing hose","Digestate","None","Sommer",16.867,3.18167,0.09,30,"Afgasset biomasse","0 kg/t",5.1,7.9,FALSE,FALSE,168,100,4,0.3,30,"094-2010","None",NA,30

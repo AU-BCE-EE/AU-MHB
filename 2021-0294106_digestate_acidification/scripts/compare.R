@@ -1,4 +1,5 @@
 # Compare calculated EFs to those from 2021 EF report
+# And calculate acid reductions
 
 # To deal with e.g., "Summer, before winter rapeseed"
 EFs$app.timing[grepl('Summer', EFs$app.timing)] <- 'Summer'
@@ -11,3 +12,9 @@ dat.comp <- merge(dat, EFs[EFs$decade == 2010 & EFs$man.trt != 'Barn acidified' 
                   c('id', 'app.timing', 'app.mthd', 'man.source', 'man.trt', 'incorp', 't.incorp', 'EFp')],
       by = c('app.timing', 'app.mthd', 'man.source', 'man.trt'),
       suffixes = c('', '.report'), all.x = TRUE)
+
+# Acid
+dat.acomp <- dcast(dat, app.timing.dk + app.timing + app.mthd + man.source + man.name ~ acid, value.var = 'EF')
+dat.acomp$red.acid.2.1 <- 100 * (1 - dat.acomp$`2.1 kg/t` / dat.acomp$`0 kg/t`)
+dat.acomp$red.acid.5.7 <- 100 * (1 - dat.acomp$`5.7 kg/t` / dat.acomp$`0 kg/t`)
+dat.acomp$red.acid.11 <- 100 * (1 - dat.acomp$`11 kg/t` / dat.acomp$`0 kg/t`)
