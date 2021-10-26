@@ -22,6 +22,10 @@ pig <- c(Kvæg = FALSE, `Øko kvæg` = FALSE, Tyrekalve = FALSE,
 
 
 # Add DM from titration samples
+# Drop extra Horsens sample
+dim(dm)
+dm <- dm[!duplicated(dm[, c('sample', 'animal')]), ]
+dim(dm)
 # all.x applies to dat, so dropped digestate samples should still be dropped
 ##dat <- merge(dat, dm, by = c('sample', 'animal'), all.x = TRUE)
 # Missing DM samples now dropped
@@ -34,12 +38,12 @@ table(dat$animal.sample, is.na(dat$man.dm))
 # Other vars
 dat$man.source.pig <- pig[dat$animal]
 dat$ct <- 168
-dat$app.rate <- 30
+dat$app.rate.ni <- 30
 dat$rain.rate <- 0.09 # From 750 mm/yr for Jutland from Tavs
 dat$rain.cum <- dat$rain.rate * dat$ct / 2 # Use midpoint
 
 # Arbitrary TAN application rate - does not matter
-dat$tan.app <- 3 * dat$app.rate
+dat$tan.app <- 3 * dat$app.rate.ni
 
 #### NTS NTS !!!!!!!
 #### Adjust DM for sens
