@@ -1,0 +1,89 @@
+---
+title: Understanding ALFAM2 pH/DM response
+author: Sasha D. Hafner
+output: pdf_document
+date: January 2021
+---
+
+To try to understand DM effects
+
+```{r}
+rm(list = ls())
+library(ALFAM2)
+library(ggplot2)
+library(dplyr)
+source('../../functions/rounddf.R')
+```
+
+Get, tweak pars
+
+```{r}
+load('../../parameters/parf.RData')
+pars <- parf
+pars['man.ph.r1'] <- 0.66
+pars['man.ph.r3'] <- 0.24
+```
+
+Input data.
+
+```{r}
+dat <- data.frame(ct = 168, animal = rep(c('cattle', 'pig'), each = 4), 
+                  man.source.pig = rep(c(FALSE, TRUE), each = 4),                   
+                  man.dm = c(7.5, 7.5, 3.75, 3.75, 3.5, 3.5, 1.75, 1.75), 
+                  man.ph = c(7,   6.5, 7,    6.5,  7,   6.5, 7,    6.5),
+                  TAN.app = 100)
+dat$id <- 1:nrow(dat)
+```
+
+Run model.
+
+```{r}
+pred <- ALFAM2mod(dat, pars = pars, group = 'id')
+dat <- merge(dat, pred, by = c('id', 'ct'))
+dat <- as.data.frame(mutate(group_by(dat, animal, man.dm), red = 100 * (1 - er / er[man.ph == 7])))
+dat <- rounddf(dat, digits = 3, func = signif)
+```
+
+Checck.
+```{r}
+dat
+```
+
+Plot.
+
+```{r}
+
+ggplot(dat, aes(man.ph, er, colour = factor(man.dm))) +
+  geom_line() +
+  ylim(0, 0.30) +
+  facet_wrap(~ animal)
+
+dd <- subset(dat, red > 0)
+ggplot(dd, aes(man.dm, red, colour = animal)) +
+  geom_line() 
+
+```
+
+# Check output similar to curves doc
+
+
+```{r}
+dat <- data.frame(ct = 168, TAN.app = 100)
+dat$rain.rate <- 0.06
+dat$rain.cum <- dat$rain.rate * dat$ct
+
+pred1u <- ALFAM2mod(dat, pars = pars, man.ph = 7, wind.2m = 3, air.temp = 13)
+pred1a <- ALFAM2mod(dat, pars = pars, man.ph = 6.6, wind.2m = 3, air.temp = 13)
+pred2u <- ALFAM2mod(dat, pars = pars, man.ph = 7, wind.2m = 7, air.temp = 20)
+pred2a <- ALFAM2mod(dat, pars = pars, man.ph = 6.6, wind.2m = 7, air.temp = 20)
+```
+
+```{r}
+pred1u
+pred1a
+pred2u
+pred2a
+```
+
+
+

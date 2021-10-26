@@ -1,0 +1,182 @@
+---
+title: Understanding ALFAM2 digestate predictions
+author: Sasha D. Hafner
+output: pdf_document
+date: January 2021
+classoption: landscape
+---
+
+To try to understand combined DM and pH effects that drive differences in emission from digestate vs. raw slurry.
+
+# Prep
+
+```{r}
+rm(list = ls())
+library(ALFAM2)
+library(ggplot2)
+library(dplyr)
+source('../../functions/rounddf.R')
+```
+
+# Parameters
+Get, set pars
+
+```{r}
+load('../../parameters/parf.RData')
+pars <- parf
+pars['man.ph.r1'] <- 0.66
+pars['man.ph.r3'] <- 0.24
+```
+
+View pars
+
+```{r}
+signif(pars, 3)
+```
+
+DM and pH
+
+```{r}
+signif(pars, 3)[grepl('\\.dm\\.', names(pars))]
+signif(pars, 3)[grepl('\\.ph\\.', names(pars))]
+```
+
+Note that these are different from the defaults.
+These new values are based on the EF work.
+
+Defaults:
+
+```
+       pars = c(int.f0            = -0.7364889,
+                int.r1            = -1.1785848,
+                int.r2            = -0.9543731,
+                int.r3            = -2.9012937,
+                app.mthd.os.f0    = -1.1717859,
+                app.rate.f0       = -0.0134681,
+                man.dm.f0         =  0.407466,
+                incorp.deep.f4    = -3.6477259,
+                incorp.shallow.f4 = -0.4121023,
+                app.mthd.bc.r1    =  0.6283396,
+                man.dm.r1         = -0.075822,
+                air.temp.r1       =  0.0492777,
+                wind.2m.r1        =  0.0486651,
+                man.ph.r1         =  0.5327231,
+                air.temp.r3       =  0.0152419,
+                incorp.deep.r3    = -0.3838862,
+                app.mthd.os.r3    = -0.122883,
+                man.ph.r3         =  0.2663616,
+                rain.rate.r2      =  0.4327281,
+                rain.cum.r3       = -0.0300936), 
+ 
+```
+
+
+
+
+# Input data
+Input data, from the acidification report.
+
+```{r}
+dat <- data.frame(ct = 168, animal = c('pig', 'cattle', 'mixed', 'digestate', 'digestate DM', 'digestate pH'), 
+                  man.source.pig = c(TRUE, rep(FALSE, 5)),
+                  man.dm = c(3.5, 7.5, 5.5, 7.8, 7.8, 5.5), 
+                  man.ph = c(7.1, 7.0, 7.1, 8.1, 7.1, 8.1),
+                  TAN.app = 100)
+dat$id <- 1:nrow(dat)
+dat.input <- dat
+```
+
+# Run model
+
+```{r}
+pred <- ALFAM2mod(dat, pars = pars, group = 'id')
+dat <- merge(dat, pred, by = c('id', 'ct'))
+dat <- rounddf(dat, digits = 3, func = signif)
+```
+
+# Output
+## Parameter values.
+
+```{r}
+rounddf(dat[, c(3, 9:12)], func = signif, digits = 2)
+```
+
+```{r}
+ggplot(dat, aes(animal, f0, fill = animal)) +
+  geom_col()
+
+ggplot(dat, aes(animal, r1, fill = animal)) +
+  geom_col()
+
+ggplot(dat, aes(animal, r2, fill = animal)) +
+  geom_col()
+
+ggplot(dat, aes(animal, r3, fill = animal)) +
+  geom_col()
+
+```
+
+## Emission and pools.
+f = fast pool, s = slow, e = cumulative emission (% applied TAN here).
+All fast TAN is lost by 168 h, so r3 becomes important.
+
+
+```{r}
+rounddf(dat[, c(3, 14, 15, 17)], func = signif, digits = 2)
+```
+
+```{r}
+ggplot(dat, aes(animal, s, fill = animal)) +
+  geom_col()
+
+ggplot(dat, aes(animal, e, fill = animal)) +
+  geom_col()
+
+```
+
+Initial partitioning (f0) is not as influential as might be expected, because there is a fast -> slow transfer over time (through r2).
+This makes the shape of the emission curve important; cases with low emission rates will still tend to have lower emission.
+This is why digestate DM alone doesn't have a large effect, and why the combination of DM and pH (digestate), in contrast, has a big effect.
+
+# Detailed curves
+Generate curves.
+
+## Input data
+
+```{r}
+dat2 <- dat.input[rep(1:6, each = 169), ]
+dat2$ct <- rep(0:168, 6)
+dat2$rain.rate <- 0.09
+dat2$rain.cum <- dat2$ct * dat2$rain.rate - 0.5 * dat2$rain.rate
+```
+
+## Run model
+
+```{r}
+pred2 <- ALFAM2mod(dat2, pars = pars, group = 'id')
+dat2 <- merge(dat2, pred2, by = c('id', 'ct'))
+```
+
+## Output
+Plot.
+Cumulative emission.
+
+```{r}
+ggplot(dat2, aes(ct, e, colour = animal)) +
+  geom_line()
+
+ggplot(dat2, aes(ct, e, colour = animal)) +
+  geom_line() +
+  xlim(0, 24)
+```
+
+Emission rate.
+
+```{r}
+ggplot(dat2, aes(ct, j, colour = animal)) +
+  geom_line()
+
+ggplot(dat2, aes(ct, j, colour = animal)) +
+  geom_line() +
+  xlim(0, 24)
+```

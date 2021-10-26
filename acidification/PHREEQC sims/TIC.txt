@@ -1,0 +1,17 @@
+TIC method for slurry samples
+Updated: 31 MAR 2015 by SDH
+
+0. (Weigh empty bottles--will be done at time of collection)
+1. Weigh bottles with samples
+2. Add 3 mol/L HCl (at least 2 mL of acid per 10 mL sample) (invert bottle when removing needle)
+3. Shake vigorously for 30 seconds
+4. Let the samples sit for 10 minutes
+5. Shake again for 30 seconds
+6. Let the samples sit for 10 minutes
+7. Measure pressure with manometer
+8. Record time of acid addition, time of pressure measurement, and air temperature
+
+Notes:
+If the sample is too dry, it is OK to add water before or after adding acid.
+But, be sure to weigh the total mass before adding water.
+The volume of water added should be included in the spreadsheet when entering the data.
