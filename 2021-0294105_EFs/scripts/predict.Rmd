@@ -26,14 +26,17 @@ Run model
 With set 2 parameters
 
 ```{r}
-preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', group = 'id', warn = TRUE, prep = TRUE)
+preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', 
+                   time.incorp = 't.incorp', group = 'id', warn = TRUE, prep = TRUE)
 ```
 
 Check reference condition.
 
 ```{r}
-ALFAM2mod(ref, pars = ALFAM2pars01, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', warn = TRUE)
-ALFAM2mod(ref, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', warn = TRUE)
+ALFAM2mod(ref, pars = ALFAM2pars01, app.name = 'tan.app', time.name = 'ct', 
+          time.incorp = 't.incorp', warn = TRUE)
+ALFAM2mod(ref, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', 
+          time.incorp = 't.incorp', warn = TRUE)
 ```
 
 Add results to main df
