@@ -1,7 +1,4 @@
-# Sort, name, create factors
-
-# Drop shallow incorporation for plots
-dat <- subset(dat, incorp != 'Shallow')
+# Sort, name, create factors for tables and plots
 
 dat$app.mthd.nm <- factor(paste0(dat$app.mthd, ifelse(dat$acid, ' + acid', ifelse(dat$incorp == 'Deep', ' + deep', ''))), 
                             levels = c('Trailing hose', 'Trailing hose + acid', 'Open slot injection', 'Closed slot injection', 'Trailing hose + deep'),
