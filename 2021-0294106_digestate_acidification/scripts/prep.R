@@ -10,10 +10,6 @@ dat <- cbind(dat[rep(1:(nw * na), nc), ], comp[rep(1:nc, each = nw * na), ])
 dat <- dat[dat$app.mthd == 'Trailing hose' | dat$acid == '0 kg/t', ]
 rownames(dat) <- 1:nrow(dat)
 
-# Add application method info
-dat$app.mthd.os <- ifelse(dat$app.mthd == 'Open slot injection', TRUE, FALSE)
-dat$app.mthd.cs <- ifelse(dat$app.mthd == 'Closed slot injection', TRUE, FALSE)
-
 # Add fixed time
 dat$ct <- 168
 dat$tan.app <- 100

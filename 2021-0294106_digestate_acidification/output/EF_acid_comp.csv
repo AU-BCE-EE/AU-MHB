@@ -1,16 +1,16 @@
-"app.timing.dk","app.timing","app.mthd","man.source","man.name","0 kg/t","11 kg/t","2.1 kg/t","5.7 kg/t","red.acid.2.1","red.acid.5.7","red.acid.11"
-"April","April","Closed slot injection","Digestate","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA
-"April","April","Open slot injection","Digestate","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA
-"April","April","Trailing hose","Digestate","Afgasset biomasse",0.29,0.17,0.25,0.21,13.7931034482759,27.5862068965517,41.3793103448276
-"Efterår","Autumn","Closed slot injection","Digestate","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA
-"Efterår","Autumn","Open slot injection","Digestate","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA
-"Efterår","Autumn","Trailing hose","Digestate","Afgasset biomasse",0.3,0.21,0.27,0.24,9.99999999999999,20,30
-"Maj","May","Closed slot injection","Digestate","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA
-"Maj","May","Open slot injection","Digestate","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA
-"Maj","May","Trailing hose","Digestate","Afgasset biomasse",0.3,0.2,0.26,0.23,13.3333333333333,23.3333333333333,33.3333333333333
-"Marts","March","Closed slot injection","Digestate","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA
-"Marts","March","Open slot injection","Digestate","Afgasset biomasse",0.16,NA,NA,NA,NA,NA,NA
-"Marts","March","Trailing hose","Digestate","Afgasset biomasse",0.28,0.14,0.23,0.18,17.8571428571429,35.7142857142857,50
-"Sommer","Summer","Closed slot injection","Digestate","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA
-"Sommer","Summer","Open slot injection","Digestate","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA
-"Sommer","Summer","Trailing hose","Digestate","Afgasset biomasse",0.3,0.22,0.27,0.25,9.99999999999999,16.6666666666667,26.6666666666667
+"app.timing.dk","app.timing","app.mthd","man.source","0 kg/t","11 kg/t","2.1 kg/t","5.7 kg/t","red.acid.2.1","red.acid.5.7","red.acid.11","app.mthd.nm"
+"April","April","Closed slot injection","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA,"Closed slot injection"
+"April","April","Open slot injection","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA,"Open slot injection"
+"April","April","Trailing hose","Afgasset biomasse",0.29,0.17,0.25,0.21,13.7931034482759,27.5862068965517,41.3793103448276,"Trailing hose"
+"Efterår","Autumn","Closed slot injection","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA,"Closed slot injection"
+"Efterår","Autumn","Open slot injection","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA,"Open slot injection"
+"Efterår","Autumn","Trailing hose","Afgasset biomasse",0.3,0.21,0.27,0.24,9.99999999999999,20,30,"Trailing hose"
+"Maj","May","Closed slot injection","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA,"Closed slot injection"
+"Maj","May","Open slot injection","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA,"Open slot injection"
+"Maj","May","Trailing hose","Afgasset biomasse",0.3,0.2,0.26,0.23,13.3333333333333,23.3333333333333,33.3333333333333,"Trailing hose"
+"Marts","March","Closed slot injection","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA,"Closed slot injection"
+"Marts","March","Open slot injection","Afgasset biomasse",0.16,NA,NA,NA,NA,NA,NA,"Open slot injection"
+"Marts","March","Trailing hose","Afgasset biomasse",0.28,0.14,0.23,0.18,17.8571428571429,35.7142857142857,50,"Trailing hose"
+"Sommer","Summer","Closed slot injection","Afgasset biomasse",0.026,NA,NA,NA,NA,NA,NA,"Closed slot injection"
+"Sommer","Summer","Open slot injection","Afgasset biomasse",0.17,NA,NA,NA,NA,NA,NA,"Open slot injection"
+"Sommer","Summer","Trailing hose","Afgasset biomasse",0.3,0.22,0.27,0.25,9.99999999999999,16.6666666666667,26.6666666666667,"Trailing hose"

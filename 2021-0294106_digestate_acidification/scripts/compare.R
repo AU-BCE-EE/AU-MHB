@@ -14,7 +14,7 @@ dat.comp <- merge(dat, EFs[EFs$decade == 2010 & EFs$man.trt != 'Barn acidified' 
       suffixes = c('', '.report'), all.x = TRUE)
 
 # Acid
-dat.acomp <- dcast(dat, app.timing.dk + app.timing + app.mthd + man.source + man.name ~ acid, value.var = 'EF')
+dat.acomp <- dcast(dat, app.timing.dk + app.timing + app.mthd + man.source ~ acid, value.var = 'EF')
 dat.acomp$red.acid.2.1 <- 100 * (1 - dat.acomp$`2.1 kg/t` / dat.acomp$`0 kg/t`)
 dat.acomp$red.acid.5.7 <- 100 * (1 - dat.acomp$`5.7 kg/t` / dat.acomp$`0 kg/t`)
 dat.acomp$red.acid.11 <- 100 * (1 - dat.acomp$`11 kg/t` / dat.acomp$`0 kg/t`)
