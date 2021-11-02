@@ -1,5 +1,5 @@
 
-ff <- list.files('../data', full.names = TRUE)
+ff <- list.files('../data-old', full.names = TRUE)
 
 dat <- data.frame()
 for (i in ff) {

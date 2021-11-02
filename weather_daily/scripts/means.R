@@ -14,7 +14,8 @@ dns <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')],
                  dat[, c('station', 'month', 'decade', 'year')], FUN = function(x) sum(!is.na(x))) 
 
 # Table summary to check which stations are included
-dd <- dat[!is.na(rowSums(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')])), ]
+#dd <- dat[!is.na(rowSums(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')])), ]
+dd <- dat
 dno <- table(dd$station, dd$year)
 
 # Get means separately by season
