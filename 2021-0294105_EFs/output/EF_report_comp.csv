@@ -1,19 +1,19 @@
 "app.timing","app.mthd","man.source","acid","incorp","t.incorp","air.temp","wind.2m","rain.rate","app.rate.ni","man.dm","man.ph","ct","tan.app","id","EF","EFp","id.report","EFp.report"
-"April","Closed slot injection","Afgasset biomasse",FALSE,"None",NA,8.5,3.91,0.09,0,5.1,7.9,168,100,57,0.026,2.6,NA,NA
-"April","Closed slot injection","Kvæggylle",FALSE,"None",NA,8.5,3.91,0.09,0,6.5,7,168,100,37,0.016,1.6,NA,NA
-"April","Closed slot injection","Svinegylle",FALSE,"None",NA,8.5,3.91,0.09,0,3.9,7.2,168,100,17,0.018,1.8,NA,NA
-"April","Open slot injection","Afgasset biomasse",FALSE,"None",NA,8.5,3.91,0.09,0,5.1,7.9,168,100,52,0.17,17,NA,NA
-"April","Open slot injection","Kvæggylle",FALSE,"None",NA,8.5,3.91,0.09,0,6.5,7,168,100,32,0.14,14,NA,NA
-"April","Open slot injection","Svinegylle",FALSE,"None",NA,8.5,3.91,0.09,0,3.9,7.2,168,100,12,0.098,9.8,NA,NA
-"April","Trailing hose","Afgasset biomasse",FALSE,"Deep",4,8.5,3.91,0.09,30,5.1,7.9,168,100,47,0.13,13,NA,NA
-"April","Trailing hose","Afgasset biomasse",FALSE,"None",NA,8.5,3.91,0.09,30,5.1,7.9,168,100,42,0.29,29,NA,NA
-"April","Trailing hose","Afgasset biomasse",TRUE,"None",NA,8.5,3.91,0.09,30,5.1,6.52,168,100,72,0.17,17,NA,NA
-"April","Trailing hose","Kvæggylle",FALSE,"Deep",4,8.5,3.91,0.09,30,6.5,7,168,100,27,0.047,4.7,NA,NA
-"April","Trailing hose","Kvæggylle",FALSE,"None",NA,8.5,3.91,0.09,30,6.5,7,168,100,22,0.27,27,NA,NA
-"April","Trailing hose","Kvæggylle",TRUE,"None",NA,8.5,3.91,0.09,30,6.5,6.47,168,100,67,0.19,19,NA,NA
-"April","Trailing hose","Svinegylle",FALSE,"Deep",4,8.5,3.91,0.09,30,3.9,7.2,168,100,7,0.035,3.5,NA,NA
-"April","Trailing hose","Svinegylle",FALSE,"None",NA,8.5,3.91,0.09,30,3.9,7.2,168,100,2,0.15,15,NA,NA
-"April","Trailing hose","Svinegylle",TRUE,"None",NA,8.5,3.91,0.09,30,3.9,6.47,168,100,62,0.11,11,NA,NA
+"April","Closed slot injection","Afgasset biomasse",FALSE,"None",NA,8.5,3.91,0.04,0,5.1,7.9,168,100,57,0.026,2.6,NA,NA
+"April","Closed slot injection","Kvæggylle",FALSE,"None",NA,8.5,3.91,0.04,0,6.5,7,168,100,37,0.016,1.6,NA,NA
+"April","Closed slot injection","Svinegylle",FALSE,"None",NA,8.5,3.91,0.04,0,3.9,7.2,168,100,17,0.018,1.8,NA,NA
+"April","Open slot injection","Afgasset biomasse",FALSE,"None",NA,8.5,3.91,0.04,0,5.1,7.9,168,100,52,0.17,17,NA,NA
+"April","Open slot injection","Kvæggylle",FALSE,"None",NA,8.5,3.91,0.04,0,6.5,7,168,100,32,0.14,14,NA,NA
+"April","Open slot injection","Svinegylle",FALSE,"None",NA,8.5,3.91,0.04,0,3.9,7.2,168,100,12,0.098,9.8,NA,NA
+"April","Trailing hose","Afgasset biomasse",FALSE,"Deep",4,8.5,3.91,0.04,30,5.1,7.9,168,100,47,0.13,13,NA,NA
+"April","Trailing hose","Afgasset biomasse",FALSE,"None",NA,8.5,3.91,0.04,30,5.1,7.9,168,100,42,0.29,29,NA,NA
+"April","Trailing hose","Afgasset biomasse",TRUE,"None",NA,8.5,3.91,0.04,30,5.1,6.52,168,100,72,0.18,18,NA,NA
+"April","Trailing hose","Kvæggylle",FALSE,"Deep",4,8.5,3.91,0.04,30,6.5,7,168,100,27,0.047,4.7,NA,NA
+"April","Trailing hose","Kvæggylle",FALSE,"None",NA,8.5,3.91,0.04,30,6.5,7,168,100,22,0.27,27,NA,NA
+"April","Trailing hose","Kvæggylle",TRUE,"None",NA,8.5,3.91,0.04,30,6.5,6.47,168,100,67,0.19,19,NA,NA
+"April","Trailing hose","Svinegylle",FALSE,"Deep",4,8.5,3.91,0.04,30,3.9,7.2,168,100,7,0.035,3.5,NA,NA
+"April","Trailing hose","Svinegylle",FALSE,"None",NA,8.5,3.91,0.04,30,3.9,7.2,168,100,2,0.15,15,NA,NA
+"April","Trailing hose","Svinegylle",TRUE,"None",NA,8.5,3.91,0.04,30,3.9,6.47,168,100,62,0.11,11,NA,NA
 "Efterår","Closed slot injection","Afgasset biomasse",FALSE,"None",NA,14.6,3.45,0.09,0,5.1,7.9,168,100,60,0.026,2.6,NA,NA
 "Efterår","Closed slot injection","Kvæggylle",FALSE,"None",NA,14.6,3.45,0.09,0,6.5,7,168,100,40,0.016,1.6,NA,NA
 "Efterår","Closed slot injection","Svinegylle",FALSE,"None",NA,14.6,3.45,0.09,0,3.9,7.2,168,100,20,0.018,1.8,NA,NA
@@ -59,18 +59,18 @@
 "Marts","Trailing hose","Svinegylle",FALSE,"Deep",4,4.9,4.025,0.09,30,3.9,7.2,168,100,6,0.024,2.4,NA,NA
 "Marts","Trailing hose","Svinegylle",FALSE,"None",NA,4.9,4.025,0.09,30,3.9,7.2,168,100,1,0.14,14,NA,NA
 "Marts","Trailing hose","Svinegylle",TRUE,"None",NA,4.9,4.025,0.09,30,3.9,6.47,168,100,61,0.096,9.6,NA,NA
-"Sommer","Closed slot injection","Afgasset biomasse",FALSE,"None",NA,16.867,3.18167,0.09,0,5.1,7.9,168,100,59,0.026,2.6,NA,NA
-"Sommer","Closed slot injection","Kvæggylle",FALSE,"None",NA,16.867,3.18167,0.09,0,6.5,7,168,100,39,0.016,1.6,NA,NA
-"Sommer","Closed slot injection","Svinegylle",FALSE,"None",NA,16.867,3.18167,0.09,0,3.9,7.2,168,100,19,0.018,1.8,NA,NA
-"Sommer","Open slot injection","Afgasset biomasse",FALSE,"None",NA,16.867,3.18167,0.09,0,5.1,7.9,168,100,54,0.17,17,NA,NA
-"Sommer","Open slot injection","Kvæggylle",FALSE,"None",NA,16.867,3.18167,0.09,0,6.5,7,168,100,34,0.16,16,NA,NA
-"Sommer","Open slot injection","Svinegylle",FALSE,"None",NA,16.867,3.18167,0.09,0,3.9,7.2,168,100,14,0.1,10,NA,NA
-"Sommer","Trailing hose","Afgasset biomasse",FALSE,"Deep",4,16.867,3.18167,0.09,30,5.1,7.9,168,100,49,0.2,20,NA,NA
-"Sommer","Trailing hose","Afgasset biomasse",FALSE,"None",NA,16.867,3.18167,0.09,30,5.1,7.9,168,100,44,0.3,30,NA,NA
-"Sommer","Trailing hose","Afgasset biomasse",TRUE,"None",NA,16.867,3.18167,0.09,30,5.1,6.52,168,100,74,0.22,22,NA,NA
-"Sommer","Trailing hose","Kvæggylle",FALSE,"Deep",4,16.867,3.18167,0.09,30,6.5,7,168,100,29,0.11,11,NA,NA
-"Sommer","Trailing hose","Kvæggylle",FALSE,"None",NA,16.867,3.18167,0.09,30,6.5,7,168,100,24,0.33,33,NA,NA
-"Sommer","Trailing hose","Kvæggylle",TRUE,"None",NA,16.867,3.18167,0.09,30,6.5,6.47,168,100,69,0.28,28,NA,NA
-"Sommer","Trailing hose","Svinegylle",FALSE,"Deep",4,16.867,3.18167,0.09,30,3.9,7.2,168,100,9,0.067,6.7,NA,NA
-"Sommer","Trailing hose","Svinegylle",FALSE,"None",NA,16.867,3.18167,0.09,30,3.9,7.2,168,100,4,0.16,16,NA,NA
-"Sommer","Trailing hose","Svinegylle",TRUE,"None",NA,16.867,3.18167,0.09,30,3.9,6.47,168,100,64,0.12,12,NA,NA
+"Sommer","Closed slot injection","Afgasset biomasse",FALSE,"None",NA,16.867,3.18167,0.12,0,5.1,7.9,168,100,59,0.026,2.6,NA,NA
+"Sommer","Closed slot injection","Kvæggylle",FALSE,"None",NA,16.867,3.18167,0.12,0,6.5,7,168,100,39,0.016,1.6,NA,NA
+"Sommer","Closed slot injection","Svinegylle",FALSE,"None",NA,16.867,3.18167,0.12,0,3.9,7.2,168,100,19,0.018,1.8,NA,NA
+"Sommer","Open slot injection","Afgasset biomasse",FALSE,"None",NA,16.867,3.18167,0.12,0,5.1,7.9,168,100,54,0.17,17,NA,NA
+"Sommer","Open slot injection","Kvæggylle",FALSE,"None",NA,16.867,3.18167,0.12,0,6.5,7,168,100,34,0.16,16,NA,NA
+"Sommer","Open slot injection","Svinegylle",FALSE,"None",NA,16.867,3.18167,0.12,0,3.9,7.2,168,100,14,0.1,10,NA,NA
+"Sommer","Trailing hose","Afgasset biomasse",FALSE,"Deep",4,16.867,3.18167,0.12,30,5.1,7.9,168,100,49,0.2,20,NA,NA
+"Sommer","Trailing hose","Afgasset biomasse",FALSE,"None",NA,16.867,3.18167,0.12,30,5.1,7.9,168,100,44,0.3,30,NA,NA
+"Sommer","Trailing hose","Afgasset biomasse",TRUE,"None",NA,16.867,3.18167,0.12,30,5.1,6.52,168,100,74,0.22,22,NA,NA
+"Sommer","Trailing hose","Kvæggylle",FALSE,"Deep",4,16.867,3.18167,0.12,30,6.5,7,168,100,29,0.11,11,NA,NA
+"Sommer","Trailing hose","Kvæggylle",FALSE,"None",NA,16.867,3.18167,0.12,30,6.5,7,168,100,24,0.33,33,NA,NA
+"Sommer","Trailing hose","Kvæggylle",TRUE,"None",NA,16.867,3.18167,0.12,30,6.5,6.47,168,100,69,0.27,27,NA,NA
+"Sommer","Trailing hose","Svinegylle",FALSE,"Deep",4,16.867,3.18167,0.12,30,3.9,7.2,168,100,9,0.067,6.7,NA,NA
+"Sommer","Trailing hose","Svinegylle",FALSE,"None",NA,16.867,3.18167,0.12,30,3.9,7.2,168,100,4,0.16,16,NA,NA
+"Sommer","Trailing hose","Svinegylle",TRUE,"None",NA,16.867,3.18167,0.12,30,3.9,6.47,168,100,64,0.12,12,NA,NA
