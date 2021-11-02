@@ -26,5 +26,5 @@ ds <- rounddf(ds, 1)
 nd <- dcast(dm, decade + month ~ variable, value.var = 'nd')
 ns <- dcast(dm, decade + month ~ variable, value.var = 'nstat')
 
-n.stat <- table(dl$station, dl$year)
+n.stat <- table(dl$station, dl$year, dl$variable)
 
