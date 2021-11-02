@@ -25,7 +25,7 @@ dmm <- merge(dmm, seas, by = 'month')
 dmm$wind.2m.adj <- 1.15 * dmm$wind.2m
 dmm$temp.adj <- dmm$temp + 0.9
 
-dmms <- aggregate(dmm[, c('temp', 'temp.adj', 'wv', 'wind.2m', 'wind.2m.adj', 'rain.rate')], 
+dmms <- aggregate(dmm[, c('temp', 'wv', 'wind.2m', 'temp.adj', 'wind.2m.adj', 'rain.rate')], 
                  dmm[, c('season', 'decade')], FUN = mean, na.rm = TRUE)
 
 
