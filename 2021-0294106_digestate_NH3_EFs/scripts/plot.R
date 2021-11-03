@@ -14,6 +14,7 @@ ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
 ggplot(dat.acomp, aes(app.timing.dk, red.acid.2.1)) +
   geom_point(colour = 'red') +
   geom_point(aes(app.timing.dk, red.acid.11), colour = 'blue') +
+  geom_point(aes(app.timing.dk, red.acid.7.5), colour = 'orange') +
   ylim(0, max(dat.acomp$red.acid.11)) +
   labs(x = 'Application period', y = 'Reduction in emis. factor (% un-acidified EF)',
        colour = 'Manure source') + 
