@@ -1,14 +1,9 @@
 
-# Means
-# First by station x month x year
-# Note that excluding year here will change results slightly because of imbalance (some missing values)
-dms <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
-                 dat[, c('station', 'month', 'year', 'decade')], FUN = mean, na.rm = TRUE)
+# Means by month x decade, without calculate by station first
+# Idea is that this approach minimizes the bias from incomplete datasets
+dmm <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
+                 dat[, c('month', 'decade')], FUN = mean, na.rm = TRUE)
 
-
-# Then month x decade
-dmm <- aggregate(dms[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
-                 dms[, c('month', 'decade')], FUN = mean, na.rm = TRUE)
 
 dmm <- dmm[order(dmm$decade, dmm$month), ]
 
