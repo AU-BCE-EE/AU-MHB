@@ -2,6 +2,7 @@
 
 print('start bootstrap sims')
 nsim <- 1000
+nsim <- 100
 set.seed(123)
 # Bootstrap interpolated pH
 pl <- c(6.0, 6.3, 6.6)
