@@ -13,9 +13,13 @@ dat$decade <- 10 * dat$year %/% 10
 # Precipitation rate
 dat$rain.rate <- dat$prec / 24
 
-# Older data (< 2014) seems to use different name for prec08
+# Older data (< 2014) have prec08 (precipitation at 8.00)
 dat$rain.rate[is.na(dat$prec)] <- dat$prec08[is.na(dat$prec)]  / 24
 
 # Add wind at 2 m
 dat$wind.2m <- dat$wv * log(2/0.01) / log(10/0.01)
+
+# Exclude what must be a data entry error on rainfall (see plots)
+dat.all <- dat
+dat$rain.rate[dat$rain.rate > 15] <- NA
 
