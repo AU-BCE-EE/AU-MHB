@@ -50,7 +50,7 @@ summ25 <- as.data.frame(summarise(group_by(idat, animal, month),
                                 red.m = target))
 
 # Select summary for table in report
-# Note that upper limit ul includes var in both model predictions and among titrations
+# Note that upper limit ul2 includes var in both model predictions and among titrations
 # Is conservative 90% (probably 95% or even higher)
 # Sort animals
 idat$animal <- factor(idat$animal, levels = c('Kvæg', 'So-/smågrise', 'Slagtesvin', 'Afgasset'))
@@ -59,10 +59,11 @@ summ25sel <- as.data.frame(summarise(group_by(idat, month, animal),
                                 rdose.md = median(rdose.kg.t), 
                                 rdose.mean = mean(rdose.kg.t), 
                                 rdose.s = sd(rdose.kg.t),
-                                rdose.ul = mean(rdose.kg.t.ul) + qt(0.7, length(rdose.kg.t) - 1) * sd(rdose.kg.t) / sqrt(length(rdose.kg.t)),
+                                rdose.ul1 = mean(rdose.kg.t) + qt(0.95, length(rdose.kg.t) - 1) * sd(rdose.kg.t) / sqrt(length(rdose.kg.t)),
+                                rdose.ul2 = mean(rdose.kg.t.ul) + qt(0.7, length(rdose.kg.t) - 1) * sd(rdose.kg.t) / sqrt(length(rdose.kg.t)),
                                 rdpH.mean = mean(rdpH), 
                                 rdpH.s = sd(rdpH),
-                                rdpH.ul = mean(rdpH.ul) + qt(0.7, length(rdose.kg.t) - 1) * sd(rdpH) / sqrt(length(rdose.kg.t)),
+                                rdpH.ul2 = mean(rdpH.ul) + qt(0.7, length(rdose.kg.t) - 1) * sd(rdpH) / sqrt(length(rdose.kg.t)),
                                 ))
 summ25sel <- rounddf(summ25sel, func = signif, digits = 2)
 

@@ -1,7 +1,9 @@
 # Get input data sorted out
 
 wthr <- subset(wthr, month %in% c(4, 6) & decade == 2010)
-wthr$air.temp <- wthr$temp
+wthr$air.temp <- wthr$temp.adj
+wthr$wind.2m <- wthr$wind.2m.adj
+wthr <- wthr[, c('month', 'decade', 'wind.2m', 'air.temp', 'rain.rate')]
 
 dat <- titrat[rep(1:nrow(titrat), each = 2), ]
 dat <- cbind(dat, wthr[rep(1:2, nrow(titrat)), c('month', 'wind.2m', 'air.temp')])
