@@ -1,9 +1,12 @@
 
 # Means
+# First by station x month x year
+# Note that excluding year here will change results slightly because of imbalance (some missing values)
 dms <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
-                 dat[, c('station', 'month', 'decade')], FUN = mean, na.rm = TRUE)
+                 dat[, c('station', 'month', 'year', 'decade')], FUN = mean, na.rm = TRUE)
 
 
+# Then month x decade
 dmm <- aggregate(dms[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
                  dms[, c('month', 'decade')], FUN = mean, na.rm = TRUE)
 
@@ -12,6 +15,10 @@ dmm <- dmm[order(dmm$decade, dmm$month), ]
 # Number of obs (by station)
 dns <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
                  dat[, c('station', 'month', 'decade', 'year')], FUN = function(x) sum(!is.na(x))) 
+
+# Fraction missing
+fna <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
+                 dat[, c('month', 'decade')], FUN = function(x) mean(is.na(x)))
 
 # Table summary to check which stations are included
 dd <- dat[!is.na(rowSums(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')])), ]
