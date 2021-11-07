@@ -11,7 +11,8 @@ dat$dpH <- dat$pH.u - dat$pH.a
 ggplot(dat, aes(dpH, 100*r, colour = ref, shape = source)) +
   #geom_smooth(aes(group = 1), se = FALSE, colour = 'gray65') +
   geom_point() +
-  #geom_smooth(se = FALSE, method = lm) +
+  geom_smooth(se = FALSE, method = lm) +
+  geom_smooth(aes(group = 1), se = FALSE, colour = 'white') +
   scale_shape_manual(values = c(19, 1)) +
   theme(legend.position = 'right') +
   labs(x = 'Forskel i pH', y = 'Reduktion ved forsuring (%)', colour = 'Reference', shape = '')
