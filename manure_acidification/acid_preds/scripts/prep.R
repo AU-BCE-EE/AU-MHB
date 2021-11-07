@@ -1,12 +1,12 @@
 # Get input data sorted out
 
-wthr <- subset(wthr, month %in% c(4, 6) & decade == 2010)
+wthr <- subset(wthr, decade == 2010)
 wthr$air.temp <- wthr$temp.adj
 wthr$wind.2m <- wthr$wind.2m.adj
-wthr <- wthr[, c('month', 'decade', 'wind.2m', 'air.temp', 'rain.rate')]
+wthr <- wthr[, c('season', 'decade', 'wind.2m', 'air.temp', 'rain.rate')]
 
-dat <- titrat[rep(1:nrow(titrat), each = 2), ]
-dat <- cbind(dat, wthr[rep(1:2, nrow(titrat)), c('month', 'wind.2m', 'air.temp')])
+dat <- titrat[rep(1:nrow(titrat), each = nrow(wthr)), ]
+dat <- cbind(dat, wthr[rep(1:5, nrow(titrat)), c('season', 'wind.2m', 'air.temp')])
 
 # Run ID
 dat$rid <- 1:nrow(dat)
@@ -34,8 +34,6 @@ dim(dm)
 dat <- merge(dat, dm, by = c('sample', 'animal'))
 ### Fill in missing DM with DK means
 ##dat$man.dm[is.na(dat$man.dm)] <- dm.dk[dat$animal][is.na(dat$man.dm)]
-
-table(dat$animal.sample, is.na(dat$man.dm))
 
 # Other vars
 dat$man.source.pig <- pig[dat$animal]
