@@ -25,7 +25,7 @@ Run model
 With set 2 parameters
 
 ```{r}
-preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', group = 'id', warn = TRUE, prep = TRUE)
+preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', group = 'id', warn = TRUE, prep = TRUE, parallel = TRUE, n.cpus = 3)
 ```
 
 Check reference condition.

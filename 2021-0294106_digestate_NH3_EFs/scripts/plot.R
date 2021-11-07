@@ -11,7 +11,7 @@ ggplot(dat, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = ap
   theme(legend.position = 'top')
 ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
 
-ggplot(dat.acomp, aes(app.timing.dk, red.acid.2.1)) +
+ggplot(dat.acomp, aes(app.timing.dk, red.acid.3.4)) +
   geom_point(colour = 'red') +
   geom_point(aes(app.timing.dk, red.acid.11), colour = 'blue') +
   geom_point(aes(app.timing.dk, red.acid.7.5), colour = 'orange') +
