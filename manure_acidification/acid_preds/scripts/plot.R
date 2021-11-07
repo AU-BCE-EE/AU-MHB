@@ -1,5 +1,5 @@
                       
-p <- ggplot(dat, aes(dose.kg.t, red, colour = factor(month), group = interaction(sample, month))) +
+p <- ggplot(dat, aes(dose.kg.t, red, colour = factor(season), group = interaction(sample, season))) +
   geom_line() +
   facet_wrap(~ animal) +
   theme(legend.position = 'top') +
@@ -8,10 +8,10 @@ p <- ggplot(dat, aes(dose.kg.t, red, colour = factor(month), group = interaction
   p
 ggsave('../plots/20_red_v_dose.png', height = 4, width = 4)
 
-dd <- droplevels(subset(dat, (month == 4 | !grepl('^S', animal)))) 
-ds <- droplevels(subset(summ25sel, (month == 4 | !grepl('^S', animal)))) 
-p <- ggplot(dd, aes(dose.kg.t, red, colour = factor(month), group = interaction(sample, month))) +
-  geom_vline(data = ds, aes(xintercept = rdose.md, colour = factor(month), group = 1), lty = '2121', alpha = 0.5) +
+dd <- droplevels(subset(dat, (season == 'April' | !grepl('^S', animal)))) 
+ds <- droplevels(subset(summ25sel, (season == 'April' | !grepl('^S', animal)))) 
+p <- ggplot(dd, aes(dose.kg.t, red, colour = factor(season), group = interaction(sample, season))) +
+  geom_vline(data = ds, aes(xintercept = rdose.md, colour = factor(season), group = 1), lty = '2121', alpha = 0.5) +
   geom_line() +
   facet_wrap(~ animal) +
   theme(legend.position = 'top') +
@@ -23,7 +23,7 @@ p
 ggsave('../plots/21_red_v_dose_30.png', height = 4.5, width = 4)
 
 dd <- droplevels(subset(datm, red.m <= 50))
-p <- ggplot(dd, aes(dose.kg.t, red.m, colour = factor(month))) +
+p <- ggplot(dd, aes(dose.kg.t, red.m, colour = factor(season))) +
   geom_line() +
   geom_line(aes(dose.kg.t, red.m - red.s), lty = '1111') +
   geom_line(aes(dose.kg.t, red.m + red.s), lty = '1111') +
@@ -35,7 +35,7 @@ p <- ggplot(dd, aes(dose.kg.t, red.m, colour = factor(month))) +
 ggsave('../plots/22_redm_v_dose.png', height = 4, width = 4)
 
  
-p <- ggplot(dd, aes(dose.kg.t, red.m, colour = factor(month), group = interaction(animal, month))) +
+p <- ggplot(dd, aes(dose.kg.t, red.m, colour = factor(season), group = interaction(animal, season))) +
   geom_line() +
   facet_wrap(~ animal) +
   theme(legend.position = 'top') +
@@ -45,7 +45,7 @@ p <- ggplot(dd, aes(dose.kg.t, red.m, colour = factor(month), group = interactio
 ggsave('../plots/20_red_v_dose.png', height = 4, width = 4)
 
 
-dd <- subset(ulcomp, month == 4)
+dd <- subset(ulcomp, season == 'April')
 # Don't ask me why I need the group argument here
 ggplot(dd, aes(etype, rdose.kg.t, colour = interaction(animal, sample), group = interaction(animal, sample))) +
   geom_line() +
@@ -56,9 +56,9 @@ ggplot(dd, aes(etype, rdose.kg.t, colour = interaction(animal, sample), group = 
   theme(legend.position = 'none')
 ggsave('../plots/23_dose_CL_comp.png', height = 8, width = 6)
 
-ggplot(edat, aes(dose.kg.t, e.rel, colour = sample, shape = factor(month))) +
+ggplot(edat, aes(dose.kg.t, e.rel, colour = sample, shape = factor(season))) +
   geom_line() +
-  scale_shape_manual(values = c(1, 19)) +
+  scale_shape_manual(values = c(1, 19, 2:10)) +
   facet_wrap(~ animal) +
   labs(x = 'Acid dose (kg/g)', y = '168 h relative emission (% applied TAN)', shape = 'Month') +
   scale_colour_discrete(guide = 'none') +
@@ -66,9 +66,9 @@ ggplot(edat, aes(dose.kg.t, e.rel, colour = sample, shape = factor(month))) +
 ggsave('../plots/24_emis_pred.png', height = 6, width = 6)
 
 dd <- subset(edat, dose.kg.t %in% c(0, 2))
-ggplot(dd, aes(dose.kg.t, e.rel, colour = sample, shape = factor(month))) +
+ggplot(dd, aes(dose.kg.t, e.rel, colour = sample, shape = factor(season))) +
   geom_line() +
-  scale_shape_manual(values = c(1, 19)) +
+  scale_shape_manual(values = c(1, 19, 2:10)) +
   facet_wrap(~ animal) +
   labs(x = 'Acid dose (kg/t)', y = '168 h relative emission (% applied TAN)', shape = 'Month') +
   xlim(-0.5, 2.5) +
@@ -78,17 +78,17 @@ ggplot(dd, aes(dose.kg.t, e.rel, colour = sample, shape = factor(month))) +
 ggsave('../plots/25_emis_pred_labs.png', height = 6, width = 6)
 
 # pH and reduction plots
-ggplot(dat, aes(pH, red, colour = factor(month), group = interaction(animal, sample, month))) +
+ggplot(dat, aes(pH, red, colour = factor(season), group = interaction(animal, sample, season))) +
   geom_line(alpha = 0.5, lty = 2) +
-  geom_line(data = pH.summ, aes(pH, red.m, group = interaction(animal, month)), lwd = 2) +
+  geom_line(data = pH.summ, aes(pH, red.m, group = interaction(animal, season)), lwd = 2) +
   facet_wrap(~ animal) +
   labs(x = 'Gylle pH', y = 'ALFAM2 beregnede reduk. i fordampning (% af ubehandlet)',
        colour = 'Måned') 
 ggsave('../plots/30_red_v_pH.png', height = 6, width = 6)
 
-ggplot(dat, aes(dpH, red, colour = factor(month), group = interaction(animal, sample, month))) +
+ggplot(dat, aes(dpH, red, colour = factor(season), group = interaction(animal, sample, season))) +
   geom_line(alpha = 0.5, lty = 2) +
-  geom_line(data = dpH.summ, aes(dpH, red.m, group = interaction(animal, month)), lwd = 2) +
+  geom_line(data = dpH.summ, aes(dpH, red.m, group = interaction(animal, season)), lwd = 2) +
   facet_wrap(~ animal) +
   labs(x = expression('Gylle'~Delta*'pH'), y = 'ALFAM2 beregnede reduk. i fordampning (% af ubehandlet)',
        colour = 'Måned') 
@@ -97,9 +97,9 @@ ggsave('../plots/31_red_v_dpH.png', height = 6, width = 6)
 # Without digestate
 dd <- subset(dat, animal != 'Afgasset')
 ds <- subset(pH.summ, animal != 'Afgasset')
-ggplot(dd, aes(pH, red, colour = factor(month), group = interaction(animal, sample, month))) +
+ggplot(dd, aes(pH, red, colour = factor(season), group = interaction(animal, sample, season))) +
   geom_line(alpha = 0.5, lty = 2) +
-  geom_line(data = ds, aes(pH, red.m, group = interaction(animal, month)), lwd = 2) +
+  geom_line(data = ds, aes(pH, red.m, group = interaction(animal, season)), lwd = 2) +
   facet_wrap(~ animal, ncol = 2) +
   theme(legend.position = c(0.7, 0.2)) +
   labs(x = 'Gylle pH', y = 'ALFAM2 beregnede reduk. i fordampning (% af ubehandlet)',
@@ -108,9 +108,9 @@ ggsave('../plots/32_red_v_pH_no_dig.png', height = 6, width = 6)
 
 dd <- subset(dat, animal != 'Afgasset')
 ds <- subset(dpH.summ, animal != 'Afgasset')
-ggplot(dd, aes(dpH, red, colour = factor(month), group = interaction(animal, sample, month))) +
+ggplot(dd, aes(dpH, red, colour = factor(season), group = interaction(animal, sample, season))) +
   geom_line(alpha = 0.5, lty = 2) +
-  geom_line(data = ds, aes(dpH, red.m, group = interaction(animal, month)), lwd = 2) +
+  geom_line(data = ds, aes(dpH, red.m, group = interaction(animal, season)), lwd = 2) +
   facet_wrap(~ animal) +
   facet_wrap(~ animal, ncol = 2) +
   theme(legend.position = c(0.7, 0.2)) +
