@@ -19,7 +19,7 @@ dmph <- rounddf(dmph, digits = 3, func = signif)
 write.csv(dmph, '../output/DM_pH_sample.csv', row.names = FALSE)
 
 # Get DM and initial pH means from data used in calculations
-dmph <- subset(dat, dose.kg.t == 0 & month == 4)[, c('sample', 'animal', 'pH', 'man.dm', 'man.vs')]
+dmph <- subset(dat, dose.kg.t == 0 & season == 'Marts')[, c('sample', 'animal', 'pH', 'man.dm', 'man.vs')]
 # Add numbers
 dmph <- dmph[order(dmph$animal, dmph$sample), ]
 dmph <- as.data.frame(mutate(group_by(dmph, animal), id = paste(animal, 1:length(animal))))

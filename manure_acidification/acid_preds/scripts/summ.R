@@ -6,9 +6,9 @@ edat0 <- subset(dat, dose.kg.t == 0)
 edat <- subset(dat, dose.kg.t <= 6)
 
 # Summarize untreated emission by sample and type
-e0summ <- as.data.frame(summarise(group_by(edat0, animal, month), n = length(e.rel), e.rel = mean(e.rel)))
+e0summ <- as.data.frame(summarise(group_by(edat0, animal, season), n = length(e.rel), e.rel = mean(e.rel)))
 
-dat <- as.data.frame(mutate(group_by(dat, animal, sample, month), 
+dat <- as.data.frame(mutate(group_by(dat, animal, sample, season), 
                             red = 100 * (1 - e.rel/e.rel[dose.kg.t == 0]),
                             red.ul = 100 * (1 - e.rel.ul/e.rel.ul[dose.kg.t == 0]),
                             dpH = pH[dose.kg.t == 0] - pH
@@ -17,7 +17,7 @@ dat <- as.data.frame(mutate(group_by(dat, animal, sample, month),
 # Mean and sd reduction etc. by type and dose
 d <- subset(dat, dose.kg.t %in% c(0:4, 5, 10, 20, 25, 30))
 
-summ <- as.data.frame(summarise(group_by(d, animal, month, dose.kg.t),
+summ <- as.data.frame(summarise(group_by(d, animal, season, dose.kg.t),
                                 n = length(unique(sample)),
                                 pH.m = mean(pH), pH.s = sd(pH), pH.mn = min(pH), pH.mx = max(pH),
                                 dpH.m = mean(dpH), dpH.s = sd(dpH), dpH.mn = min(dpH), dpH.mx = max(dpH),
@@ -29,7 +29,7 @@ summ <- as.data.frame(summarise(group_by(d, animal, month, dose.kg.t),
 idat <- data.frame()
 target <- 25 # Percent reduction
 
-idat <- as.data.frame(summarise(group_by(dat, sample, animal, man.dm, wind.2m, air.temp, month), 
+idat <- as.data.frame(summarise(group_by(dat, sample, animal, man.dm, wind.2m, air.temp, season), 
                       rdose.kg.t = approx(red, dose.kg.t, xout = target)$y,
                       rdose.kg.t.ul = approx(red.ul, dose.kg.t, xout = target)$y,
                       rpH = approx(red, pH, xout = target)$y,
@@ -39,7 +39,7 @@ idat <- as.data.frame(summarise(group_by(dat, sample, animal, man.dm, wind.2m, a
 idat$red <- target
 
 # Summarize dose for 25% reduction by type for report table
-summ25 <- as.data.frame(summarise(group_by(idat, animal, month),
+summ25 <- as.data.frame(summarise(group_by(idat, animal, season),
                                 n = length(unique(sample)),
                                 rdose.md = median(rdose.kg.t), rdose.mean = mean(rdose.kg.t), 
                                 rdose.ul.md = median(rdose.kg.t.ul), rdose.ul.mean = mean(rdose.kg.t.ul), 
@@ -54,7 +54,7 @@ summ25 <- as.data.frame(summarise(group_by(idat, animal, month),
 # Is conservative 90% (probably 95% or even higher)
 # Sort animals
 idat$animal <- factor(idat$animal, levels = c('Kvæg', 'So-/smågrise', 'Slagtesvin', 'Afgasset'))
-summ25sel <- as.data.frame(summarise(group_by(idat, month, animal),
+summ25sel <- as.data.frame(summarise(group_by(idat, season, animal),
                                 n = length(rdose.kg.t),
                                 rdose.md = median(rdose.kg.t), 
                                 rdose.mean = mean(rdose.kg.t), 
@@ -74,14 +74,14 @@ for (i in 1:ncol(summ25seltxt)) {
 }
 
 # Overall requirements
-dd <- summ25[, c('animal', 'month', 'rdose.mean')]
+dd <- summ25[, c('animal', 'season', 'rdose.mean')]
 dd$agroup <- substr(dd$animal, 1, 1)
-dd <- subset(dd, !(agroup == 'S' & month == 6))
-oa25 <- as.data.frame(summarise(group_by(dd, agroup), n.vals = length(rdose.mean), n.months = length(unique(month)), n.groups = length(unique(animal)), rdose.oa = mean(rdose.mean)))
+dd <- subset(dd, !(agroup == 'S' & season == 6))
+oa25 <- as.data.frame(summarise(group_by(dd, agroup), n.vals = length(rdose.mean), n.seasons = length(unique(season)), n.groups = length(unique(animal)), rdose.oa = mean(rdose.mean)))
 oa25 <- rounddf(oa25, 1)
 
 # Mean response for plots
-datm <- as.data.frame(summarise(group_by(dat, animal, month, dose.kg.t),
+datm <- as.data.frame(summarise(group_by(dat, animal, season, dose.kg.t),
                                 n = length(unique(sample)),
                                 pH.m = mean(pH), pH.s = sd(pH), pH.mn = min(pH), pH.mx = max(pH),
                                 dpH.m = mean(dpH), dpH.s = sd(dpH), dpH.mn = min(dpH), dpH.mx = max(dpH),
@@ -90,9 +90,9 @@ datm <- as.data.frame(summarise(group_by(dat, animal, month, dose.kg.t),
 
 
 # Ave and CL dose in same column for plot
-x <- idat[, c('sample', 'animal', 'man.dm', 'month', 'rdose.kg.t')]
+x <- idat[, c('sample', 'animal', 'man.dm', 'season', 'rdose.kg.t')]
 x$etype <- 'Average'
-y <- idat[, c('sample', 'animal', 'man.dm', 'month', 'rdose.kg.t.ul')]
+y <- idat[, c('sample', 'animal', 'man.dm', 'season', 'rdose.kg.t.ul')]
 y$etype <- '90% CL'
 names(y)[5] <- 'rdose.kg.t'
 ulcomp <- rbind(x, y)
