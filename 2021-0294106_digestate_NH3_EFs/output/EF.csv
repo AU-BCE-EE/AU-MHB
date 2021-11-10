@@ -1,131 +1,131 @@
-"app.timing.dk","app.timing","air.temp","wind.2m","rain.rate","app.mthd","app.rate.ni","man.source","acid","man.dm","man.ph","ct","tan.app","id","EF","EFp","man.trt","app.mthd.nm"
-"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,1,0.28,28,"None","Slæbeslange"
-"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,2,0.29,29,"None","Slæbeslange"
-"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,3,0.3,30,"None","Slæbeslange"
-"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,4,0.3,30,"None","Slæbeslange"
-"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,5,0.3,30,"None","Slæbeslange"
+"app.timing.dk","app.timing","air.temp","wind.2m","rain.rate","app.mthd","app.rate.ni","man.source","acid","man.dm","man.ph","ct","tan.app","id","EF","EFp","man.trt","app.mthd.nm","man.dm.nm"
+"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,1,0.28,28,"None","Slæbeslange","Tørstof: 5.1%"
+"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,2,0.29,29,"None","Slæbeslange","Tørstof: 5.1%"
+"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,3,0.3,30,"None","Slæbeslange","Tørstof: 5.1%"
+"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,4,0.3,30,"None","Slæbeslange","Tørstof: 5.1%"
+"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,5,0.3,30,"None","Slæbeslange","Tørstof: 5.1%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Open slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,6,0.16,16,"None","Nedfældning
 i græs
-"
+","Tørstof: 5.1%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Open slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,7,0.17,17,"None","Nedfældning
 i græs
-"
+","Tørstof: 5.1%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Open slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,8,0.17,17,"None","Nedfældning
 i græs
-"
+","Tørstof: 5.1%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Open slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,9,0.17,17,"None","Nedfældning
 i græs
-"
+","Tørstof: 5.1%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Open slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,10,0.17,17,"None","Nedfældning
 i græs
-"
+","Tørstof: 5.1%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,11,0.026,2.6,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 5.1%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,12,0.026,2.6,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 5.1%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,13,0.026,2.6,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 5.1%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,14,0.026,2.6,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 5.1%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",5.1,7.9,168,100,15,0.026,2.6,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 5.1%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","11 kg/t",5.1,6.52,168,100,16,0.14,14,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 5.1%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","11 kg/t",5.1,6.52,168,100,17,0.17,17,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 5.1%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","11 kg/t",5.1,6.52,168,100,18,0.2,20,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 5.1%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","11 kg/t",5.1,6.52,168,100,19,0.22,22,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 5.1%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","11 kg/t",5.1,6.52,168,100,20,0.21,21,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
-"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.19,168,100,21,0.21,21,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.19,168,100,22,0.24,24,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.19,168,100,23,0.25,25,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.19,168,100,24,0.26,26,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.19,168,100,25,0.26,26,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 5.1%"
+"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.0813,168,100,21,0.2,20,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 5.1%"
+"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.0813,168,100,22,0.23,23,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 5.1%"
+"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.0813,168,100,23,0.24,24,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 5.1%"
+"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.0813,168,100,24,0.26,26,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 5.1%"
+"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",5.1,7.0813,168,100,25,0.25,25,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 5.1%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",5.1,6.79,168,100,26,0.17,17,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 5.1%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",5.1,6.79,168,100,27,0.2,20,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 5.1%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",5.1,6.79,168,100,28,0.22,22,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 5.1%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",5.1,6.79,168,100,29,0.24,24,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 5.1%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",5.1,6.79,168,100,30,0.23,23,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
-"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,31,0.36,36,"None","Slæbeslange"
-"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,32,0.39,39,"None","Slæbeslange"
-"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,33,0.41,41,"None","Slæbeslange"
-"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,34,0.42,42,"None","Slæbeslange"
-"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,35,0.41,41,"None","Slæbeslange"
+","Tørstof: 5.1%"
+"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,31,0.36,36,"None","Slæbeslange","Tørstof: 6.9%"
+"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,32,0.39,39,"None","Slæbeslange","Tørstof: 6.9%"
+"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,33,0.41,41,"None","Slæbeslange","Tørstof: 6.9%"
+"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,34,0.42,42,"None","Slæbeslange","Tørstof: 6.9%"
+"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,35,0.41,41,"None","Slæbeslange","Tørstof: 6.9%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Open slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,36,0.2,20,"None","Nedfældning
 i græs
-"
+","Tørstof: 6.9%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Open slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,37,0.21,21,"None","Nedfældning
 i græs
-"
+","Tørstof: 6.9%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Open slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,38,0.21,21,"None","Nedfældning
 i græs
-"
+","Tørstof: 6.9%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Open slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,39,0.22,22,"None","Nedfældning
 i græs
-"
+","Tørstof: 6.9%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Open slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,40,0.22,22,"None","Nedfældning
 i græs
-"
+","Tørstof: 6.9%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,41,0.027,2.7,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 6.9%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,42,0.027,2.7,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 6.9%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,43,0.027,2.7,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 6.9%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,44,0.027,2.7,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 6.9%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Closed slot injection",0,"Afgasset biomasse","0 kg/t",6.9,7.9,168,100,45,0.027,2.7,"None","Nedfældning
-på sort jord"
+på sort jord","Tørstof: 6.9%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","11 kg/t",6.9,6.52,168,100,46,0.15,15,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 6.9%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","11 kg/t",6.9,6.52,168,100,47,0.2,20,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 6.9%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","11 kg/t",6.9,6.52,168,100,48,0.25,25,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 6.9%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","11 kg/t",6.9,6.52,168,100,49,0.3,30,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 6.9%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","11 kg/t",6.9,6.52,168,100,50,0.27,27,"Field acidified","Slæbeslange +
-markforsuring (11 kg/t)"
-"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.19,168,100,51,0.26,26,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.19,168,100,52,0.3,30,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.19,168,100,53,0.34,34,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.19,168,100,54,0.37,37,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
-"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.19,168,100,55,0.35,35,"Field acidified","Slæbeslange +
-markforsuring (3,4 kg/t)"
+markforsuring (11 kg/t)","Tørstof: 6.9%"
+"Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.0813,168,100,51,0.24,24,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 6.9%"
+"April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.0813,168,100,52,0.29,29,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 6.9%"
+"Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.0813,168,100,53,0.33,33,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 6.9%"
+"Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.0813,168,100,54,0.36,36,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 6.9%"
+"Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","3.4 kg/t",6.9,7.0813,168,100,55,0.34,34,"Field acidified","Slæbeslange +
+markforsuring (3,4 kg/t)","Tørstof: 6.9%"
 "Marts","March",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",6.9,6.79,168,100,56,0.19,19,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 6.9%"
 "April","April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",6.9,6.79,168,100,57,0.24,24,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 6.9%"
 "Maj","May",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",6.9,6.79,168,100,58,0.29,29,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 6.9%"
 "Sommer","Summer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",6.9,6.79,168,100,59,0.33,33,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 6.9%"
 "Efterår","Autumn",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose",30,"Afgasset biomasse","7.5 kg/t",6.9,6.79,168,100,60,0.31,31,"Field acidified","Slæbeslange +
 markforsuring (7,5 kg/t)
-"
+","Tørstof: 6.9%"
