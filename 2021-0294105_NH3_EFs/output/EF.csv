@@ -89,50 +89,50 @@ på sort jord","Ikke"
 på sort jord","Ikke"
 "Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Closed slot injection","None",NA,0,"Kvæggylle",FALSE,6.5,7,168,100,40,0.016,1.6,"Nedfældning på sort jord","Nedfældning
 på sort jord","Ikke"
-"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,41,0.28,28,"Slæbeslange","Slæbeslange","Ikke"
-"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,42,0.29,29,"Slæbeslange","Slæbeslange","Ikke"
-"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,43,0.3,30,"Slæbeslange","Slæbeslange","Ikke"
-"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,44,0.3,30,"Slæbeslange","Slæbeslange","Ikke"
-"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,45,0.3,30,"Slæbeslange","Slæbeslange","Ikke"
-"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,46,0.083,8.3,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
+"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,41,0.36,36,"Slæbeslange","Slæbeslange","Ikke"
+"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,42,0.39,39,"Slæbeslange","Slæbeslange","Ikke"
+"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,43,0.41,41,"Slæbeslange","Slæbeslange","Ikke"
+"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,44,0.42,42,"Slæbeslange","Slæbeslange","Ikke"
+"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","None",NA,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,45,0.41,41,"Slæbeslange","Slæbeslange","Ikke"
+"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,46,0.087,8.7,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
 Nedbringning
 inden 4 timer","Nedbringning
 inden 4 timer"
-"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,47,0.12,12,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
+"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,47,0.13,13,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
 Nedbringning
 inden 4 timer","Nedbringning
 inden 4 timer"
-"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,48,0.16,16,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
+"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,48,0.2,20,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
 Nedbringning
 inden 4 timer","Nedbringning
 inden 4 timer"
-"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,49,0.2,20,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
+"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,49,0.27,27,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
 Nedbringning
 inden 4 timer","Nedbringning
 inden 4 timer"
-"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,5.1,7.9,168,100,50,0.18,18,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
+"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","Deep",4,30,"Afgasset biomasse",FALSE,6.9,7.9,168,100,50,0.23,23,"Slæbeslange + Nedbringning inden 4 timer","Slæbeslange +
 Nedbringning
 inden 4 timer","Nedbringning
 inden 4 timer"
-"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,51,0.16,16,"Nedfældning i græs","Nedfældning
+"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,51,0.2,20,"Nedfældning i græs","Nedfældning
 i græs","Ikke"
-"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,52,0.17,17,"Nedfældning i græs","Nedfældning
+"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,52,0.21,21,"Nedfældning i græs","Nedfældning
 i græs","Ikke"
-"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,53,0.17,17,"Nedfældning i græs","Nedfældning
+"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,53,0.21,21,"Nedfældning i græs","Nedfældning
 i græs","Ikke"
-"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,54,0.17,17,"Nedfældning i græs","Nedfældning
+"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,54,0.22,22,"Nedfældning i græs","Nedfældning
 i græs","Ikke"
-"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,55,0.17,17,"Nedfældning i græs","Nedfældning
+"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Open slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,55,0.22,22,"Nedfældning i græs","Nedfældning
 i græs","Ikke"
-"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,56,0.026,2.6,"Nedfældning på sort jord","Nedfældning
+"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,56,0.027,2.7,"Nedfældning på sort jord","Nedfældning
 på sort jord","Ikke"
-"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,57,0.026,2.6,"Nedfældning på sort jord","Nedfældning
+"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,57,0.027,2.7,"Nedfældning på sort jord","Nedfældning
 på sort jord","Ikke"
-"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,58,0.026,2.6,"Nedfældning på sort jord","Nedfældning
+"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,58,0.027,2.7,"Nedfældning på sort jord","Nedfældning
 på sort jord","Ikke"
-"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,59,0.026,2.6,"Nedfældning på sort jord","Nedfældning
+"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,59,0.027,2.7,"Nedfældning på sort jord","Nedfældning
 på sort jord","Ikke"
-"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,5.1,7.9,168,100,60,0.026,2.6,"Nedfældning på sort jord","Nedfældning
+"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Closed slot injection","None",NA,0,"Afgasset biomasse",FALSE,6.9,7.9,168,100,60,0.027,2.7,"Nedfældning på sort jord","Nedfældning
 på sort jord","Ikke"
 "Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","None",NA,30,"Svinegylle",TRUE,3.9,6.47,168,100,61,0.096,9.6,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
@@ -154,13 +154,13 @@ markforsuring","Ikke"
 markforsuring","Ikke"
 "Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","None",NA,30,"Kvæggylle",TRUE,6.5,6.47,168,100,70,0.25,25,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
-"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,5.1,6.52,168,100,71,0.14,14,"Slæbeslange + markforsuring","Slæbeslange +
+"Marts",4.43101207056639,4.05891613991413,0.0599629009095261,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,6.9,6.52,168,100,71,0.15,15,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
-"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,5.1,6.52,168,100,72,0.17,17,"Slæbeslange + markforsuring","Slæbeslange +
+"April",8.23645983645984,3.84445591865745,0.0552119412831931,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,6.9,6.52,168,100,72,0.2,20,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
-"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,5.1,6.52,168,100,73,0.2,20,"Slæbeslange + markforsuring","Slæbeslange +
+"Maj",12.4492495309568,3.48391526295633,0.0702993488962998,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,6.9,6.52,168,100,73,0.25,25,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
-"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,5.1,6.52,168,100,74,0.22,22,"Slæbeslange + markforsuring","Slæbeslange +
+"Sommer",16.8762259816193,3.15624012423227,0.105925308296069,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,6.9,6.52,168,100,74,0.3,30,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
-"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,5.1,6.52,168,100,75,0.21,21,"Slæbeslange + markforsuring","Slæbeslange +
+"Efterår",14.4977479635841,3.32276959833633,0.128260170445409,"Trailing hose","None",NA,30,"Afgasset biomasse",TRUE,6.9,6.52,168,100,75,0.27,27,"Slæbeslange + markforsuring","Slæbeslange +
 markforsuring","Ikke"
