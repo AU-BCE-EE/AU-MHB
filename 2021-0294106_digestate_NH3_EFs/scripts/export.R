@@ -4,7 +4,7 @@
 write.csv(dat, '../output/EF.csv', row.names = FALSE)
 
 # Table 
-eftab <- dcast(dat, app.mthd.nm ~ app.timing, value.var = 'EFp')
+eftab <- dcast(dat, man.dm + app.mthd.nm ~ app.timing, value.var = 'EFp')
 write.csv(eftab, '../output/EF_table.csv', row.names = FALSE)
 
 # Predictions
