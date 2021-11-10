@@ -1,5 +1,18 @@
 
 
+pd <- subset(dat, acid != '7.5 kg/t')
+ggplot(pd, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
+  geom_point(size = 3) +
+  geom_line(lty = 1, alpha = 0.08) +
+  ylim(0, max(dat$EFp)) +
+  labs(x = 'Udbringningsperiode', y = 'Emissionsfaktor (% af TAN)',
+       shape = '', colour = '') + 
+  scale_shape_manual(values = c(19, 24, 6, 20, 1, 3)) +
+  facet_grid(~ man.dm.nm) +
+  scale_x_continuous(breaks = unique(as.integer(dat$app.timing.dk)), labels= unique(dat$app.timing.dk)) +
+  theme(legend.position = 'top')
+ggsave('../plots/emis_factors_sel.png', height = 4.8, width = 6.9)
+
 ggplot(dat, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
   geom_point(size = 3) +
   geom_line(lty = 1, alpha = 0.08) +
