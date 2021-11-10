@@ -3,8 +3,8 @@
 # Set dose levels, up to 30 kg/t
 dose.levels <- 0:240 / 8
 
-# Add levels from legislation, to later extract change in pH (some already present based on above, but for general approach, leave)
-dose.levels <- unique(c(dose.levels, c(2.1, 2.9, 3.0, 5.7, 11.0)))
+# Add levels from legislation or our later dose estimates, to later extract change in pH (some already present based on above, but for general approach, leave)
+dose.levels <- unique(c(dose.levels, c(2.1, 2.9, 3.0, 3.4, 5.7, 11.0)))
 
 idat <- data.frame()
 
