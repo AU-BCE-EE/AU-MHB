@@ -1,0 +1,65 @@
+---
+title: Exploration of subsets
+author: Sasha D. Hafner
+output: pdf_document
+date: 2021
+---
+
+Counts.
+
+```{r}
+dim(d.pred.168)
+length(unique(d.pred.168$pmid))
+dim(d.pred.168.mm)
+dim(d.pred.168.cp)
+dim(d.pred2.168)
+```
+
+Non-pH data.
+
+```{r}
+length(unique(c(pmid.cal2, pmid.cal2cs, pmid.cal4)))
+```
+
+
+```{r}
+table(d.pred.168$meas.tech2)
+table(d.pred.168.mm$meas.tech2)
+table(d.pred.168.cp$meas.tech2)
+```
+
+```{r}
+table(d.pred2.168$country, d.pred2.168$meas.tech2)
+table(d.pred3.168$country, d.pred3.168$meas.tech2)
+table(d.pred.168$country, d.pred.168$meas.tech2)
+table(d.pred.168.mm$country, d.pred.168.mm$meas.tech2)
+table(d.pred.168.cp$country, d.pred.168.cp$meas.tech2)
+```
+
+```{r}
+table(d.pred2.168$inst)
+table(d.pred3.168$inst)
+table(d.pred3.168$institute)
+table(d.pred.168$inst)
+table(d.pred.168.mm$inst)
+table(d.pred.168.cp$inst)
+```
+
+```{r}
+table(d.pred2.168$country)
+table(d.pred3.168$country)
+table(d.pred.168$country)
+table(d.pred.168.mm$country)
+table(d.pred.168.cp$country)
+```
+
+```{r}
+table(droplevels(d.pred2.168$exper))
+table(droplevels(d.pred3.168$exper))
+table(droplevels(d.pred.168$exper))
+table(droplevels(d.pred.168.mm$exper))
+table(droplevels(d.pred.168.cp$exper))
+```
+
+
+

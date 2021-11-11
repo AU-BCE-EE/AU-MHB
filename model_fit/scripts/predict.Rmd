@@ -1,0 +1,22 @@
+---
+title: 'Model call record'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: 
+---
+
+Calculates emission
+
+Run model 
+
+With set 2 parameters
+
+```{r}
+preds <- ALFAM2mod(dde, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', 
+                   time.incorp = 'time.incorp', group = 'pmid', warn = TRUE, prep = TRUE, 
+                   parallel = FALSE, ncpus = 4)
+names(preds) <- paste0(names(preds), '.pred')
+d.pred <- cbind(dde, preds[, -1:-3])
+d.pred$error.er <- d.pred$er.pred - d.pred$er
+```
