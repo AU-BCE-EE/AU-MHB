@@ -1,0 +1,25 @@
+"source","variable","n","min","max","mean","median","sd"
+"Gylle afgasset","DM",19,1.98,6.48,4.38,4.26,1.194
+"Gylle afgasset","pH",19,6.73,8.4,7.729,7.72,0.373
+"Gylle afgasset","TN",19,2.39,6.11,3.96,3.97,0.969
+"Gylle afgasset","TAN",19,1.42,4.57,2.743,2.65,0.814
+"Gylle, køer","DM",7,3.78,7.72,5.969,5.96,1.484
+"Gylle, køer","pH",7,6.78,7.2,7.051,7.1,0.154
+"Gylle, køer","TN",7,1.62,3.76,2.91,3.06,0.757
+"Gylle, køer","TAN",7,1.04,2.18,1.764,1.78,0.39
+"Gylle, kvæg","DM",77,1.96,9.55,6.428,6.67,1.634
+"Gylle, kvæg","pH",77,6.2,7.93,7.033,7,0.338
+"Gylle, kvæg","TN",77,1.58,5.84,3.447,3.55,0.672
+"Gylle, kvæg","TAN",77,1.07,3.33,2.005,2,0.456
+"Gylle, kvæg Markforsuring","DM",43,2.51,8.66,6.44,6.61,1.466
+"Gylle, kvæg Markforsuring","pH",43,4.79,7.56,6.054,6.08,0.582
+"Gylle, kvæg Markforsuring","TN",43,1.62,4.8,3.385,3.51,0.592
+"Gylle, kvæg Markforsuring","TAN",43,1.07,3.46,2.068,2.03,0.47
+"Gylle, svin","DM",115,0.83,9.12,3.87,3.43,2.159
+"Gylle, svin","pH",115,6.13,8.59,7.211,7.21,0.381
+"Gylle, svin","TN",115,1.66,8.13,4.417,4.3,1.363
+"Gylle, svin","TAN",115,1.65,5.82,3.3,3.27,0.831
+"Gylle, svin Markforsuring","DM",81,1,9.89,4.407,3.99,2.356
+"Gylle, svin Markforsuring","pH",81,5.4,7.27,6.336,6.29,0.387
+"Gylle, svin Markforsuring","TN",81,2.06,7.79,4.294,3.97,1.316
+"Gylle, svin Markforsuring","TAN",81,1.66,5.27,3.275,3.21,0.884
