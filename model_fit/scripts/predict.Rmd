@@ -3,7 +3,6 @@ title: 'Model call record'
 output: pdf_document
 classoption: landscape
 author: Sasha D. Hafner
-date: 
 ---
 
 Calculates emission

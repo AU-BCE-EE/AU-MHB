@@ -4,12 +4,12 @@ dd <- subset(d.pred.168, er < 1)
 da <- subset(dd, er < er.pred)
 db <- subset(dd, er >= er.pred)
 ggplot(dd, aes(man.dm, er, colour = country)) +
-  geom_segment(data = da, aes(x = man.dm, y = er, xend = man.dm, yend = er.pred)) +
-  geom_segment(data = db, aes(x = man.dm, y = er, xend = man.dm, yend = er.pred), lty = 3) +
+  geom_segment(data = da, aes(x = man.dm, y = er, xend = man.dm, yend = er.pred), alpha = 0.2) +
+  geom_segment(data = db, aes(x = man.dm, y = er, xend = man.dm, yend = er.pred), alpha = 0.2, lty = 3) +
   geom_point() +
   geom_point(aes(man.dm, er.pred), pch = 2) +
   facet_wrap(~ app.mthd.nm, scale = 'free', ncol = 2) +
-  labs(x = 'Dry matter (%)', y = '168 h cum. emission (% applied TAN)', colour = 'Country') 
+  labs(x = 'Dry matter (%)', y = '7 d cum. emission (% applied TAN)', colour = 'Country') 
 ggsave('../plots/emis_v_dm.png', height = 6, width = 10)
 
 
