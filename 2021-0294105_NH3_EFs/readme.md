@@ -5,7 +5,7 @@ Calculation of selected emission factors for NH3 loss from field-applied manure
 These calculations follow a recent report (Hafner et al., 2021), with some small changes in model inputs.
 The report is available from <https://pure.au.dk/portal/files/223538048/EFreport23092021.pdf> and the calculations are described in detail at <https://github.com/sashahafner/ALFAM2-EF-DK-2021>.
 
-Briefly, the ALFAM2 model (v1.5.0 of the ALFAM2 R package, Hafner et al., 2020) was used with Parameter Set 2 to calculate cumulative NH3 emission after 168 hours.
+Briefly, the ALFAM2 model (v1.5.1 of the ALFAM2 R package, Hafner et al., 2020) was used with Parameter Set 2 to calculate cumulative NH3 emission after 168 hours.
 Model inputs included manure dry matter (DM) and pH, average air temperature and wind speed, and application method.
 
 # Weather inputs
@@ -14,6 +14,12 @@ These means are calculated in the `../weather` directory, which includes a `read
 Unlike the earlier work (Hafner et al., 2021), emission factors calculated here are based on monthly averages for rainfall.
 There are small differences in air temperature and wind speed as well--see `../weather/readme.md` for details.
 And here, summer was defined as June, July, and August for all emission factors.
+
+# Manure dry matter and untreated pH
+For cattle and pig manure (kvæg and svin in Danish), these inputs exactly match those given in the earlier work (Hafner et al., 2021).
+For digestate (afgasset in Danish), an updated dry matter (DM) value was used, calculated as the mean of 26 samples consisting of the combination of the 15 samples from Møller and Nielsen (2016) as described in Hafner et al. (2021) and 11 samples recently analyzed at Aarhus University (these 11 are the same samples from Nyord et al. (2021) but with some additonal samples collected later).
+The mean DM value is calculated in the `../manure_composition` directory (see `scripts_digestate` and `output`).
+The mean pH for these 26 samples was identical to the value used in Hafner et al. (2021).
 
 # Acidification emission factor calculations
 To account for acidification, the ALFAM2 model predicts the effect of manure pH on emission.
@@ -42,11 +48,14 @@ For details on the titration curves and how the doses in the table above were ca
 The $delta$pH values used here were taken from `../manure_titration/output/dpH_acid_doses.csv` file.
 
 # Repeating calculations
-All calculations can be repeated in R by running the script `scripts/main.R`.
+Calculations can be repeated in R by running the script `scripts/main.R`.
 The `logs` directory has a log of the ALFAM2 model call.
 Inputs are specified in the `inputs` directory.
 
 # References
 Hafner, S. D., Nyord, T., Sommer, S. G., & Adamsen, A. P. S. 2021. Estimation of Danish emission factors for ammonia from field-applied liquid manure for 1980 to 2019.138 pages. Advisory report from DCA – Danish Centre for Food and Agriculture, Aarhus University, submitted: 23-09-2021. <https://pure.au.dk/portal/files/223538048/EFreport23092021.pdf>
+
+Møller, H.B., Nielsen, K.J., 2016. Biogas taskforce – udvikling og effektivisering af biogasproduktionen i Danmark.
+DCA report 077. DCA - Nationalt Center for Fødevarer og Jordbrug, Tjele, Denmark.
 
 Nyord, T., Hafner, S.D., Adamsen, A.P.S., Sommer, S.G. 2021. Ammoniakfordampning fra forsuret gylle ved udbringning med slæbeslange. DCA - Nationalt Center for Fødevarer og Jordbrug Aarhus Universitet. Journal 2020-0188079. <https://pure.au.dk/portal/files/211563336/Forsuring_150221.pdf>
