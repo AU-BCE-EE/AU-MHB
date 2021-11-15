@@ -1,0 +1,36 @@
+---
+title: 'Effects of predictors on emission'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: 
+---
+
+Check package version.
+
+```{r}
+library(ALFAM2)
+packageVersion('ALFAM2')
+```
+
+```{r}
+dat <- data.frame(id = rep(c('low', 'high'), each = 7), man.dm = rep(c(5, 7), each = 7), tan.app = 100, ct = rep(24 * 1:7, 2))
+```
+
+
+```{r}
+preds2 <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', group = 'id', warn = TRUE)
+preds2
+```
+
+```{r}
+preds1 <- ALFAM2mod(dat, pars = ALFAM2pars01, app.name = 'tan.app', time.name = 'ct', group = 'id', warn = TRUE)
+preds1
+```
+
+```{r}
+preds2
+preds1
+```
+
+
