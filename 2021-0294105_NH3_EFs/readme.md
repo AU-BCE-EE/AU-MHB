@@ -44,8 +44,10 @@ Notes: Acid doses are from <https://www.retsinformation.dk/eli/lta/2021/1551>.
 
 It is a coincidence that acidified pH values are identical for cattle and pig manure.
 
-For details on the titration curves and how the doses in the table above were calculated, see the `../manure_titration` directory.
+For details on the titration curves and how the pH values in the table above were calculated, see the `../manure_titration` directory.
 The $delta$pH values used here were taken from `../manure_titration/output/dpH_acid_doses.csv` file.
+
+Although the dose and resulting manure pH values are linked in the analysis in `../manure_acidification/acid_preds` and Nyord et al. (2021), with non-linear responses, means are not necessarily identical.
 
 # Repeating calculations
 Calculations can be repeated in R by running the script `scripts/main.R`.
