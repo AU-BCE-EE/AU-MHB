@@ -1,7 +1,7 @@
 
 
 pd <- subset(dat, acid != '7.5 kg/t')
-ggplot(pd, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
+ggplot(pd, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm.lb, colour = app.mthd.nm.lb)) +
   geom_point(size = 3) +
   geom_line(lty = 1, alpha = 0.08) +
   ylim(0, max(dat$EFp)) +
@@ -13,7 +13,7 @@ ggplot(pd, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = app
   theme(legend.position = 'top')
 ggsave('../plots/emis_factors_sel.png', height = 4.8, width = 6.9)
 
-ggplot(dat, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm, colour = app.mthd.nm)) +
+ggplot(dat, aes(as.integer(app.timing.dk), EFp, shape = app.mthd.nm.lb, colour = app.mthd.nm.lb)) +
   geom_point(size = 3) +
   geom_line(lty = 1, alpha = 0.08) +
   ylim(0, max(dat$EFp)) +
