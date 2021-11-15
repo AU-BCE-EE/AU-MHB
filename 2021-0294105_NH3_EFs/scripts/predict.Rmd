@@ -3,7 +3,7 @@ title: 'Model call record'
 output: pdf_document
 classoption: landscape
 author: Sasha D. Hafner
-date: September 2020
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 ---
 
 Calculates emission factors
