@@ -2,7 +2,6 @@
 
 write.csv(summ, '../output/dose_summ.csv', row.names = FALSE)
 write.csv(summ25, '../output/25_summ.csv', row.names = FALSE)
-write.csv(summ25seltxt, '../output/25sel_summ_txt.csv', row.names = FALSE)
 write.csv(summ25sel, '../output/25sel_summ.csv', row.names = FALSE)
 write.csv(oa25, '../output/25_overall.csv', row.names = FALSE)
 write.csv(e0summ, '../output/untreated_emis.csv', row.names = FALSE)

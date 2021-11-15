@@ -67,12 +67,6 @@ summ25sel <- as.data.frame(summarise(group_by(idat, season, animal),
                                 ))
 summ25sel <- rounddf(summ25sel, func = signif, digits = 2)
 
-# Make character, switch to comma decimal
-summ25seltxt <- summ25sel
-for (i in 1:ncol(summ25seltxt)) {
-  summ25seltxt[, i] <- gsub('\\.', ',', as.character(summ25seltxt[, i]))
-}
-
 # Overall requirements
 dd <- summ25[, c('animal', 'season', 'rdose.mean')]
 dd$agroup <- substr(dd$animal, 1, 1)
