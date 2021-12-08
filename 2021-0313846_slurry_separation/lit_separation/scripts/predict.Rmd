@@ -1,0 +1,45 @@
+---
+title: 'Model call record'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+---
+
+Calculates emission.
+
+Check package version.
+
+```{r}
+packageVersion('ALFAM2')
+```
+
+Parameter values.
+
+```{r}
+ALFAM2pars02
+```
+
+Run model 
+
+With set 2 parameters
+
+```{r}
+pred.raw <- ALFAM2mod(datraw, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'duration', 
+                  group = 'id', warn = TRUE, prep = TRUE)
+pred.sep <- ALFAM2mod(datsep, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'duration', 
+                  group = 'id', warn = TRUE, prep = TRUE)
+```
+
+```{r}
+head(pred.raw)
+head(pred.sep)
+```
+
+Add results to main df
+
+```{r}
+dat$emis.raw.pred <- 100 * pred.raw$er
+dat$emis.sep.pred <- 100 * pred.sep$er
+```
+
