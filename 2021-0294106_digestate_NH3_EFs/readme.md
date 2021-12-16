@@ -17,7 +17,8 @@ And here, summer was defined as June, July, and August for all emission factors.
 
 # Manure dry matter and untreated pH
 For digestate an updated dry matter (DM) value was used, calculated as the mean of 26 samples consisting of the combination of the 15 samples from Møller and Nielsen (2016) as described in Hafner et al. (2021) and 11 samples recently analyzed at Aarhus University (these 11 are the same samples from Nyord et al. (2021) but with some additonal samples collected later).
-The mean DM value is calculated in the `../manure_composition` directory (see `scripts_digestate` and `output`).
+The mean DM value, which is 5.9%, is calculated in the `../manure_composition` directory (see `scripts_digestate` and `output`).
+Mean values from the individual sets were also included in the analysis and show up in the output, but results are not presented in the corresponding report.
 The mean pH for these 26 samples was identical to the value used in Hafner et al. (2021).
 
 # Acidification emission factor calculations
@@ -46,6 +47,11 @@ For details on the titration curves and how the pH values in the table above wer
 The $delta$pH values used here were taken from `../manure_titration/output/dpH_acid_doses.csv` file.
 
 Although the dose and resulting manure pH values are linked in the analysis in `../manure_acidification/acid_preds` and Nyord et al. (2021), with non-linear responses, means are not necessarily identical.
+
+# Comparison with earlier values
+EFs calculated here are compared to those from the earlier report (Hafner et al. 2021) in the file `output/EF_report_comp.csv`.
+Differences are due to the use of different dry matter values and possibly slight changes in weather inputs in some cases.
+Many of the new EFs presented in this current work have no corresponding value for comparison in the earlier report; acidification of digestate was not included in the earlier report (Hafner et al. 2021). 
 
 # Repeating calculations
 Calculations can be repeated in R by running the script `scripts/main.R`.
