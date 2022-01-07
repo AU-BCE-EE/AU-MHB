@@ -1,0 +1,38 @@
+---
+title: 'Model call record'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+---
+
+Calculates emission factors
+
+Check package version.
+
+```{r}
+packageVersion('ALFAM2')
+```
+
+Parameter values.
+
+```{r}
+ALFAM2pars02
+dat
+```
+
+Run model 
+
+With set 2 parameters
+
+```{r}
+preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', 
+                   time.incorp = 't.incorp', group = 'id', warn = TRUE, prep = TRUE)
+```
+
+Add results to main df
+```{r}
+dat$EF <- signif(preds$er, 2)
+dat$EFp <- 100 * signif(preds$er, 2)
+```
+
