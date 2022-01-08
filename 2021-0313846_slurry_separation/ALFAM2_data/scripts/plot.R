@@ -4,13 +4,17 @@ ggplot(dat, aes(meas.tech2, e.rel.final, fill = country)) +
   ylim(0, 2) 
 ggsave('../plots/emis_boxplot.png', width = 6, height = 5)
 
+dat$app.mthd <- dat$app.method
 ggplot(dat, aes(man.dm, e.rel.final, colour = country, shape = meas.tech2)) +
-  geom_point() +
+  geom_point(alpha = 0.6) +
   xlim(0, 40) +
   ylim(0, 2) +
+  facet_wrap(~ app.mthd) +
+  geom_line(data = pred, aes(man.dm, er, colour = NA, shape = NA)) +
+  geom_vline(xintercept = 15, lty = 2, colour = 'gray45') +
   labs(x = 'Manure DM (%)', y = 'Relative final emission (% applied TAN)',
        shape = 'Measurement tech.', colour = 'Country')
-ggsave('../plots/emis_v_DM.png', width = 6, height = 5)
+ggsave('../plots/emis_v_DM.png', width = 7, height = 5)
 
 ggplot(dat, aes(man.dm, e.rel.final, colour = country, shape = meas.tech2)) +
   geom_smooth(method = lm, formula = y ~ x) +
