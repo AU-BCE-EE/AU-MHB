@@ -1,2 +1,2 @@
 
-dat <- subset(dat, app.method == 'bc')
+dat <- subset(dat, app.method %in% c('bsth', 'bc'))
