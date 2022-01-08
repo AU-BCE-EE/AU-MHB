@@ -1,6 +1,6 @@
 
 
-ggplot(dat, aes(as.integer(app.timing), EFp, shape = fraction, colour = fraction)) +
+ggplot(dat, aes(as.integer(app.timing), EFp, shape = interaction(fraction, incorp), colour = interaction(fraction, incorp))) +
   geom_point() +
   geom_line(lty = 1, alpha = 0.08) +
   facet_wrap(~ man.source) +
@@ -11,7 +11,7 @@ ggplot(dat, aes(as.integer(app.timing), EFp, shape = fraction, colour = fraction
   scale_x_continuous(breaks = unique(as.integer(dat$app.timing)), labels= unique(dat$app.timing)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = 'top')
-ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
+ggsave('../plots/field_emis_factors.png', height = 4.8, width = 6.9)
 
 ggplot(datl, aes(as.integer(app.timing), EFp.overall, shape = EF.type, colour = EF.type)) +
   geom_point() +
