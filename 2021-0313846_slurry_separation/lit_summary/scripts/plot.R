@@ -27,13 +27,13 @@ ee$A.DM <- ee$man.dm
 ee$A.emis.perc <- ee$EFp
 ee$source <- 'ALFAM2'
 #dd <- rbindf(dd, ee)
-ggplot(dd, aes(A.DM, A.emis.perc, shape = fraction, colour = 'red')) +
+ggplot(dd, aes(A.DM, A.emis.perc, shape = fraction, colour = viridis(3)[1])) +
   geom_smooth(aes(group = 1), colour = 'gray75', lty = 1, lwd = 2, alpha = 0.7, method = lm, se = FALSE) +
   geom_point() +
-  geom_point(data = ee, colour = 'blue') +
+  geom_point(data = ee, colour = viridis(3)[2]) +
   facet_wrap(~ slurry.source) +
   geom_smooth(aes(group = source), method = lm, se = FALSE) +
-  geom_smooth(data = ee, method = lm, colour = 'blue', se = FALSE) +
+  geom_smooth(data = ee, aes(group = 1), method = lm, colour = viridis(3)[2], se = FALSE) +
   labs(x = 'Tørstof (%)', y = 'Emissionsfaktor (% af TAN)') +
   theme(legend.position = 'none')
 ggsave('../plots/emis_v_DM.png', height = 4, width = 6)
