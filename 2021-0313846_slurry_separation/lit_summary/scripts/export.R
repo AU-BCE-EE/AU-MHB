@@ -1,3 +1,3 @@
 
-write.csv(summ, '../output/summary.csv', row.names = FALSE)
-write.csv(nsumm, '../output/count_summary.csv', row.names = FALSE)
+write.csv(dmds2, '../output/DM_summary.csv', row.names = FALSE)
+write.csv(ds2, '../output/var_summary.csv', row.names = FALSE)

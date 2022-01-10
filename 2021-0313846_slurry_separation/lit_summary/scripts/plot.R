@@ -26,7 +26,6 @@ ee$slurry.source <- ee$man.source
 ee$A.DM <- ee$man.dm
 ee$A.emis.perc <- ee$EFp
 ee$source <- 'ALFAM2'
-#dd <- rbindf(dd, ee)
 ggplot(dd, aes(A.DM, A.emis.perc, shape = fraction, colour = viridis(3)[1])) +
   geom_smooth(aes(group = 1), colour = 'gray75', lty = 1, lwd = 2, alpha = 0.7, method = lm, se = FALSE) +
   geom_point() +

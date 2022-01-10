@@ -1,0 +1,12 @@
+"sep.scale","slurry.source","DM.raw.mean","DM.liquid.mean","DM.solid.mean","dDM.liquid.mean","dDM.solid.mean","DM.raw.sd","DM.liquid.sd","DM.solid.sd","dDM.liquid.sd","dDM.solid.sd","DM.raw.n","DM.liquid.n","DM.solid.n","dDM.liquid.n","dDM.solid.n"
+"full","cattle",8.16333333333333,4.38634920634921,21.395,-3.6752380952381,NA,1.91334494769994,2.05500321377286,0.643467170879758,1.16747858045776,NA,5,9,2,5,0
+"full","digestate",4.55,3.55,NA,-1.1,NA,1.48492424049175,1.62634559672906,NA,NA,NA,2,2,0,1,0
+"full","pig",NA,1.925,22.325,NA,NA,NA,0.459619407771256,5.26794551983978,NA,NA,0,2,2,0,0
+"lab","cattle",7.1,4.17733333333333,19.2,-2.7,NA,NA,2.15086855840973,NA,NA,NA,1,5,1,1,0
+"lab","digestate",6.275,4.595,15.55,-1.68,9.275,0.0212132034355966,0.586898628384834,0.919238815542511,0.565685424949238,0.898025612106915,2,2,2,2,2
+"lab","digested pig",3.4,2.3,NA,-1.1,NA,NA,NA,NA,NA,NA,1,1,0,1,0
+"lab","pig",NA,1.725,16.68,NA,NA,NA,0.601040764008565,NA,NA,NA,0,2,1,0,0
+"pilot","digested pig",NA,0.91,NA,NA,NA,NA,NA,NA,NA,NA,0,1,0,0,0
+"pilot","pig",NA,2.04,NA,NA,NA,NA,0.965297881485296,NA,NA,NA,0,4,0,0,0
+"unknown","cattle",5.79,2.65333333333333,NA,-3.13666666666667,NA,NA,NA,NA,NA,NA,1,1,0,1,0
+"unknown","pig",NA,1.83333333333333,NA,NA,NA,NA,NA,NA,NA,NA,0,1,0,0,0
