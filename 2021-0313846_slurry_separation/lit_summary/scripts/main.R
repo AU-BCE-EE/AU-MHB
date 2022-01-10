@@ -1,4 +1,4 @@
-# Calculation of emission with ALFAM2 model
+# Summarize lit data, compare to ALFAM2 predictions
 
 rm(list = ls())
 
