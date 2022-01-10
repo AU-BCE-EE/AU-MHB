@@ -2,7 +2,7 @@
 
 ggplot(dat, aes(as.integer(app.timing), EFp, shape = interaction(fraction, incorp), colour = interaction(fraction, incorp))) +
   geom_point() +
-  geom_line(lty = 1, alpha = 0.08) +
+  geom_line(aes(group = interaction(fraction, incorp, scenario)), lty = 1, alpha = 0.08) +
   facet_wrap(~ man.source) +
   ylim(0, max(dat$EFp)) +
   labs(x = 'Udbringningsperiode', y = 'Emissionsfaktor (% af TAN)',
@@ -26,9 +26,10 @@ ggplot(datl, aes(as.integer(app.timing), EFp.overall, shape = EF.type, colour = 
         legend.position = 'top')
 
 dats$app.timing.num <- as.integer(dats$app.timing) + as.numeric(dats$EF.type)/10 - 0.2
+dats$highest <- pmax(dats$high, dats$high2)
 ggplot(dats, aes(app.timing.num, mid, shape = EF.type, colour = EF.type)) +
   geom_point() +
-  geom_errorbar(aes(ymin = low, ymax = high), width = 0) +
+  geom_errorbar(aes(ymin = low, ymax = highest), width = 0) +
   geom_line(lty = 1, alpha = 0.08) +
   facet_wrap( ~ man.source) +
   ylim(0, max(datl$EFp.overall)) +
