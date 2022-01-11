@@ -1,7 +1,5 @@
-dat$fraction.nm <- mapvalues(dat$fraction, from = c('solid', 'liquid', 'raw'), to = c('Fiber', 'Væske', 'Ubehandlet'))
-dat$incorp.nm <- mapvalues(dat$incorp, from = c('none', 'deep'), to = c('Ingen', 'Nedpløjning'))
 
-ggplot(dat, aes(as.integer(app.timing), EFp, shape = interaction(fraction.nm, incorp.nm), colour = interaction(fraction.nm, incorp.nm))) +
+ggplot(dat, aes(as.integer(app.timing), EFp, shape = frac.incorp.nm, colour = frac.incorp.nm)) +
   geom_point() +
   geom_line(aes(group = interaction(fraction, incorp.nm, scenario)), lty = 1, alpha = 0.08) +
   facet_wrap(~ man.source) +
@@ -13,18 +11,6 @@ ggplot(dat, aes(as.integer(app.timing), EFp, shape = interaction(fraction.nm, in
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = 'top')
 ggsave('../plots/field_emis_factors.png', height = 4.8, width = 6.9)
-
-ggplot(datl, aes(as.integer(app.timing), EFp.overall, shape = EF.type, colour = EF.type)) +
-  geom_point() +
-  geom_line(lty = 1, alpha = 0.08) +
-  facet_grid(scenario ~ man.source) +
-  ylim(0, max(datl$EFp.overall)) +
-  labs(x = 'Udbringningsperiode', y = 'Emissionsfaktor (% af TAN)',
-       shape = '', colour = '') + 
-  scale_shape_manual(values = c(19, 24, 6, 20, 1)) +
-  scale_x_continuous(breaks = unique(as.integer(dat$app.timing)), labels= unique(dat$app.timing)) +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-        legend.position = 'top')
 
 dats$app.timing.num <- as.integer(dats$app.timing) + as.numeric(dats$EF.type)/10 - 0.2
 dats$highest <- pmax(dats$high, dats$high2)
