@@ -20,8 +20,8 @@ ggsave('../plots/TAN_stor_emis_ini.png', height = 4, width = 5)
 
 # Compare to ALFAM2 EFs
 dd <- subset(dat, slurry.source %in% c('cattle', 'pig') & fraction != 'solid')
-dd$slurry.source <- ifelse(dd$slurry.source == 'pig', 'Svinegylle', 'Kvæggylle')
-ee <- subset(EFs, man.source %in% c('Svinegylle', 'Kvæggylle') & fraction != 'solid')
+dd$slurry.source <- ifelse(dd$slurry.source == 'pig', 'Svinegylle', 'KvÃ¦ggylle')
+ee <- subset(EFs, man.source %in% c('Svinegylle', 'KvÃ¦ggylle') & fraction != 'solid')
 ee$slurry.source <- ee$man.source
 ee$A.DM <- ee$man.dm
 ee$A.emis.perc <- ee$EFp
@@ -33,7 +33,7 @@ ggplot(dd, aes(A.DM, A.emis.perc, shape = fraction, colour = viridis(3)[1])) +
   facet_wrap(~ slurry.source) +
   geom_smooth(aes(group = source), method = lm, se = FALSE) +
   geom_smooth(data = ee, aes(group = 1), method = lm, colour = viridis(3)[2], se = FALSE) +
-  labs(x = 'Tørstof (%)', y = 'Emissionsfaktor (% af TAN)') +
+  labs(x = 'TÃ¸rstof (%)', y = 'Emissionsfaktor (% af TAN)') +
   theme(legend.position = 'none')
 ggsave('../plots/emis_v_DM.png', height = 4, width = 6)
 
