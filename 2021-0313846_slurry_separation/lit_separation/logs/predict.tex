@@ -1,0 +1,274 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  landscape]{article}
+\title{Model call record}
+\author{Sasha D. Hafner}
+\date{11 januar, 2022}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Model call record},
+  pdfauthor={Sasha D. Hafner},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+Calculates emission.
+
+Check package version.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{packageVersion}\NormalTok{(}\StringTok{\textquotesingle{}ALFAM2\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] '1.5.5'
+\end{verbatim}
+
+Parameter values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ALFAM2pars02}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##            int.f0    app.mthd.os.f0    app.rate.ni.f0         man.dm.f0 man.source.pig.f0    app.mthd.cs.f0            int.r1    app.mthd.bc.r1         man.dm.r1       air.temp.r1 
+##       -0.60568338       -1.74351499       -0.01114900        0.39967070       -0.59202858       -7.63373787       -0.93921516        0.79352480       -0.13988189        0.07354268 
+##        wind.2m.r1    app.mthd.ts.r1 ts.cereal.hght.r1         man.ph.r1            int.r2      rain.rate.r2            int.r3    app.mthd.bc.r3    app.mthd.cs.r3         man.ph.r3 
+##        0.15026720       -0.45907135       -0.24471238        0.66500000       -1.79918546        0.39402156       -3.22841225        0.56153956       -0.66647417        0.23800000 
+## incorp.shallow.f4 incorp.shallow.r3    incorp.deep.f4    incorp.deep.r3 
+##       -0.96496655       -0.58052689       -3.69494954       -1.26569562
+\end{verbatim}
+
+Run model
+
+With set 2 parameters
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pred.raw }\OtherTok{\textless{}{-}} \FunctionTok{ALFAM2mod}\NormalTok{(datraw, }\AttributeTok{pars =}\NormalTok{ ALFAM2pars02, }\AttributeTok{app.name =} \StringTok{\textquotesingle{}tan.app\textquotesingle{}}\NormalTok{, }\AttributeTok{time.name =} \StringTok{\textquotesingle{}duration\textquotesingle{}}\NormalTok{, }
+                  \AttributeTok{group =} \StringTok{\textquotesingle{}id\textquotesingle{}}\NormalTok{, }\AttributeTok{warn =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{prep =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## User-supplied parameters are being used.
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in ALFAM2mod(datraw, pars = ALFAM2pars02, app.name = "tan.app", : Running with 10 parameters. Dropped 14 with no match.
+## These secondary parameters have been dropped:
+##   app.mthd.os.f0
+##   app.rate.ni.f0
+##   app.mthd.cs.f0
+##   air.temp.r1
+##   app.mthd.ts.r1
+##   ts.cereal.hght.r1
+##   man.ph.r1
+##   rain.rate.r2
+##   app.mthd.cs.r3
+##   man.ph.r3
+##   incorp.shallow.f4
+##   incorp.shallow.r3
+##   incorp.deep.f4
+##   incorp.deep.r3
+## 
+## These secondary parameters are being used:
+##   int.f0
+##   man.dm.f0
+##   man.source.pig.f0
+##   int.r1
+##   app.mthd.bc.r1
+##   man.dm.r1
+##   wind.2m.r1
+##   int.r2
+##   int.r3
+##   app.mthd.bc.r3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{pred.sep }\OtherTok{\textless{}{-}} \FunctionTok{ALFAM2mod}\NormalTok{(datsep, }\AttributeTok{pars =}\NormalTok{ ALFAM2pars02, }\AttributeTok{app.name =} \StringTok{\textquotesingle{}tan.app\textquotesingle{}}\NormalTok{, }\AttributeTok{time.name =} \StringTok{\textquotesingle{}duration\textquotesingle{}}\NormalTok{, }
+                  \AttributeTok{group =} \StringTok{\textquotesingle{}id\textquotesingle{}}\NormalTok{, }\AttributeTok{warn =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{prep =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## User-supplied parameters are being used.
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in ALFAM2mod(datsep, pars = ALFAM2pars02, app.name = "tan.app", : Running with 10 parameters. Dropped 14 with no match.
+## These secondary parameters have been dropped:
+##   app.mthd.os.f0
+##   app.rate.ni.f0
+##   app.mthd.cs.f0
+##   air.temp.r1
+##   app.mthd.ts.r1
+##   ts.cereal.hght.r1
+##   man.ph.r1
+##   rain.rate.r2
+##   app.mthd.cs.r3
+##   man.ph.r3
+##   incorp.shallow.f4
+##   incorp.shallow.r3
+##   incorp.deep.f4
+##   incorp.deep.r3
+## 
+## These secondary parameters are being used:
+##   int.f0
+##   man.dm.f0
+##   man.source.pig.f0
+##   int.r1
+##   app.mthd.bc.r1
+##   man.dm.r1
+##   wind.2m.r1
+##   int.r2
+##   int.r3
+##   app.mthd.bc.r3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(pred.raw)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   app.mthd.bc man.source.pig id  ct  dt        f0         r1         r2           r3 f4            f        s         j        e    e.int        er
+## 1           0              0  1  70  70 0.6441285 0.01749569 0.01587869 0.0005910004  1 4.141834e+00 40.60648 0.3107384 21.75169 21.75169 0.3270930
+## 2           0              0  2  48  48 0.3261644 0.05064555 0.01587869 0.0005910004  1 9.638197e-01 52.42450 0.3877433 18.61168 18.61168 0.2584956
+## 3           1              0  3 264 264 0.4289964 0.22090017 0.01587869 0.0021534129  1 3.970228e-26 44.17985 0.3250763 85.82015 85.82015 0.6601550
+## 4           1              0  4 264 264 0.4685221 0.19419734 0.01587869 0.0021534129  1 4.796688e-23 40.09576 0.3208494 84.70424 84.70424 0.6787198
+## 5           1              0  5 264 264 0.4486782 0.20711887 0.01587869 0.0021534129  1 1.456297e-24 39.63000 0.3040530 80.27000 80.27000 0.6694746
+## 6           1              0  6 264 264 0.3530445 0.28582588 0.01587869 0.0021534129  1 1.039847e-33 43.35706 0.2713748 71.64294 71.64294 0.6229821
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(pred.sep)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   app.mthd.bc man.source.pig id  ct  dt         f0         r1         r2           r3 f4             f        s         j        e    e.int        er
+## 1           0              0  1  70  70 0.23771965 0.07217909 0.01587869 0.0005910004  1  3.500683e-02 54.08928 0.2267959 15.87571 15.87571 0.2267959
+## 2           0              0  2  48  48 0.20341952 0.08479150 0.01587869 0.0005910004  1  1.102344e-01 54.76825 0.2733649 13.12151 13.12151 0.1929634
+## 3           1              0  3 264 264 0.13185801 0.80116800 0.01587869 0.0021534129  1  3.990328e-93 71.01332 0.2764647 72.98668 72.98668 0.5068519
+## 4           1              0  4 264 264 0.10674474 0.97196970 0.01587869 0.0021534129  1 8.120727e-113 70.25499 0.2588826 68.34501 68.34501 0.4931097
+## 5           1              0  5 264 264 0.07697784 1.29881239 0.01587869 0.0021534129  1 1.887835e-150 69.59930 0.2401542 63.40070 63.40070 0.4766970
+## 6           1              0  6 264 264 0.13185801 0.80116800 0.01587869 0.0021534129  1  3.092504e-93 55.03533 0.2142601 56.56467 56.56467 0.5068519
+\end{verbatim}
+
+Add results to main df
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{emis.raw.pred }\OtherTok{\textless{}{-}} \DecValTok{100} \SpecialCharTok{*}\NormalTok{ pred.raw}\SpecialCharTok{$}\NormalTok{er}
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{emis.sep.pred }\OtherTok{\textless{}{-}} \DecValTok{100} \SpecialCharTok{*}\NormalTok{ pred.sep}\SpecialCharTok{$}\NormalTok{er}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
