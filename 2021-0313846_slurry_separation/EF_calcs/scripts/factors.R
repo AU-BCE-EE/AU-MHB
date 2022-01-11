@@ -1,6 +1,9 @@
 # Sort, name, create factors for tables and plots
 
 dat$app.timing <- factor(dat$app.timing, levels = c('Marts', 'April', 'Maj', 'Sommer', 'Efterår'))
+dat$fraction.nm <- factor(dat$fraction, levels = c('solid', 'liquid', 'raw'), labels = c('Fiber', 'Væske', 'Ubehandlet'))
+dat$incorp.nm <- factor(dat$incorp, levels = c('none', 'deep'), labels = c('Ingen', 'Nedpløjning'))
+dat$frac.incorp.nm <- paste0(dat$fraction.nm, ifelse(dat$incorp == 'deep', ' med nedpløjning', ''))
 
 datw$man.source <- factor(datw$man.source, levels = c('Kvæggylle', 'Svinegylle', 'Afgasset biomasse'))
 datw$app.timing <- factor(datw$app.timing, levels = c('Marts', 'April', 'Maj', 'Sommer', 'Efterår'))
