@@ -7,5 +7,5 @@ datw$app.timing <- factor(datw$app.timing, levels = c('Marts', 'April', 'Maj', '
 
 dats$app.timing <- factor(dats$app.timing, levels = c('Marts', 'April', 'Maj', 'Sommer', 'Efterår'))
 dats$EF.type <- factor(dats$EF.type, levels = c('EF.raw.overall', 'EF.sep.incorp.overall', 'EF.sep.surface.overall'),
-                        labels = c('Ubehandlet (reference)', 'Separeret med nedpl�jet fiberfraktion', 'Separeret med bredspredt fiberfraktion'))
+                        labels = c('Ubehandlet (reference)', 'Separeret med\nnedpløjet fiberfraktion', 'Separeret med\nbredspredt fiberfraktion'))
 
