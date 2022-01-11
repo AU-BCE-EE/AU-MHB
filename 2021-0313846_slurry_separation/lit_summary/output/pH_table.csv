@@ -1,0 +1,4 @@
+"slurry.source","pH.raw.mean","pH.liquid.mean","pH.solid.mean","dpH.liquid.mean","dpH.liquid.sd","dpH.liquid.n"
+"cattle",7.15,7.39,8.6,0.169,0.241,10
+"digestate",7.15,7.95,NA,0.8,0.566,2
+"pig",NA,7.89,8.18,NA,NA,0

@@ -37,6 +37,37 @@ dmtab <- dmds2[dmds2$sep.scale == 'full' & dmds2$slurry.source %in% c('cattle', 
              c('slurry.source', 'DM.raw.mean', 'DM.liquid.mean', 'DM.solid.mean', 'rdDM.liquid.mean', 'rdDM.liquid.sd', 'rdDM.liquid.n')]
 dmtab <- rounddf(dmtab, 1)
 
+# pH summary ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# pH summary first by study (source) and experiment or treatment etc.
+phds1 <- aggregate(dat[, c('pH'), drop = FALSE], 
+                 by = dat[, c('source', 'sep.scale', 'slurry.source', 'set', 'fraction')], FUN = mean, na.rm = TRUE)
+# Spread out fractions across columns
+phdw1 <- dcast(phds1, source + sep.scale + slurry.source + set ~ fraction, value.var = 'pH')
+names(phdw1)[5:8] <- paste0('pH.', names(phdw1)[5:8])
+
+# Change in pH due to separation
+phdw1$dpH.liquid <- phdw1$pH.liquid - phdw1$pH.raw
+phdw1$dpH.solid <- phdw1$pH.solid - phdw1$pH.raw
+
+# Final summary
+phds2 <- aggregate(phdw1[, c('pH.raw', 'pH.liquid', 'pH.solid', 'dpH.liquid', 'dpH.solid', 'dpH.liquid', 'dpH.solid')], 
+                 by = phdw1[, c('sep.scale', 'slurry.source')], FUN = mean, na.rm = TRUE)
+names(phds2)[-1:-2] <- paste0(names(phds2)[-1:-2], '.mean')
+phsds2 <- aggregate(phdw1[, c('pH.raw', 'pH.liquid', 'pH.solid', 'dpH.liquid', 'dpH.solid', 'dpH.liquid', 'dpH.solid')], 
+                 by = phdw1[, c('sep.scale', 'slurry.source')], FUN = sd, na.rm = TRUE)
+names(phsds2)[-1:-2] <- paste0(names(phsds2)[-1:-2], '.sd')
+phns2 <- aggregate(phdw1[, c('pH.raw', 'pH.liquid', 'pH.solid', 'dpH.liquid', 'dpH.solid', 'dpH.liquid', 'dpH.solid')], 
+                 by = phdw1[, c('sep.scale', 'slurry.source')], FUN = function(x) sum(!is.na(x)))
+names(phns2)[-1:-2] <- paste0(names(phns2)[-1:-2], '.n')
+phds2 <- merge(phds2, phsds2, by = c('sep.scale', 'slurry.source'))
+phds2 <- merge(phds2, phns2, by = c('sep.scale', 'slurry.source'))
+phds2 <- phds2[order(phds2$sep.scale, phds2$slurry.source), ]
+
+# pH table for report ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+phtab <- phds2[phds2$sep.scale == 'full' & phds2$slurry.source %in% c('cattle', 'pig', 'digestate'), 
+             c('slurry.source', 'pH.raw.mean', 'pH.liquid.mean', 'pH.solid.mean', 'dpH.liquid.mean', 'dpH.liquid.sd', 'dpH.liquid.n')]
+phtab <- rounddf(phtab, 3, func = signif)
+
 # Other variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # First by study (source) and experiment or treatment etc.
 ##ds1 <- aggregate(dl[, c('value'), drop = FALSE], 
