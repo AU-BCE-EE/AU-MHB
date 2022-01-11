@@ -1,6 +1,12 @@
 
-ggplot(dat, aes(as.integer(app.timing), EFp, shape = frac.incorp.nm, colour = frac.incorp.nm)) +
+dd <- subset(dat, scenario %in% c('mid', 'reference'))
+eb <- subset(dat, fraction == 'liquid')
+ebw <- dcast(eb, app.timing + frac.incorp.nm + man.source ~ scenario, value.var = 'EFp')
+ebw$lwr <- pmin(ebw$low, ebw$high, ebw$high2)
+ebw$upr <- pmax(ebw$low, ebw$high, ebw$high2)
+ggplot(dd, aes(as.integer(app.timing), EFp, shape = frac.incorp.nm, colour = frac.incorp.nm)) +
   geom_point() +
+  geom_errorbar(data = ebw, aes(y = mid, ymin = lwr, ymax = upr), width = 0) +
   geom_line(aes(group = interaction(fraction, incorp.nm, scenario)), lty = 1, alpha = 0.08) +
   facet_wrap(~ man.source) +
   ylim(0, max(dat$EFp)) +
