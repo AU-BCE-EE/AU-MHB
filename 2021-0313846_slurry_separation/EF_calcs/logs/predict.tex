@@ -1,0 +1,509 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  landscape]{article}
+\title{Model call record}
+\author{Sasha D. Hafner}
+\date{11 januar, 2022}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Model call record},
+  pdfauthor={Sasha D. Hafner},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+Calculates emission factors
+
+Check package version.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{packageVersion}\NormalTok{(}\StringTok{\textquotesingle{}ALFAM2\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] '1.5.5'
+\end{verbatim}
+
+Parameter values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ALFAM2pars02}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##            int.f0    app.mthd.os.f0    app.rate.ni.f0         man.dm.f0 man.source.pig.f0    app.mthd.cs.f0            int.r1    app.mthd.bc.r1         man.dm.r1       air.temp.r1 
+##       -0.60568338       -1.74351499       -0.01114900        0.39967070       -0.59202858       -7.63373787       -0.93921516        0.79352480       -0.13988189        0.07354268 
+##        wind.2m.r1    app.mthd.ts.r1 ts.cereal.hght.r1         man.ph.r1            int.r2      rain.rate.r2            int.r3    app.mthd.bc.r3    app.mthd.cs.r3         man.ph.r3 
+##        0.15026720       -0.45907135       -0.24471238        0.66500000       -1.79918546        0.39402156       -3.22841225        0.56153956       -0.66647417        0.23800000 
+## incorp.shallow.f4 incorp.shallow.r3    incorp.deep.f4    incorp.deep.r3 
+##       -0.96496655       -0.58052689       -3.69494954       -1.26569562
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dat}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      app.timing  air.temp  wind.2m  rain.rate  scenario        man.source fraction red.dm man.dm man.ph incorp      app.mthd t.incorp app.rate.ni  ct tan.app id
+## 1         Marts  4.431012 4.058916 0.05996290 reference        Svinegylle      raw      0  3.900    7.2   none Trailing hose       NA          30 168     100  1
+## 2         April  8.236460 3.844456 0.05521194 reference        Svinegylle      raw      0  3.900    7.2   none Trailing hose       NA          30 168     100  2
+## 3           Maj 12.449250 3.483915 0.07029935 reference        Svinegylle      raw      0  3.900    7.2   none Trailing hose       NA          30 168     100  3
+## 4        Sommer 16.876226 3.156240 0.10592531 reference        Svinegylle      raw      0  3.900    7.2   none Trailing hose       NA          30 168     100  4
+## 5       Efterår 14.497748 3.322770 0.12826017 reference        Svinegylle      raw      0  3.900    7.2   none Trailing hose       NA          30 168     100  5
+## 1.1       Marts  4.431012 4.058916 0.05996290 reference         Kvæggylle      raw      0  6.500    7.0   none Trailing hose       NA          30 168     100  6
+## 2.1       April  8.236460 3.844456 0.05521194 reference         Kvæggylle      raw      0  6.500    7.0   none Trailing hose       NA          30 168     100  7
+## 3.1         Maj 12.449250 3.483915 0.07029935 reference         Kvæggylle      raw      0  6.500    7.0   none Trailing hose       NA          30 168     100  8
+## 4.1      Sommer 16.876226 3.156240 0.10592531 reference         Kvæggylle      raw      0  6.500    7.0   none Trailing hose       NA          30 168     100  9
+## 5.1     Efterår 14.497748 3.322770 0.12826017 reference         Kvæggylle      raw      0  6.500    7.0   none Trailing hose       NA          30 168     100 10
+## 1.2       Marts  4.431012 4.058916 0.05996290 reference Afgasset biomasse      raw      0  5.900    7.9   none Trailing hose       NA          30 168     100 11
+## 2.2       April  8.236460 3.844456 0.05521194 reference Afgasset biomasse      raw      0  5.900    7.9   none Trailing hose       NA          30 168     100 12
+## 3.2         Maj 12.449250 3.483915 0.07029935 reference Afgasset biomasse      raw      0  5.900    7.9   none Trailing hose       NA          30 168     100 13
+## 4.2      Sommer 16.876226 3.156240 0.10592531 reference Afgasset biomasse      raw      0  5.900    7.9   none Trailing hose       NA          30 168     100 14
+## 5.2     Efterår 14.497748 3.322770 0.12826017 reference Afgasset biomasse      raw      0  5.900    7.9   none Trailing hose       NA          30 168     100 15
+## 1.3       Marts  4.431012 4.058916 0.05996290       low        Svinegylle   liquid   0.55  1.755    7.2   none Trailing hose       NA          30 168     100 16
+## 2.3       April  8.236460 3.844456 0.05521194       low        Svinegylle   liquid   0.55  1.755    7.2   none Trailing hose       NA          30 168     100 17
+## 3.3         Maj 12.449250 3.483915 0.07029935       low        Svinegylle   liquid   0.55  1.755    7.2   none Trailing hose       NA          30 168     100 18
+## 4.3      Sommer 16.876226 3.156240 0.10592531       low        Svinegylle   liquid   0.55  1.755    7.2   none Trailing hose       NA          30 168     100 19
+## 5.3     Efterår 14.497748 3.322770 0.12826017       low        Svinegylle   liquid   0.55  1.755    7.2   none Trailing hose       NA          30 168     100 20
+## 1.4       Marts  4.431012 4.058916 0.05996290       low         Kvæggylle   liquid   0.55  2.925    7.0   none Trailing hose       NA          30 168     100 21
+## 2.4       April  8.236460 3.844456 0.05521194       low         Kvæggylle   liquid   0.55  2.925    7.0   none Trailing hose       NA          30 168     100 22
+## 3.4         Maj 12.449250 3.483915 0.07029935       low         Kvæggylle   liquid   0.55  2.925    7.0   none Trailing hose       NA          30 168     100 23
+## 4.4      Sommer 16.876226 3.156240 0.10592531       low         Kvæggylle   liquid   0.55  2.925    7.0   none Trailing hose       NA          30 168     100 24
+## 5.4     Efterår 14.497748 3.322770 0.12826017       low         Kvæggylle   liquid   0.55  2.925    7.0   none Trailing hose       NA          30 168     100 25
+## 1.5       Marts  4.431012 4.058916 0.05996290       low Afgasset biomasse   liquid   0.55  2.655    7.9   none Trailing hose       NA          30 168     100 26
+## 2.5       April  8.236460 3.844456 0.05521194       low Afgasset biomasse   liquid   0.55  2.655    7.9   none Trailing hose       NA          30 168     100 27
+## 3.5         Maj 12.449250 3.483915 0.07029935       low Afgasset biomasse   liquid   0.55  2.655    7.9   none Trailing hose       NA          30 168     100 28
+## 4.5      Sommer 16.876226 3.156240 0.10592531       low Afgasset biomasse   liquid   0.55  2.655    7.9   none Trailing hose       NA          30 168     100 29
+## 5.5     Efterår 14.497748 3.322770 0.12826017       low Afgasset biomasse   liquid   0.55  2.655    7.9   none Trailing hose       NA          30 168     100 30
+## 1.6       Marts  4.431012 4.058916 0.05996290       mid        Svinegylle   liquid   0.35  2.535    7.2   none Trailing hose       NA          30 168     100 31
+## 2.6       April  8.236460 3.844456 0.05521194       mid        Svinegylle   liquid   0.35  2.535    7.2   none Trailing hose       NA          30 168     100 32
+## 3.6         Maj 12.449250 3.483915 0.07029935       mid        Svinegylle   liquid   0.35  2.535    7.2   none Trailing hose       NA          30 168     100 33
+## 4.6      Sommer 16.876226 3.156240 0.10592531       mid        Svinegylle   liquid   0.35  2.535    7.2   none Trailing hose       NA          30 168     100 34
+## 5.6     Efterår 14.497748 3.322770 0.12826017       mid        Svinegylle   liquid   0.35  2.535    7.2   none Trailing hose       NA          30 168     100 35
+## 1.7       Marts  4.431012 4.058916 0.05996290       mid         Kvæggylle   liquid   0.35  4.225    7.0   none Trailing hose       NA          30 168     100 36
+## 2.7       April  8.236460 3.844456 0.05521194       mid         Kvæggylle   liquid   0.35  4.225    7.0   none Trailing hose       NA          30 168     100 37
+## 3.7         Maj 12.449250 3.483915 0.07029935       mid         Kvæggylle   liquid   0.35  4.225    7.0   none Trailing hose       NA          30 168     100 38
+## 4.7      Sommer 16.876226 3.156240 0.10592531       mid         Kvæggylle   liquid   0.35  4.225    7.0   none Trailing hose       NA          30 168     100 39
+## 5.7     Efterår 14.497748 3.322770 0.12826017       mid         Kvæggylle   liquid   0.35  4.225    7.0   none Trailing hose       NA          30 168     100 40
+## 1.8       Marts  4.431012 4.058916 0.05996290       mid Afgasset biomasse   liquid   0.35  3.835    7.9   none Trailing hose       NA          30 168     100 41
+## 2.8       April  8.236460 3.844456 0.05521194       mid Afgasset biomasse   liquid   0.35  3.835    7.9   none Trailing hose       NA          30 168     100 42
+## 3.8         Maj 12.449250 3.483915 0.07029935       mid Afgasset biomasse   liquid   0.35  3.835    7.9   none Trailing hose       NA          30 168     100 43
+## 4.8      Sommer 16.876226 3.156240 0.10592531       mid Afgasset biomasse   liquid   0.35  3.835    7.9   none Trailing hose       NA          30 168     100 44
+## 5.8     Efterår 14.497748 3.322770 0.12826017       mid Afgasset biomasse   liquid   0.35  3.835    7.9   none Trailing hose       NA          30 168     100 45
+## 1.9       Marts  4.431012 4.058916 0.05996290      high        Svinegylle   liquid   0.15  3.315    7.2   none Trailing hose       NA          30 168     100 46
+## 2.9       April  8.236460 3.844456 0.05521194      high        Svinegylle   liquid   0.15  3.315    7.2   none Trailing hose       NA          30 168     100 47
+## 3.9         Maj 12.449250 3.483915 0.07029935      high        Svinegylle   liquid   0.15  3.315    7.2   none Trailing hose       NA          30 168     100 48
+## 4.9      Sommer 16.876226 3.156240 0.10592531      high        Svinegylle   liquid   0.15  3.315    7.2   none Trailing hose       NA          30 168     100 49
+## 5.9     Efterår 14.497748 3.322770 0.12826017      high        Svinegylle   liquid   0.15  3.315    7.2   none Trailing hose       NA          30 168     100 50
+## 1.10      Marts  4.431012 4.058916 0.05996290      high         Kvæggylle   liquid   0.15  5.525    7.0   none Trailing hose       NA          30 168     100 51
+## 2.10      April  8.236460 3.844456 0.05521194      high         Kvæggylle   liquid   0.15  5.525    7.0   none Trailing hose       NA          30 168     100 52
+## 3.10        Maj 12.449250 3.483915 0.07029935      high         Kvæggylle   liquid   0.15  5.525    7.0   none Trailing hose       NA          30 168     100 53
+## 4.10     Sommer 16.876226 3.156240 0.10592531      high         Kvæggylle   liquid   0.15  5.525    7.0   none Trailing hose       NA          30 168     100 54
+## 5.10    Efterår 14.497748 3.322770 0.12826017      high         Kvæggylle   liquid   0.15  5.525    7.0   none Trailing hose       NA          30 168     100 55
+## 1.11      Marts  4.431012 4.058916 0.05996290      high Afgasset biomasse   liquid   0.15  5.015    7.9   none Trailing hose       NA          30 168     100 56
+## 2.11      April  8.236460 3.844456 0.05521194      high Afgasset biomasse   liquid   0.15  5.015    7.9   none Trailing hose       NA          30 168     100 57
+## 3.11        Maj 12.449250 3.483915 0.07029935      high Afgasset biomasse   liquid   0.15  5.015    7.9   none Trailing hose       NA          30 168     100 58
+##  [ reached 'max' / getOption("max.print") -- omitted 137 rows ]
+\end{verbatim}
+
+Run model
+
+With set 2 parameters
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{preds }\OtherTok{\textless{}{-}} \FunctionTok{ALFAM2mod}\NormalTok{(dat, }\AttributeTok{pars =}\NormalTok{ ALFAM2pars02, }\AttributeTok{app.name =} \StringTok{\textquotesingle{}tan.app\textquotesingle{}}\NormalTok{, }\AttributeTok{time.name =} \StringTok{\textquotesingle{}ct\textquotesingle{}}\NormalTok{, }
+                   \AttributeTok{time.incorp =} \StringTok{\textquotesingle{}t.incorp\textquotesingle{}}\NormalTok{, }\AttributeTok{group =} \StringTok{\textquotesingle{}id\textquotesingle{}}\NormalTok{, }\AttributeTok{warn =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{prep =} \ConstantTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## User-supplied parameters are being used.
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 106).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 107).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 108).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 109).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 110).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 111).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 112).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 113).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 114).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 115).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 116).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 117).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 118).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 119).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 120).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 136).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 137).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 138).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 139).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 140).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 141).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 142).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 143).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 144).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 145).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 146).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 147).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 148).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 149).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 150).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 166).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 167).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 168).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 169).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 170).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 171).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 172).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 173).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 174).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 175).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 176).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 177).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 178).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 179).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 180).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 76).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 77).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 78).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 79).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 80).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 81).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 82).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 83).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 84).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 85).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 86).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 87).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 88).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 89).
+\end{verbatim}
+
+\begin{verbatim}
+## Incorporation applied (for group 90).
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in ALFAM2mod(dat, pars = ALFAM2pars02, app.name = "tan.app", time.name = "ct", : Running with 17 parameters. Dropped 7 with no match.
+## These secondary parameters have been dropped:
+##   app.mthd.os.f0
+##   app.mthd.cs.f0
+##   app.mthd.ts.r1
+##   ts.cereal.hght.r1
+##   app.mthd.cs.r3
+##   incorp.shallow.f4
+##   incorp.shallow.r3
+## 
+## These secondary parameters are being used:
+##   int.f0
+##   app.rate.ni.f0
+##   man.dm.f0
+##   man.source.pig.f0
+##   int.r1
+##   app.mthd.bc.r1
+##   man.dm.r1
+##   air.temp.r1
+##   wind.2m.r1
+##   man.ph.r1
+##   int.r2
+##   rain.rate.r2
+##   int.r3
+##   app.mthd.bc.r3
+##   man.ph.r3
+##   incorp.deep.f4
+##   incorp.deep.r3
+\end{verbatim}
+
+Add results to main df
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{EF }\OtherTok{\textless{}{-}} \FunctionTok{signif}\NormalTok{(preds}\SpecialCharTok{$}\NormalTok{er, }\DecValTok{4}\NormalTok{)}
+\NormalTok{dat}\SpecialCharTok{$}\NormalTok{EFp }\OtherTok{\textless{}{-}} \DecValTok{100} \SpecialCharTok{*} \FunctionTok{signif}\NormalTok{(preds}\SpecialCharTok{$}\NormalTok{er, }\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
