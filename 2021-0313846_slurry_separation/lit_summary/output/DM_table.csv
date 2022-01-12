@@ -1,4 +1,4 @@
 "slurry.source","DM.raw.mean","DM.liquid.mean","DM.solid.mean","rdDM.liquid.mean","rdDM.liquid.sd","rdDM.liquid.n"
-"cattle",7.3,3.2,25.6,-55.8,21.8,12
+"cattle",7.1,3.2,25.6,-55.2,19.9,22
 "digestate",4.2,3.2,NA,-26.3,8.9,3
-"pig",NA,1.9,22.3,NA,NA,0
+"pig",3.9,1.9,22.3,-49.1,16.5,4
