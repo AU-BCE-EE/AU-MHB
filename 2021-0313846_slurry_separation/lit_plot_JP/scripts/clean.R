@@ -32,7 +32,7 @@ datA$Separated1 <- mapvalues(datA$Separated1, from = c('No'), to = c('Ubehandlet
 datA$Separated1 <- mapvalues(datA$Separated1, from = c('Yes'), to = c('Separeret'))
 
 datA$Slurry1 <- datA$Slurry
-datA$Slurry1 <- mapvalues(datA$Slurry1, from = c('cattle'), to = c('Kvæggylle'))
+datA$Slurry1 <- mapvalues(datA$Slurry1, from = c('cattle'), to = c('KvÃ¦ggylle'))
 datA$Slurry1 <- mapvalues(datA$Slurry1, from = c('pig'), to = c('Svinegylle'))
 datA$Slurry1 <- mapvalues(datA$Slurry1, from = c('digested pig'), to = c('Afgasset biomasse'))
 datA$Slurry1 <- mapvalues(datA$Slurry1, from = c('digestate'), to = c('Afgasset biomasse'))
