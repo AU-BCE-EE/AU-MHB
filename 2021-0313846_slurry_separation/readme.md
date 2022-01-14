@@ -38,4 +38,20 @@ Very few observations are available.
 
 # `EF_calcs`
 Calculation of overall ammonia emission from reference and slurry separation manure management chains.
+Here field application emission factors are calculated for raw manure as well as liquid and solid fractions.
+These estimates are combined with input data on separation efficiency of TAN and storage emission factors to predict overall ammonia loss.
+Calculations are relatively straightforward.
+Inputs are set in `inputs`, calculations can be carried out by running `scripts/main.R`, and output is in `output` and `plots`.
+Some potentially confusing bits include 
+* inclusion of denitrification loss during storage of separated solid, which affects the TAN available for loss after field application, and
+* duplication of ALFAM2 model inputs with identical values (`Slurry & application` sheet) for solid fraction, simply for making the merge for `low`, `high`, etc. scenarios easier.
 
+Note that climate inputs include the small adjustments for constant conditions described in the 2021 emission factor report (Hafner et al., 2021).
+Dry matter content and pH values are identical to those used in earlier analyses: see `../2021-0294105_NH3_EFs` for cattle and pig slurry and `2021-0294106_digestate_NH3_EFs` for digestate.
+
+
+# References
+Hafner, S. D., Nyord, T., Sommer, S. G., & Adamsen, A. P. S. 2021. Estimation of Danish emission factors for ammonia from field-applied liquid manure for 1980 to 2019.138 pages. Advisory report from DCA – Danish Centre for Food and Agriculture, Aarhus University, submitted: 23-09-2021. <https://pure.au.dk/portal/files/223538048/EFreport23092021.pdf>
+
+
+* 
