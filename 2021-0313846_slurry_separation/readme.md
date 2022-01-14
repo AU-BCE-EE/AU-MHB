@@ -13,6 +13,7 @@ Where relevant, the `logs` directory has a log of the ALFAM2 model call, which c
 All calculations here were based on version 1.5.1 of the ALFAM2 package, using Parameter Set 2 (default).
 Where relevant, inputs are specified in the `inputs` directory.
 Add-on packages needed for running the scripts are listed in the `scripts/packages.R` files.
+See the `logs/versions.txt` files for package (and R) versions (typically not important).
 
 # `ALFAM2_data`
 Graphical exploration of measurements in the ALFAM2 database, and ALFAM2 model predictions.
