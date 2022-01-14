@@ -27,9 +27,15 @@ Other plots provide evidence that emission does in fact tend to increase with dr
 
 # `DATAMAN`
 Some plots of measurements from the DATAMAN database, excluding observations originally taken from ALFAM2.
-Data frome: <https://dataman.azurewebsites.net/DataManFields>
+Data from: <https://dataman.azurewebsites.net/DataManFields>
 Storage seems empty; these data are from field application only.
 Two filtering operations: 
 1. manure treatment = separation
 2. manure type = farmyard manure (FYM), slurry, solid manure, dung
+
 These correspond to subdirectories `1_separated` and `2_more`.
+Very few observations are available.
+
+# `EF_calcs`
+Calculation of overall ammonia emission from reference and slurry separation manure management chains.
+
