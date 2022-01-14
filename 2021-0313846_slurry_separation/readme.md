@@ -20,7 +20,16 @@ Both were related to a paricular problem in this work: that both database and mo
 None of these results were included in the order memo, but they support the approach used for estimation of emission factors.
 
 Plots of measurements (particularly `plots/emis_v_DM.png`) confirm that high emission factors for high dry matter manure is possible, and suggest emission *may* actually decline at dry matter contents above around 20% (although few measurements are available).
-The model was developed with measurements from slurry with no more than 15% DM, so should no be expected to be accurate, but model predictions show that peak emission occurs at a dry matter content between 10 and 15% for the inputs selected.  
+The model was developed with measurements from slurry with no more than 15% DM, so should not be expected to be accurate, but model predictions show that peak emission occurs at a dry matter content between 10 and 15% for the inputs selected.  
 (The curves shown in `plots/emis_v_DM.png` are model predictions.)
 
 Other plots provide evidence that emission does in fact tend to increase with dry matter (`plots/emis_v_DM_lines.png`) or may have a tendency to decline at high dry matter.
+
+# `DATAMAN`
+Some plots of measurements from the DATAMAN database, excluding observations originally taken from ALFAM2.
+Data frome: <https://dataman.azurewebsites.net/DataManFields>
+Storage seems empty; these data are from field application only.
+Two filtering operations: 
+1. manure treatment = separation
+2. manure type = farmyard manure (FYM), slurry, solid manure, dung
+These correspond to subdirectories `1_separated` and `2_more`.
