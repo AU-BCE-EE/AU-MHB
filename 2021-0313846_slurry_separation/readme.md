@@ -50,14 +50,9 @@ Some potentially confusing bits include
 Note that climate inputs include the small adjustments for constant conditions described in the 2021 emission factor report (Hafner et al., 2021).
 Dry matter content and pH values are identical to those used in earlier analyses: see `../2021-0294105_NH3_EFs` for cattle and pig slurry and `2021-0294106_digestate_NH3_EFs` for digestate.
 
-# `lit_data`
-Contains a single Excel spreadsheet file with literature data on slurry separation.
-
-# `lit_plot`
-Scripts produce a plot of the change of dry matter during separation, and the associated effect on ammonia loss following field application.
-
 # `lit_summary` 
-For calculation of a summary of dry matter change, TAN separation efficiency, and other variables from literature data.
+Output from analysis of literature data. 
+Original data and scripts not included, but expect to be added after a separate literature review is published.
 Includes a comparison between ALFAM2 model calculated field emission factors and literature measurements.
 
 # References
