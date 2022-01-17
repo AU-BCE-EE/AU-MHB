@@ -30,11 +30,11 @@ Other plots provide evidence that emission does in fact tend to increase with dr
 Some plots of measurements from the DATAMAN database, excluding observations originally taken from ALFAM2.
 Data from: <https://dataman.azurewebsites.net/DataManFields>
 Storage seems empty; these data are from field application only.
-Two filtering operations: 
+Two "filtering" operations in database interface: 
 1. manure treatment = separation
 2. manure type = farmyard manure (FYM), slurry, solid manure, dung
 
-These correspond to subdirectories `1_separated` and `2_more`.
+These correspond to the downloaded data in subdirectories `1_separated` and `2_more`.
 Very few observations are available.
 
 # `EF_calcs`
@@ -45,11 +45,20 @@ Calculations are relatively straightforward.
 Inputs are set in `inputs`, calculations can be carried out by running `scripts/main.R`, and output is in `output` and `plots`.
 Some potentially confusing bits include 
 * inclusion of denitrification loss during storage of separated solid, which affects the TAN available for loss after field application, and
-* duplication of ALFAM2 model inputs with identical values (`Slurry & application` sheet) for solid fraction, simply for making the merge for `low`, `high`, etc. scenarios easier.
+* duplication of ALFAM2 model inputs with identical values (Slurry & application` sheet) for solid fraction, simply for making the merge for `low`, `high`, etc. scenarios easier.
 
 Note that climate inputs include the small adjustments for constant conditions described in the 2021 emission factor report (Hafner et al., 2021).
 Dry matter content and pH values are identical to those used in earlier analyses: see `../2021-0294105_NH3_EFs` for cattle and pig slurry and `2021-0294106_digestate_NH3_EFs` for digestate.
 
+# `lit_data`
+Contains a single Excel spreadsheet file with literature data on slurry separation.
+
+# `lit_plot`
+Scripts produce a plot of the change of dry matter during separation, and the associated effect on ammonia loss following field application.
+
+# `lit_summary` 
+For calculation of a summary of dry matter change, TAN separation efficiency, and other variables from literature data.
+Includes a comparison between ALFAM2 model calculated field emission factors and literature measurements.
 
 # References
 Hafner, S. D., Nyord, T., Sommer, S. G., & Adamsen, A. P. S. 2021. Estimation of Danish emission factors for ammonia from field-applied liquid manure for 1980 to 2019.138 pages. Advisory report from DCA – Danish Centre for Food and Agriculture, Aarhus University, submitted: 23-09-2021. <https://pure.au.dk/portal/files/223538048/EFreport23092021.pdf>
