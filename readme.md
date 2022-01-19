@@ -12,7 +12,7 @@ See below for information on releases associated with each order.
 Most recent orders are on the bottom.
 All releases can be browsed [here](https://github.com/sashahafner/AU-myndighedsbetjening/releases).
 
-# 2020 emission factor report
+# 2021 emission factor report
 * Report citation: Hafner, S. D., Nyord, T., Sommer, S. G., & Adamsen, A. P. S. (2021). Estimation of Danish emission factors for ammonia from field-applied liquid manure for 1980 to 2019. 138 pages. Advisory report from DCA – Danish Centre for Food and Agriculture, Aarhus University, submitted: 23-09-2021.
 * Report download (pdf): <https://pure.au.dk/portal/files/223538048/EFreport23092021.pdf>
 * GitHub repo (different repository): <https://github.com/sashahafner/ALFAM2-EF-DK-2021> 
