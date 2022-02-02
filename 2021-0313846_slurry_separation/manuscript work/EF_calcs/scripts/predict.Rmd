@@ -18,7 +18,6 @@ Parameter values.
 
 ```{r}
 ALFAM2pars02
-dat
 ```
 
 Run model 
@@ -26,13 +25,16 @@ Run model
 With set 2 parameters
 
 ```{r}
-preds <- ALFAM2mod(dat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', 
-                   time.incorp = 't.incorp', group = 'id', warn = TRUE, prep = TRUE)
+refpreds <- alfam2(refdat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', group = 'id', warn = TRUE, prep = TRUE)
+lfpreds <- alfam2(lfdat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', group = 'id', warn = TRUE, prep = TRUE)
+sfpreds <- ALFAM2mod(sfdat, pars = ALFAM2pars02, app.name = 'tan.app', time.name = 'ct', 
+                     time.incorp = 't.incorp', group = 'id', warn = TRUE, prep = TRUE)
 ```
 
 Add results to main df
 ```{r}
-dat$EF <- signif(preds$er, 4)
-dat$EFp <- 100 * signif(preds$er, 4)
+refdat$EF.field.raw <- signif(refpreds$er, 4)
+lfdat$EF.field <- signif(lfpreds$er, 4)
+sfdat$EF.field <- signif(sfpreds$er, 4)
 ```
 
