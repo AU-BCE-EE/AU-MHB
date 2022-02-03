@@ -4,7 +4,7 @@ refdat <- merge(refdat, stor, by = 'man.source')
 refdat$EF.overall <- refdat$EF.stor.raw +  (1 - refdat$EF.stor.raw) * refdat$EF.field.raw
 
 # Separated scenarios
-sepdat <- merge(lfdat, sfdat, by = c('app.timing', 'man.source', 'scenario', 'app.mthd', 'app.mthd.sf', 'incorp.sf'),
+sepdat <- merge(lfdat, sfdat, by = c('app.timing', 'man.source', 'scenario', 'app.mthd.rl', 'app.mthd.sf', 'incorp.sf'),
                 suffixes = c('.liquid', '.solid'))
 sepdat <- merge(sepdat, stor, by = 'man.source')
 sepdat <- merge(sepdat, sep, by = 'scenario')
