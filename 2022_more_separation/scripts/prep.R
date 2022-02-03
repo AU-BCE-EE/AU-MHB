@@ -1,15 +1,7 @@
 # Merge inputs, sort out some variables
 
 # Create all combos
-dat <- expand.grid(man.source = type$man.source, 
-                   app.mthd = app$app.mthd, 
-                   app.timing = weather$app.timing,
-                   man.ph = pH$man.ph,
-                   man.dm = DM$man.dm)
-
-# Merge in additional columns
-dat <- merge(dat, weather, by = 'app.timing')
-dat <- merge(dat, app, by = 'app.mthd')
+dat <- dfcombos(type, app, weather, pH, DM)
 
 # Create ID
 dat$id <- 1:nrow(dat)
