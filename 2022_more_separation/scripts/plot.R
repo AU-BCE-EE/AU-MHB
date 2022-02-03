@@ -17,5 +17,9 @@ ggplot(dat, aes(man.ph, 100 * EF, colour = man.dm.dk)) +
   scale_shape_manual(values = c(19, 24, 6, 20, 1, 3)) +
   facet_grid(app.timing.dk ~ app.mthd.dk) +
   xlim(6.9, 8.3) +
-  theme(legend.position = 'top')
+  theme(legend.position = 'top') +
+  scale_x_continuous(labels = number_format(decimal.mark = ','))
 ggsave('../plots/emis_factors.png', height = 6, width = 7)
+
+
+
