@@ -1,30 +1,20 @@
 
-# Reshape field EF data frame
-dref <- dat[dat$scenario == 'reference', ]
-dref$EF.field.raw.none <- dref$EF
-dsep <- dat[dat$scenario != 'reference', ]
-datw <- dcast(dsep, scenario + app.timing + app.mthd + man.source ~ fraction + incorp, value.var = 'EF')
-names(datw)[-1:-3] <- paste0('EF.field.', gsub('_', '.', names(datw)[-1:-3]))
-datw <- merge(datw, dref[, c('app.timing', 'man.source', 'EF.field.raw.none')], by = c('app.timing', 'man.source'))
+# Raw slurry reference
+refdat <- merge(refdat, stor, by = 'man.source')
+refdat$EF.overall <- refdat$EF.stor.raw +  (1 - refdat$EF.stor.raw) * refdat$EF.field.raw
 
-# Add separation efficiency
-datw <- merge(datw, sep, by = 'scenario')
+# Separated scenarios
+sepdat <- merge(lfdat, sfdat, by = c('app.timing', 'man.source', 'scenario', 'app.mthd', 'app.mthd.sf', 'incorp.sf'),
+                suffixes = c('.liquid', '.solid'))
+sepdat <- merge(sepdat, stor, by = 'man.source')
+sepdat <- merge(sepdat, sep, by = 'scenario')
+sepdat$EF.overall <- (1 - sepdat$sep.eff.TAN) * (sepdat$EF.stor.liquid + (1 - sepdat$EF.stor.liquid) * sepdat$EF.field.liquid) +
+                              sepdat$sep.eff.TAN * (sepdat$EF.stor.solid + (1 - sepdat$N.loss.stor.solid) * sepdat$EF.field.solid)
 
-# And storage EFs
-datw <- merge(datw, stor, by = 'man.source')
-
-# Calculate overall EFs
-# For raw (reference) there is no denitrification loss
-datw$EF.raw.overall <- datw$EF.stor.raw + (1 - datw$EF.stor.raw) * datw$EF.field.raw.none
-# With separation, TAN is also assumed to be lost through denitrification (see N.loss.stor.solid)
-datw$EF.sep.incorp.overall <- (1 - datw$sep.eff.TAN) * (datw$EF.stor.liquid + (1 - datw$EF.stor.liquid) * datw$EF.field.liquid.none) +
-                              datw$sep.eff.TAN * (datw$EF.stor.solid + (1 - datw$N.loss.stor.solid) * datw$EF.field.solid.deep)
-datw$EF.sep.surface.overall <- (1 - datw$sep.eff.TAN) * (datw$EF.stor.liquid + (1 - datw$EF.stor.liquid) * datw$EF.field.liquid.none) +
-                              datw$sep.eff.TAN * (datw$EF.stor.solid + (1 - datw$N.loss.stor.solid) * datw$EF.field.solid.none)
-
-# Make long version for plotting
-datl <- melt(datw, id.vars = 1:12, measure.vars = 13:15, value.name = 'EF.overall', variable.name = 'EF.type')
+                            
+# Combine ref and sep 
+datl <- rbindf(refdat, sepdat)
 datl$EFp.overall <- 100 * datl$EF.overall
 
-# Spread by scenario for error bar plot
-dats <- dcast(datl, app.timing + man.source + EF.type ~ scenario, value.var = 'EFp.overall')
+## Spread by scenario for error bar plot
+#dats <- dcast(datl, app.timing + man.source + app.mthd + incorp.sf ~ scenario, value.var = 'EFp.overall')
