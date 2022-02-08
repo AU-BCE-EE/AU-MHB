@@ -13,7 +13,7 @@ ggplot(dat, aes(man.ph, 100 * EF, colour = man.dm.dk)) +
   geom_point() +
   geom_line() +
   labs(x = 'Gylle pH', y = 'Emissionsfaktor (% af TAN)',
-       shape = '', colour = '') + 
+       shape = 'T\u00F8rstof', colour = 'T\u00F8rstof') + 
   scale_shape_manual(values = c(19, 24, 6, 20, 1, 3)) +
   facet_grid(app.timing.dk ~ app.mthd.dk) +
   xlim(6.9, 8.3) +
