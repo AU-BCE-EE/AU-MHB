@@ -1,5 +1,5 @@
 # `2022-0338417_separation_trailing_shoes`
-Field emission of ammonia from digestate for several application method x dry matter x pH x applicating timing combinations
+Field emission of ammonia from digestate for several application method x dry matter x pH x application timing combinations
 
 # Overview
 This task is a follow-up to `2021-0313846_slurry_separation`, which was intended to quantitatively assess the effect of liquid/solid separation of animal slurry on subsequent ammonia loss, primarily after field application.
