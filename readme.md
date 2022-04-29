@@ -19,7 +19,7 @@ All releases can be browsed [here](https://github.com/sashahafner/AU-myndighedsb
 
 # `2021-0294105_NH3_EFs`
 * Report citation: Adamsen, A.P.S., Hafner, S.D. (2021) Emissionsfaktorer for ammoniak fra ALFAM2 for ammoniakreducerende udbringningsteknikker. 6 sider. Rådgivningsrapport fra DCA – Nationalt Center for Fødevarer og Jordbrug, Aarhus Universitet, leveret: 17.11.2021. (In Danish. Translated title: Emission Factors for Ammonia from ALFAM2 for Ammonia-Reducing Application Techniques.)
-* Report download (pdf): <https://pure.au.dk/portal/files/223538048/EFreport23092021.pdf>
+* Report download (pdf): <https://pure.au.dk/portal/files/226435930/Emissionsfakt._ALFAM2_for_ammoniakred_udbringningstek.17_11_2021.pdf>
 * GitHub release: [2021-0294105_v2](https://github.com/sashahafner/AU-myndighedsbetjening/releases/tag/2021-0294105_v2)
 
 # `2021-0294106_digestate_NH3_EFs`
