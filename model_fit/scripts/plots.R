@@ -90,3 +90,25 @@ ggplot(d.pred.incorp, aes(ct, er, colour = incorp, group = pmid)) +
   theme(legend.position = 'top') +
   guides(colour = guide_legend(nrow = 1))
 ggsave('../plots/emis_incorp.png', height = 7, width = 12)
+
+# Plot 50 random flux plots
+set.seed(124)
+dd <- subset(d.pred, pmid %in% sample(unique(d.pred$pmid), 20))
+zero <- unique(dd[, c('pmid', 'app.mthd', 'country')])
+zero$ct <- 0 
+zero$e.cum <- 0 
+zero$e.pred <- 0 
+dd <- rbindf(dd, zero)
+ggplot(dd, aes(ct, e.cum, colour = app.mthd, group = pmid)) +
+  geom_line(aes(ct, e.pred), lty = 2) +
+  geom_line() +
+  xlim(0, 72) +
+  facet_wrap(~ interaction(country, pmid), scale = 'fixed', ncol = 5) +
+  labs(x = 'Time (h)', 
+       y = expression(NH[3]~'emission'~(kg/ha)),
+       colour = 'Application method') +
+  theme(legend.position = 'top') +
+  guides(colour = guide_legend(nrow = 1))
+ggsave('../plots/emis_sample.png', height = 5, width = 8)
+
+
