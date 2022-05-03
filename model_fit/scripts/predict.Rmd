@@ -19,3 +19,14 @@ names(preds) <- paste0(names(preds), '.pred')
 d.pred <- cbind(dde, preds[, -1:-3])
 d.pred$error.er <- d.pred$er.pred - d.pred$er
 ```
+
+And with set 1 (why not compare?)
+
+```{r}
+dde$rain.cum[is.na(dde$rain.cum)] <- 0
+preds1 <- ALFAM2mod(dde, pars = ALFAM2pars01, app.name = 'tan.app', time.name = 'ct', 
+                   time.incorp = 'time.incorp', group = 'pmid', warn = TRUE, prep = TRUE, 
+                   parallel = FALSE, ncpus = 4)
+names(preds1) <- paste0(names(preds1), '.pred1')
+d.pred <- cbind(d.pred, preds1[, -1:-3])
+```
