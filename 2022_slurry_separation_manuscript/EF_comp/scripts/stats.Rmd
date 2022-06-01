@@ -1,0 +1,29 @@
+---
+title: 'Stats on LF vs. RS effect'
+output: pdf_document
+author: Sasha D. Hafner
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+---
+
+Generates results for this statement:
+
+```
+In general, a clear reduction in the emission factors after application 
+of the liquid fraction was found relative to application of the raw 
+slurry (Figure 2) (p < 1·10-8 from F-test based on 2-factor ANOVA) . 
+```
+
+```{r}
+dd <- subset(dat, frac.stud != 'mix')
+
+mod <- lm(log10(EFp.field) ~ frac.stud.nm + interaction(source, set), data = dd)
+anova(mod)
+coef(mod)[1:3]
+100 * (10^coef(mod)[1:3] - 1)
+```
+
+```{r}
+mod <- lm(log10(EFp.field) ~ DM, data = dd)
+anova(mod)
+summary(mod)
+```
