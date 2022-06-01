@@ -27,7 +27,7 @@ All releases can be browsed [here](https://github.com/sashahafner/AU-myndighedsb
 * Report download (pdf): <https://pure.au.dk/portal/en/publications/emissionsfaktorer-for-ammoniak-fra-alfam2-for-afgasset-biomasse(fac0f3f8-e407-438e-ab80-a4ff5e8dc5e0).html>
 * GitHub release: [2021-0294106_v2](https://github.com/sashahafner/AU-myndighedsbetjening/releases/tag/2021-0294106_v2) 
 
-# `2021-0313846_slurry_separation` **In progress**
+# `2021-0313846_slurry_separation`
 * Report citation: Pedersen, J.M.P, Adamsen, A.P.S., Hafner, S.D. (2022) Vurdering af separation af flydende husdyrgødning som ny ammoniakreducerende udbringningsteknik
-* Report download (pdf): **coming soon** 
+* Report download (pdf): https://pure.au.dk/portal/en/publications/vurdering-af-separation-af-flydende-husdyrgoedning-som-ny-ammoniakreducerende-udbringningsteknik(5f327636-6959-42be-99fe-9dfcb7655c48).html
 * GitHub release: [2021-0313846_v1](https://github.com/sashahafner/AU-myndighedsbetjening/releases/tag/2021-0313846_v1)
