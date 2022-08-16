@@ -1,4 +1,4 @@
-# `2022_slurry_separation_manuscrip`
+# `2022_slurry_separation_manuscript`
 Data and analysis for manuscript on effect of slurry separation on overall (storage + field application of both fractions) ammonia volatilization.
 
 # Directory structure
