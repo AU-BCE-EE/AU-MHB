@@ -39,8 +39,8 @@ mod1 <- lm(EFp.field ~ man.dm:source:set:man.source, data = dat)
 summary(mod1)
 coef(mod1)
 cc <- coef(mod1)[-1]
-hist(cc, breaks = 15)
 range(na.omit(cc))
+median(na.omit(cc))
 t.test(cc)
 ```
 

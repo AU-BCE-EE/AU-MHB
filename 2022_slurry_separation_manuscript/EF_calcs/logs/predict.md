@@ -3,7 +3,7 @@ title: 'Model call record'
 output: pdf_document
 classoption: landscape
 author: Sasha D. Hafner
-date: "27 May, 2022"
+date: "16 August, 2022"
 ---
 
 Calculates emission factors
@@ -16,7 +16,7 @@ packageVersion('ALFAM2')
 ```
 
 ```
-## [1] '2.1.1'
+## [1] '2.1.3'
 ```
 
 Parameter values.
