@@ -1,6 +1,5 @@
-# slurry-sep-man 
-NTS update name!
-Data and analysis for manuscript on effect of slurry separation on overall ammonia volatilization.
+# `2022_slurry_separation_manuscrip`
+Data and analysis for manuscript on effect of slurry separation on overall (storage + field application of both fractions) ammonia volatilization.
 
 # Directory structure
 ## `EF_calcs` 
