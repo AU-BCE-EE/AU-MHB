@@ -1,9 +1,11 @@
 ---
-title: 'Stats on LF vs. RS effect'
+title: 'Stats'
 output: pdf_document
 author: Sasha D. Hafner
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 ---
+
+# LF vs. RS effect
 
 Generates results for this statement:
 
@@ -27,3 +29,26 @@ mod <- lm(log10(EFp.field) ~ DM, data = dd)
 anova(mod)
 summary(mod)
 ```
+
+# Compare EF vs. DM slopes for measurements and ALFAM2 predictions
+
+CI on slope for measurements.
+
+```{r}
+mod1 <- lm(EFp.field ~ man.dm:source:set:man.source, data = dat)
+summary(mod1)
+coef(mod1)
+cc <- coef(mod1)[-1]
+hist(cc, breaks = 15)
+range(na.omit(cc))
+t.test(cc)
+```
+
+Model slope.
+
+```{r}
+mod2 <- lm(EFp.field ~ man.dm:man.source, data = a2dat)
+summary(mod2)
+coef(mod2)
+```
+
