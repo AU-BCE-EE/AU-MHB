@@ -50,18 +50,23 @@ ggplot(datlsumm, aes(EFp.overall.b.qs.5, EFp.overall.p.qs.5)) +
 ggsave('../plots/CI_comp.png', height = 6, width = 6)
 
 # Field EFs
+blank.dat <- data.frame(app.timing.num = 1, EFp.field.mean = c(0, 96, 0, 39, 0, 39, 0, 39),
+                        EF.type = 'Raw', app.mthd = c('Broadcast', 'Broadcast', 'Open slot injection', 'Open slot injection',
+                                                      'Trailing hose', 'Trailing hose', 'Trailing shoe', 'Trailing shoe'))
+
+blank.dat$EF.type <- factor(blank.dat$EF.type, levels = c('Raw', 'LF', 'SF', 'SF w/ incorporation'))
 ggplot(fdatsumm, aes(app.timing.num, EFp.field.mean, shape = EF.type, colour = EF.type)) +
   geom_point(alpha = 0.35) +
   geom_errorbar(aes(ymin = EFp.field.min, ymax = EFp.field.max), alpha = 0.4, width = 0) +
   geom_errorbar(aes(ymin = EFp.field.p.qs.5, ymax = EFp.field.p.qs.95)) +
   geom_line() +
+  geom_blank(data = blank.dat) +
   scale_shape_manual(values = c(19, 24, 6, 20, 1)) +
   scale_x_continuous(breaks = unique(as.integer(fdatsumm$app.timing)), labels= unique(fdatsumm$app.timing)) +
-  ylim(0, 100) +
   scale_color_brewer(palette = "Set1") +
   theme_bw() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = 'top') +
-  facet_grid(app.mthd ~ man.source)  +
+  facet_grid(app.mthd ~ man.source, scales = 'free')  +
   labs(x = 'Application period', y = 'Field application emission factor (% of applied TAN)', shape = '', colour = '') 
 ggsave('../plots/field_emis_factors.png', height = 6, width = 6)
 
