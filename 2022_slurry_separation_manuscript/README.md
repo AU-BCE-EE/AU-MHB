@@ -19,4 +19,15 @@ Some from <https://github.com/sashahafner/jumbled>.
 ## `lit_data`
 Contains the literaure data in a single Excel spreadsheet.
 
+# Links to manuscript
+The following list documents the source of manuscript components
 
+* Tables 3, 4, & 5: inputs set in `EF_calcs/inputs/inputs.xlsx` 
+* Section 3.1 ANOVA result: `EF_comp/reports/stats.pdf`
+* Figure 2: `EF_comp/plots/meas_EF_v_DM.png` 
+* Section 3.2 summary of literature data: `lit_summary/output/var_summary.csv` 
+* Table S1 and S2: `lit_summary/output/var_summary.csv` 
+* Figure 3: `EF_calcs/plots/field_emis_factors.png` 
+* Related values in section 3.3.1: `EF_calcs/output/field_EF_summ2.csv` 
+* Figure 4:  `EF_calcs/plots/overall_emis_factors.png` 
+* Section 3.3.2 discussion: `EF_calcs/output/EF_summ.csv` 
