@@ -1,4 +1,4 @@
-# EF_calcs
+# `EF_calcs`
 Calculation of *overall* (storage and application) emission factors given some assumptions about separation.
 See `../README.md` for additional information.
 
@@ -29,4 +29,3 @@ This applies here, but only given the assumptions that all other inputs apart fr
 
 # Plots
 The plot `plots/overall_emis_factors.png` shows mean values (points) plus a 95% confidence interval (error bars), as well as minimum and maximum estimates from individual literature observations (light error bars without horizontal ends). 
-
