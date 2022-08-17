@@ -8,5 +8,6 @@ source('packages.R')
 source('load.R')
 source('combine.R')
 source('factors.R')
-knit('stats.Rmd', output = '../reports/stats.md')
+render('stats.Rmd', output_dir = '../reports')
 source('plot.R')
+

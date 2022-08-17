@@ -32,23 +32,39 @@ summary(mod)
 
 # Compare EF vs. DM slopes for measurements and ALFAM2 predictions
 
+Comparison for this statement: 
+
+```
+The average EFemission factors vs. DM slope from literature data is 3.3 
+(95% CI: 2.1, 4.6) vs. 4.6 for model predictions 
+(units are % applied TAN per % of fresh mass).
+```
+
 CI on slope for measurements.
 
 ```{r}
-mod1 <- lm(EFp.field ~ man.dm:source:set:man.source, data = dat)
-summary(mod1)
-coef(mod1)
-cc <- coef(mod1)[-1]
-range(na.omit(cc))
-median(na.omit(cc))
-t.test(cc)
+ggplot(dat, aes(man.dm, EFp.field, colour = man.source)) + geom_point() + facet_wrap(~ source)
+```
+
+```{r}
+cc <- plyr::ddply(dat, c('source', 'set', 'man.source'), function(x) coef(lm(EFp.field ~ man.dm, data = x))[2])
+t.test(cc$man.dm[cc$man.source == 'Cattle'])
+t.test(cc$man.dm[cc$man.source == 'Pig'])
+t.test(cc$man.dm[cc$man.source == 'Digestate'])
+t.test(cc$man.dm)
+range(cc$man.dm)
+median(cc$man.dm)
+mean(cc$man.dm)
 ```
 
 Model slope.
 
 ```{r}
-mod2 <- lm(EFp.field ~ man.dm:man.source, data = a2dat)
-summary(mod2)
-coef(mod2)
+ggplot(a2dat, aes(man.dm, EFp.field, colour = man.source)) + geom_point() 
+```
+
+```{r}
+mod2b <- lm(EFp.field ~ man.dm, data = a2dat)
+summary(mod2b)
 ```
 
