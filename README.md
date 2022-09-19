@@ -1,11 +1,11 @@
-# AU-myndighedsbetjening
-Public advisory work for Danish Ministry of Environment through Aarhus University.
+# AU-MHB
+Public advisory work for Danish Ministry of Environment through Aarhus University (myndighedsbetjening).
 Orders are separated into directories with names based on the order numbers.
-See `readme.md` files in individual directories for details.
+See `README.md` files in individual directories for details.
 In some cases, there are connections between directories (the `weather` results are used in multiple analyses), and these are described in the readme files or the R scripts.
 
-In all cases, each order has (or will ultimately have) an associated report or memo available online.
-These documents are typically written in Danish.
+In all cases, each order has (or will ultimately have) an associated report or memo, or a peer-reviewed paper available online.
+These documents are sometimes written in Danish.
 
 "Releases" are used in GitHub to make it easy to find the exact version of the repository files associated with the publihsed version of the report or memo.
 See below for information on releases associated with each order.
