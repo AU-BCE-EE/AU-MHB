@@ -31,3 +31,8 @@ All releases can be browsed [here](https://github.com/sashahafner/AU-myndighedsb
 * Report citation: Pedersen, J.M.P, Adamsen, A.P.S., Hafner, S.D. (2022) Vurdering af separation af flydende husdyrgødning som ny ammoniakreducerende udbringningsteknik
 * Report download (pdf): https://pure.au.dk/portal/en/publications/vurdering-af-separation-af-flydende-husdyrgoedning-som-ny-ammoniakreducerende-udbringningsteknik(5f327636-6959-42be-99fe-9dfcb7655c48).html
 * GitHub release: [2021-0313846_v1](https://github.com/sashahafner/AU-myndighedsbetjening/releases/tag/2021-0313846_v1)
+
+# `2022_slurry_separation_manuscript`
+* Paper citation: Pedersen, J., Hafner, S.D., Adamsen, A.P.S., 2022. Effectiveness of mechanical separation for reducing ammonia loss from field-applied slurry: Assessment through literature review and model calculations. Journal of Environmental Management 323, 116196. https://doi.org/10.1016/j.jenvman.2022.116196 
+* Paper download: [https://doi.org/10.1016/j.jenvman.2022.116196](https://doi.org/10.1016/j.jenvman.2022.116196) or [here](https://drive.google.com/file/d/1ZA77H3VbueV2xEovqnMlRKVfU9OcBAH5/view?usp=sharing)
+* GitHub release: [2022_slurry_separation_v3](https://github.com/sashahafner/AU-MHB/releases/tag/2022_slurry_separation_v3)
