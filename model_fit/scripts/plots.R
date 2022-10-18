@@ -93,21 +93,21 @@ ggsave('../plots/e168_comp_dig.png', height = 4.5, width = 4)
 
 # Plot 50 random flux plots
 set.seed(124)
-dd <- subset(d.pred, pmid %in% sample(unique(d.pred$pmid), 20))
-zero <- unique(dd[, c('pmid', 'app.mthd', 'country')])
+dd <- drop(subset(d.pred, pmid %in% sample(unique(d.pred$pmid), 20) & !is.na(app.mthd.nm)))
+zero <- unique(dd[, c('pmid', 'app.mthd', 'country', 'app.mthd.nm')])
 zero$ct <- 0 
 zero$e.cum <- 0 
 zero$e.pred <- 0 
 dd <- rbindf(dd, zero)
-ggplot(dd, aes(ct, e.cum, colour = app.mthd, group = pmid)) +
-  geom_line(aes(ct, e.pred), lty = 2) +
-  geom_line(aes(ct, e.pred1), lty = 3) +
+ggplot(dd, aes(ct, e.cum, colour = app.mthd.nm, group = interaction(pmid, app.mthd.nm))) +
+  geom_line(aes(ct, e.pred), lty = '2121') +
   geom_line() +
-  xlim(0, 72) +
-  facet_wrap(~ interaction(country, pmid), scale = 'fixed', ncol = 5) +
+  coord_cartesian(xlim = c(0, 168)) +
+  facet_wrap(~ paste(country, pmid), scale = 'fixed', ncol = 5) +
   labs(x = 'Time (h)', 
-       y = expression(NH[3]~'emission'~(kg/ha)),
+       y = expression('Cumulative'~NH[3]~'emission'~(kg~ha^'-1')),
        colour = 'Application method') +
+  theme_bw() +
   theme(legend.position = 'top') +
   guides(colour = guide_legend(nrow = 1))
 ggsave('../plots/emis_sample.png', height = 5, width = 8)

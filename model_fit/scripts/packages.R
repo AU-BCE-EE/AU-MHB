@@ -5,3 +5,7 @@ library(rmarkdown)
 library(knitr)
 library(dplyr)
 library(reshape2)
+
+sink('../logs/versions.txt')
+  print(sessionInfo())
+sink()
