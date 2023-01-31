@@ -1,12 +1,12 @@
-# Calculate annual means just for 2010s
+# Calculate overall means
 
-dmm2010s <- subset(dmm.all, decade == 2010)
+summ10 <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
+                    dat[, c('station', 'month', 'decade')], FUN = mean, na.rm = TRUE)
 
-# And overall means etc.
-dasumm <- aggregate2(dmm.all, c('month', 'decade', 'temp', 'wv', 'wind.2m', 'rain.rate'), 
-                    'decade', FUN = list(mean = mean, sd = sd, 
-                                         min = min, max = max,
-                                         p10 = function(x) quantile(x, 0.1),
-                                         p90 = function(x) quantile(x, 0.9)))
+summ11 <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
+                    dat[, c('station', 'decade')], FUN = mean, na.rm = TRUE)
+
+dasumm <- aggregate2(summ11, c('temp', 'wv', 'wind.2m', 'rain.rate'), 
+                    c('decade'), FUN = list(mean = mean, min = min, max = max, n = n), na.rm = TRUE)
 
 dasumm <- rounddf(dasumm, 4, func = signif)
