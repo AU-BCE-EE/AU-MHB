@@ -4,8 +4,10 @@
 dmm <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
                  dat[, c('month', 'decade')], FUN = mean, na.rm = TRUE)
 
-
 dmm <- dmm[order(dmm$decade, dmm$month), ]
+
+# Save with all months before merge below
+dmm.all <- dmm
 
 # Number of obs (by station)
 dns <- aggregate(dat[, c('temp', 'wv', 'wind.2m', 'rain.rate')], 
