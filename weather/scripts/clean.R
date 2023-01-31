@@ -10,6 +10,10 @@ dat$year <- year(dat$date2)
 dat$month <- month(dat$date2)
 dat$decade <- 10 * dat$year %/% 10
 
+# Day of year
+
+dat$doy <- as.integer(as.character(dat$date2, format = '%j'))
+
 # Precipitation rate
 dat$rain.rate <- dat$prec / 24
 
@@ -23,3 +27,8 @@ dat$wind.2m <- dat$wv * log(2/0.01) / log(10/0.01)
 dat.all <- dat
 dat$rain.rate[dat$rain.rate > 15] <- NA
 
+# Calculate global radiation in W/m2 (originally MJ/m2, presumably total over the day)
+dat$rad <- dat$glorad * 1E6 / 86400
+
+# Fix station IDs (some have extra digits)
+dat$station <- substr(dat$station, 1, 4)
