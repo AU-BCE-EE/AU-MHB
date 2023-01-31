@@ -1,7 +1,10 @@
 # Means of STM input by day of year
 
+# Just for 2010s
+dat2010s <- subset(dat, decade == 2010)
+
 # First site x doy
-dms <- aggregate2(dat, c('temp', 'wind.2m', 'rain.rate', 'rad'),
+dms <- aggregate2(dat2010s, c('temp', 'wind.2m', 'rain.rate', 'rad'),
                   by = c('station', 'doy'), FUN = list(mean = mean, n = n),
                   na.rm = TRUE)
 
