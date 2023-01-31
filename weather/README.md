@@ -4,6 +4,7 @@ These files are used to calculate mean air temperature, wind speed, and rainfall
 # Results
 See `output/means.csv` or `output/means_season.csv` for calculated averages.
 In the latter file, summer (sommer) is defined as May, June, and July, and autumn (efterår) is September only.
+For STM input, `output/doy_mean_*_sel.csv` are the files needed.
 
 # Station details
 Weather data were downloaded from <http://agro-web01t.uni.au.dk/klimadb/> under "Døgnværdier t.o.m. 2013" and "Døgnværdier fra 2014" on 1 November 2021.
@@ -28,6 +29,8 @@ These are same numbers with additional 00.
 * 613500 Flakkebjerg
 
 611601 is given as "Jyndevad" (no "Store") on AU site "fra 2014".
+
+The last 2 digits of these six digit station codes were dropped for grouped operations.
 
 # Missing values
 Some observations are missing.

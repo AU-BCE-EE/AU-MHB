@@ -30,4 +30,3 @@ dmm$temp.adj <- dmm$temp + 0.9
 dmms <- aggregate(dmm[, c('temp', 'wv', 'wind.2m', 'temp.adj', 'wind.2m.adj', 'rain.rate')], 
                  dmm[, c('season', 'decade')], FUN = mean, na.rm = TRUE)
 
-
