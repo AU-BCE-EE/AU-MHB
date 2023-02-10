@@ -1,0 +1,150 @@
+---
+title: 'Summary of solid manure data'
+output: pdf_document
+author: Sasha D. Hafner
+date: "`r format(Sys.time(), '%d %B, %Y %H:%M')`"
+---
+
+```{r}
+names(dat)
+```
+
+# Counts
+First plot counts:
+```{r}
+kable(table(dat$meas.meth, exclude = NULL))
+kable(table(dat$manure.source, exclude = NULL))
+kable(table(dat[, c('man.type', 'manure.source')], exclude = NULL))
+kable(table(dat[, c('meas.meth', 'manure.source')], exclude = NULL))
+```
+
+Then studies:
+```{r}
+dat.study <- dat[!duplicated(dat[, c('source', 'meas.meth', 'manure.source')]), ]
+kable(table(dat.study$meas.meth, exclude = NULL))
+kable(table(dat.study$manure.source, exclude = NULL))
+kable(table(dat.study[, c('man.type', 'manure.source')], exclude = NULL))
+kable(table(dat.study[, c('meas.meth', 'manure.source')], exclude = NULL))
+```
+
+Easier combined?
+
+```{r}
+kable(
+aggregate2(as.data.frame(dat), 'source', 
+           by = c('meas.meth', 'manure.source'), 
+           FUN = list(n.plots = length, n.studies = function(x) length(unique(x))))
+)
+```
+
+
+# Emission factors and other variables for micromet observations only
+```{r}
+datmm <- subset(dat, meas.meth == 'micromet')
+```
+
+```{r}
+ggplot(datmm, aes(emis.perc.TAN, fill = incorp)) +
+  geom_histogram(bins = 10) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(datmm, aes(emis.perc.N, fill = incorp)) +
+  geom_histogram(bins = 10) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(datmm, aes(DM, fill = meas.meth)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(datmm, aes(pH)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(datmm, aes(fTAN)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+# Emission factors and other variables for all observations
+
+```{r}
+ggplot(dat, aes(emis.perc.TAN, fill = incorp)) +
+  geom_histogram(bins = 10) +
+  facet_wrap(~ manure.source, scales = 'free')
+```
+
+```{r}
+ggplot(dat, aes(emis.perc.N, fill = incorp)) +
+  geom_histogram(bins = 10) +
+  facet_wrap(~ manure.source, scales = 'free')
+```
+
+```{r}
+ggplot(dat, aes(DM, fill = meas.meth)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(pH, fill = meas.meth)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(fTAN, fill = meas.meth)) +
+  geom_histogram(bins = 30) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(DM, pH, size = emis.perc.N, colour = meas.meth)) +
+  geom_point(alpha = 0.3) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(DM, pH, size = emis.perc.TAN, colour = meas.meth)) +
+  geom_point(alpha = 0.3) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(DM, fTAN, colour = meas.meth)) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE) +
+  facet_wrap(~ manure.source, scales = 'free')
+```
+
+```{r}
+ggplot(dat, aes(DM, fTAN, size = emis.perc.N, colour = meas.meth)) +
+  geom_point(alpha = 0.3) +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(DM, emis.perc.N, size = pH, colour = meas.meth)) +
+  geom_point() +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+```{r}
+ggplot(dat, aes(fTAN, emis.perc.N, size = pH, colour = meas.meth)) +
+  geom_point() +
+  facet_wrap(~ manure.source, scales = 'fixed')
+```
+
+# Variable summary
+
+```{r}
+dfsumm(as.data.frame(dat))
+```
+
