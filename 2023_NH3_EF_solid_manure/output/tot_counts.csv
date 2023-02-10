@@ -1,0 +1,8 @@
+"manure.source","meas.meth","n.TAN.obs","n.TAN.src","n.N.obs","n.N"
+"cattle","micromet",17,7,17,7
+"pig","micromet",4,2,4,2
+"poultry","micromet",30,6,32,6
+"cattle","dynamic chamber",30,5,18,4
+"pig","dynamic chamber",62,7,56,7
+"poultry","dynamic chamber",49,6,49,6
+NA,NA,0,0,0,0
