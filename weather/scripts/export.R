@@ -18,4 +18,4 @@ write.csv(dsms, '../output/doy_mean_mean_sel.csv', row.names = FALSE)
 write.csv(dasumm, '../output/annual_summary.csv', row.names = FALSE)
 
 # Monthly summary by decade with min/max stations
-write.csv(dmsumm, '../output/montly_summary.csv', row.names = FALSE)
+write.csv(dmsumm, '../output/monthly_summary.csv', row.names = FALSE)
