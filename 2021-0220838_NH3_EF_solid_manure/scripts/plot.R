@@ -102,16 +102,16 @@ dl$variable <- as.character(dl$variable)
 dl$variable[grepl('^emis.perc.TAN', dl$variable)] <- '% of applied TAN'
 dl$variable[grepl('^emis.perc.N', dl$variable)] <- '% of applied N'
 
-ggplot(dl, aes(season.nm, value, colour = source)) +
-  geom_point(size = 3) +
+ggplot(dl, aes(season.nm, value, fill = source)) +
+  geom_point(shape = 21, size = 3, colour = 'black') + 
   facet_grid(variable ~ manure.source.nm, scales = 'free_y', switch = 'y') +
   ylim(0, NA) +
   labs(x = 'Season', y = 'Emission factor') +
   theme_bw() +
   theme(legend.title = element_blank(), legend.position = 'bottom') + 
-  guides(color = guide_legend(nrow = 6)) + 
+  guides(fill = guide_legend(nrow = 6)) + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
-  scale_color_brewer(palette = 'Spectral')
+  scale_fill_brewer(palette = 'Spectral')
 ggsave('../plots/EF_both.png', height = 5.5, width = 5)
 
 # Check normality and transformations ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
