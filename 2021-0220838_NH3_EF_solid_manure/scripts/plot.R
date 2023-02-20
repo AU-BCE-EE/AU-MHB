@@ -3,8 +3,6 @@
 # Boxplot of manure properties ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 dath <- dat[, c('source', 'manure.source.nm', 'meas.meth.nm', 'DM', 'pH', 'TAN', 'totN', 'fTAN')]
 
-brewer.pal(name = 'Spectral', n = 11)
-
 # Long data frame
 dathh <- melt(dath, id.vars = c('source', 'manure.source.nm', 'meas.meth.nm'), 
            measure.vars = c('DM', 'TAN', 'pH', 'totN', 'fTAN'), na.rm = TRUE)
