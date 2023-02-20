@@ -48,3 +48,7 @@ Send questions etc. to Sasha Hafner: <https://pure.au.dk/portal/en/persons/sasha
 # Sampling guidelines for barns and manure storages
 * Memo citation: Hafner, S.D. and Adamsen, A.P. (2022) Guidelines for selection of representative livestock barns and manure storages for measurement of greenhouse gas and ammonia emission for national inventories. 15 pages. Advisory memorandum from DCA – Danish Centre for Food and Agriculture, Aarhus University, submitted 13. Nov. 2022.
 * Memo download (pdf): <https://pure.au.dk/portal/files/294864591/Barn_protocol_131122.pdf>
+
+# `2021-0220838_NH3_EF_solid_manure`
+* Memo citation: Pedersen, J., Hafner, S.D., Adamsen, A.P.S. (2023)
+* This memo is in progress
