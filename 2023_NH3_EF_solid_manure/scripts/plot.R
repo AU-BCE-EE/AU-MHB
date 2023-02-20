@@ -3,7 +3,7 @@
 # Boxplot of manure properties ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 dath <- dat[, c('source', 'manure.source.nm', 'meas.meth.nm', 'DM', 'pH', 'TAN', 'totN', 'fTAN')]
 
-#brewer.pal(name = 'Spectral', n = 11)
+brewer.pal(name = 'Spectral', n = 11)
 
 # Long data frame
 dathh <- melt(dath, id.vars = c('source', 'manure.source.nm', 'meas.meth.nm'), 
@@ -15,7 +15,7 @@ ndl <- melt(normdat, id.vars = c('manure.source', 'manure.source.nm', 'manure.so
 ggplot(dathh, aes(manure.source.nm, value)) + 
   theme_bw() + 
   geom_jitter(aes(color = meas.meth.nm), width = 0.1, alpha = 0.35) + 
-  geom_boxplot(data = ndl, colour = 'gray55') + 
+  geom_boxplot(data = ndl, colour = '#ABDDA4') + 
   geom_boxplot(outlier.alpha = 0, fill = NA) + 
   facet_wrap(~ variable, scales = 'free_y', nrow = 1,
              labeller = as_labeller(c(DM = 'DM (%)', 
