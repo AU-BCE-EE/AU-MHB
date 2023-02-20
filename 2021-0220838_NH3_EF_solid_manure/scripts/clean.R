@@ -12,6 +12,12 @@ dat$fTAN <- dat$TAN / dat$totN
 #dat$season[is.na(dat$season)] <- dat$season.temp[is.na(dat$season)]
 dat$season[is.na(dat$season)] <- 'unknown'
 
+# Avoid capitalization problems
+dat$manure.source <- tolower(dat$manure.source)
+dat$incorp.depth <- tolower(dat$incorp.depth)
+dat$meas.meth <- tolower(dat$meas.meth)
+dat$season <- tolower(dat$season)
+
 # Add names for plots
 dat$manure.source.nm <- oneupper(dat$manure.source)
 dat$incorp.depth.nm <- oneupper(dat$incorp.depth)
