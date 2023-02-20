@@ -9,26 +9,29 @@ The files in this directory include the extracted literature data, plots, and nu
 Calculations can be repeated by running the script `scripts/main.R` in R.
 See below for more details on the contents of individual directories.
 
-# `data`
+# Directories
+## `data`
 * `lit_com.xlsx` is a Microsoft Excel file with emission data extracted from the literature
 * `norm_comp.csv` is a comma-separated text file with manure composition from the Danish normative system
 
-# `functions`
+## `functions`
 R functions used in data analysis.
 Most of these are from <https://github.com/sashahafner/jumbled/>.
 
-# `logs`
+## `logs`
 A single text file with a log of the software versions of R and add-on packages last used to generate results.
 
-# `output`
+## `output`
 Results from the analysis.
 See section below on linking results to the memo for more details.
 
-# `plots`
+## `plots`
 Plots used in the memo or for simply viewing data.
 See section below on linking results to the memo for more details.
 
-# `scripts`
+## `scripts`
 R scripts for generating results.
 The script `main.R` shows the order scripts are called used to process literature data and generate results.
 By running this script in R (<https://www.r-project.org/>) the complete analysis is carried out.
+
+# Links to memo
