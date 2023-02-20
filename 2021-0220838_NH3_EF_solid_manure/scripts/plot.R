@@ -48,15 +48,15 @@ datt <- dat[dat$timing.info == '1', ]
 datt <- datt[! datt$incorp == 'yes', ]
 datt <- datt[datt$app.meth == 'broadcast', ]
 
-ggplot(datt, aes(season.nm, emis.perc.TAN, color = source, group = source)) +
-  geom_point(size = 3) + 
+ggplot(datt, aes(season.nm, emis.perc.TAN, fill = source, group = source)) +
+  geom_point(shape = 21, size = 3, colour = 'black') + 
   facet_wrap(~ manure.source.nm) +
-  ylim(0, NA) +
+  ylim(0, 100) +
   labs(x = 'Season', y = 'Emission factor (% applied TAN)') + 
   theme_bw() + 
   theme(legend.title = element_blank()) + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
-  scale_color_brewer(palette = 'Spectral')
+  scale_fill_brewer(palette = 'Spectral')
 ggsave('../plots/season_TAN.png', height = 3, width = 6.5)
 
 ggplot(datt, aes(temp.avg, emis.perc.TAN, color = source, group = source)) +
