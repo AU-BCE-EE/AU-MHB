@@ -13,7 +13,8 @@ Most recent orders are on the bottom.
 All releases can be browsed [here](https://github.com/sashahafner/AU-myndighedsbetjening/releases).
 
 # Maintainer
-Send questions etc. to Sasha Hafner: <https://pure.au.dk/portal/en/persons/sasha-d-hafner(1a9c8309-91c7-44b3-8de9-da66643f7902).html>.
+Sasha D. Hafner.
+Contact information here: <https://au.dk/sasha.hafner@bce>.
 
 # 2021 emission factor report
 * Report citation: Hafner, S. D., Nyord, T., Sommer, S. G., & Adamsen, A. P. S. (2021). Estimation of Danish emission factors for ammonia from field-applied liquid manure for 1980 to 2019. 138 pages. Advisory report from DCA – Danish Centre for Food and Agriculture, Aarhus University, submitted: 23-09-2021.
