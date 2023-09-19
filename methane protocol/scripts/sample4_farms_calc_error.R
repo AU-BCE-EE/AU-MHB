@@ -12,7 +12,7 @@ dalby$time <- dalby$days
 dalby$date <- ymd_hms(dalby$date)
 
 # select control first
-dat <- dalby[dalby$treatment == 'control',]
+dat <- dalby[dalby$treatment == 'frequentflushing',]
 per <- read.csv('../dat/dalby_periods.csv')
 per <- per[, -c(1)]
 time_to_add <- hms("12:00:00")
@@ -103,22 +103,22 @@ stats_per_1000_campaign <- stats_per_campaign %>% summarise(CH4_part = mean(CH4_
                                              error_mean = mean(error_campaign), 
                                              error_sd = sd(error_campaign),
                                              bias = mean(bias_campaign))
+library(openxlsx)
 
+write.xlsx(output, '../output/full_output_WF.xlsx')
+write.xlsx(stats_per_campaign, '../output/stats_campaign_level_WF.xlsx')
+write.xlsx(stats_per_1000_campaign, '../output/stats_overall_WF.xlsx')
 
-write.xlsx(output, '../output/full_output.xlsx')
-write.xlsx(stats_per_campaign, '../output/stats_campaign_level.xlsx')
-write.xlsx(stats_per_1000_campaign, '../output/stats_overall.xlsx')
-
-output <- read_excel('../output/full_output.xlsx') 
-campaign <- read_excel('../output/stats_campaign_level.xlsx')
-overall <- read_excel('../output/stats_overall.xlsx')
+output <- read_excel('../output/full_output_WF.xlsx') 
+campaign <- read_excel('../output/stats_campaign_level_WF.xlsx')
+overall <- read_excel('../output/stats_overall_WF.xlsx')
 
 hist_full_output <- ggplot(output, aes(x = error)) +
   geom_histogram(binwidth = 1) + 
   theme_bw() + labs(x = "error, % from actual", y = "") + 
   theme(text = element_text(size = 14))
 
-png('../plots/hist_all.png', height = 7, width = 6.5, units = 'in', res = 600)
+png('../plots/hist_all_WF.png', height = 7, width = 6.5, units = 'in', res = 600)
 grid::grid.draw(hist_full_output)
 dev.off()
 
@@ -127,7 +127,7 @@ hist_campaign <- ggplot(campaign, aes(x = bias_campaign)) +
   theme_bw() + labs(x = "mean error, % from actual", y = "") + 
   theme(text = element_text(size = 14))
 
-png('../plots/hist_campaign.png', height = 7, width = 6.5, units = 'in', res = 600)
+png('../plots/hist_campaign_WF.png', height = 7, width = 6.5, units = 'in', res = 600)
 grid::grid.draw(hist_campaign)
 dev.off()
 
