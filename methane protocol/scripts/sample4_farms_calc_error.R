@@ -129,7 +129,7 @@ library(openxlsx)
 
 write.xlsx(output, '../output/full_output_WF_preset.xlsx')
 write.xlsx(stats_per_campaign, '../output/stats_campaign_level_WF_preset.xlsx')
-write.xlsx(stats_per_1000_campaign, '../output/stats_overall_WF.xlsx')
+write.xlsx(stats_per_1000_campaign, '../output/stats_overall_WF_preset.xlsx')
 
 output <- read_excel('../output/full_output_WF_preset.xlsx') 
 campaign <- read_excel('../output/stats_campaign_level_WF_preset.xlsx')
