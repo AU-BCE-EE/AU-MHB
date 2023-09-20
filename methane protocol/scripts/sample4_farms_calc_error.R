@@ -42,11 +42,28 @@ ref <- read_excel('../dat/ref_emis.xlsx') %>% filter(animal == 'Finisher')
 
 output <- data.frame()
 
-error_fun <- function(dat){
+error_fun <- function(dat, scheme, week_sets){
   
-  sampled_weeks <- dat %>% group_by(batch, phase) %>% summarise(weeks = sample(unique(week_of_batch), 1)) %>% 
+  # if we have random selection, two weeks per batch is chosen. 
+  # one week in first and last half of each bath. The week is randomly picked:
+  # that is for phase one it is picked between 1-6, and phase two 7-11.
+  if(scheme == 'random'){
+  sampled_weeks <- dat %>% 
+    group_by(batch, phase) %>% 
+    summarise(weeks = sample(unique(week_of_batch), 1)) %>% 
     arrange(batch, weeks)
+  }
   
+  # if we have predefined sample weeks. Four sets of three weeks are used. 
+  # The week sets are distributed equally over the batch, but all contain different weeks. 
+  # Each week set is randomly assigned to a batch so that any batch can get any week set.
+  if(scheme == 'preset'){
+    sampled_weeks <- week_sets
+    unique_batches <- unique(sampled_weeks$batch)
+    random_order <- rep(sample(unique_batches), each = 3)
+    sampled_weeks$batch <- random_order
+  }
+    
   meas_part_dat <- dat %>% group_by(batch, week_of_batch) %>%
     summarise(CH4 = mean(CH4_rate/pigs, na.rm = T)) %>% 
     group_by(batch) %>% 
@@ -79,11 +96,16 @@ for (i in 1:length(farms)){
   assign(paste0('dat', i), dat.scale)
 }
 
+# if we want specific weeks to be sampled it has to be passed as argument
+predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4), 
+                            weeks = c(1, 5, 9, 4, 8, 12, 3, 7, 11, 2, 6, 10))
+
 # simulate the four farms and get outputs in sim
 sim <- NULL
+
 for(i in 1:4){
   farm <- eval(parse(text = paste0('dat',i)))
-  sim <- rbind(sim, error_fun(dat = farm))
+  sim <- rbind(sim, error_fun(dat = farm, scheme = 'preset', week_sets = predefined_weeks))
 }
 
 # bind sim and a simulation index
@@ -105,20 +127,20 @@ stats_per_1000_campaign <- stats_per_campaign %>% summarise(CH4_part = mean(CH4_
                                              bias = mean(bias_campaign))
 library(openxlsx)
 
-write.xlsx(output, '../output/full_output_WF.xlsx')
-write.xlsx(stats_per_campaign, '../output/stats_campaign_level_WF.xlsx')
+write.xlsx(output, '../output/full_output_WF_preset.xlsx')
+write.xlsx(stats_per_campaign, '../output/stats_campaign_level_WF_preset.xlsx')
 write.xlsx(stats_per_1000_campaign, '../output/stats_overall_WF.xlsx')
 
-output <- read_excel('../output/full_output_WF.xlsx') 
-campaign <- read_excel('../output/stats_campaign_level_WF.xlsx')
-overall <- read_excel('../output/stats_overall_WF.xlsx')
+output <- read_excel('../output/full_output_WF_preset.xlsx') 
+campaign <- read_excel('../output/stats_campaign_level_WF_preset.xlsx')
+overall <- read_excel('../output/stats_overall_WF_preset.xlsx')
 
 hist_full_output <- ggplot(output, aes(x = error)) +
   geom_histogram(binwidth = 1) + 
   theme_bw() + labs(x = "error, % from actual", y = "") + 
   theme(text = element_text(size = 14))
 
-png('../plots/hist_all_WF.png', height = 7, width = 6.5, units = 'in', res = 600)
+png('../plots/hist_all_WF_preset.png', height = 7, width = 6.5, units = 'in', res = 600)
 grid::grid.draw(hist_full_output)
 dev.off()
 
@@ -127,7 +149,7 @@ hist_campaign <- ggplot(campaign, aes(x = bias_campaign)) +
   theme_bw() + labs(x = "mean error, % from actual", y = "") + 
   theme(text = element_text(size = 14))
 
-png('../plots/hist_campaign_WF.png', height = 7, width = 6.5, units = 'in', res = 600)
+png('../plots/hist_campaign_WF_preset.png', height = 7, width = 6.5, units = 'in', res = 600)
 grid::grid.draw(hist_campaign)
 dev.off()
 
