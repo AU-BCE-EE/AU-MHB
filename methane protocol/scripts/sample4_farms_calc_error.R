@@ -5,14 +5,18 @@ library(dplyr)
 library(ggplot2)
 library(purrr)
 library(lubridate)
+library(openxlsx)
 
 # import
 dalby <- read.csv('../dat/dalby_2023.csv') %>% filter(!treatment %in% c("slurryfunnels","slurrytrays"))
 dalby$time <- dalby$days
 dalby$date <- ymd_hms(dalby$date)
 
-# select control first
-dat <- dalby[dalby$treatment == 'frequentflushing',]
+# select section first
+section <- 'frequentflushing'
+method <- 'preset'
+
+dat <- dalby[dalby$treatment == section, ]
 per <- read.csv('../dat/dalby_periods.csv')
 per <- per[, -c(1)]
 time_to_add <- hms("12:00:00")
@@ -105,7 +109,7 @@ sim <- NULL
 
 for(i in 1:4){
   farm <- eval(parse(text = paste0('dat',i)))
-  sim <- rbind(sim, error_fun(dat = farm, scheme = 'preset', week_sets = predefined_weeks))
+  sim <- rbind(sim, error_fun(dat = farm, scheme = method, week_sets = predefined_weeks))
 }
 
 # bind sim and a simulation index
@@ -116,40 +120,42 @@ output <- rbind(output, output1)
 
 output <- as.data.frame(lapply(output, as.numeric))
 
-stats_per_campaign <- output %>% group_by(campaign) %>% summarise(CH4_part = mean(as.numeric(meas_part_dat)), 
-                                              CH4_full = mean(as.numeric(meas_full_dat)),
-                                              error_campaign = mean(abs(as.numeric(error))), bias_campaign = mean(as.numeric(error)))
+stats_campaign <- output %>% group_by(campaign) %>% summarise(CH4_part = mean(meas_part_dat), 
+                                              CH4_full = mean(meas_full_dat),
+                                              error_mean = mean(abs(error)), 
+                                              error_sd = sd(abs(error)), bias = mean(error))
 
-stats_per_1000_campaign <- stats_per_campaign %>% summarise(CH4_part = mean(CH4_part), 
-                                             CH4_full = mean(CH4_full), 
-                                             error_mean = mean(error_campaign), 
-                                             error_sd = sd(error_campaign),
-                                             bias = mean(bias_campaign))
-library(openxlsx)
+stats_overall <- output %>% summarise(CH4_part = mean(meas_part_dat), 
+                                             CH4_full = mean(meas_full_dat), 
+                                             error_mean = mean(abs(error)), 
+                                             error_sd = sd(abs(error)),
+                                             bias = mean(error))
 
-write.xlsx(output, '../output/full_output_WF_preset.xlsx')
-write.xlsx(stats_per_campaign, '../output/stats_campaign_level_WF_preset.xlsx')
-write.xlsx(stats_per_1000_campaign, '../output/stats_overall_WF_preset.xlsx')
+path_dat <- paste0(section,'_',method)
 
-output <- read_excel('../output/full_output_WF_preset.xlsx') 
-campaign <- read_excel('../output/stats_campaign_level_WF_preset.xlsx')
-overall <- read_excel('../output/stats_overall_WF_preset.xlsx')
+write.xlsx(output, paste0('../output/full_output_',path_dat,'.xlsx'))
+write.xlsx(stats_campaign, paste0('../output/stats_campaign_',path_dat,'.xlsx'))
+write.xlsx(stats_overall, paste0('../output/stats_overall_',path_dat,'.xlsx'))
+
+output <- read_excel(paste0('../output/full_output_',path_dat,'.xlsx')) 
+stats_campaign <- read_excel(paste0('../output/stats_campaign_',path_dat,'.xlsx'))
+stats_overall <- read_excel(paste0('../output/stats_overall_',path_dat,'.xlsx'))
 
 hist_full_output <- ggplot(output, aes(x = error)) +
   geom_histogram(binwidth = 1) + 
   theme_bw() + labs(x = "error, % from actual", y = "") + 
   theme(text = element_text(size = 14))
 
-png('../plots/hist_all_WF_preset.png', height = 7, width = 6.5, units = 'in', res = 600)
+png(paste0('../plots/hist_all_', path_dat,'.png'), height = 7, width = 6.5, units = 'in', res = 600)
 grid::grid.draw(hist_full_output)
 dev.off()
 
-hist_campaign <- ggplot(campaign, aes(x = bias_campaign)) +
+hist_campaign <- ggplot(stats_campaign, aes(x = bias)) +
   geom_histogram(binwidth = 1) + 
   theme_bw() + labs(x = "mean error, % from actual", y = "") + 
   theme(text = element_text(size = 14))
 
-png('../plots/hist_campaign_WF_preset.png', height = 7, width = 6.5, units = 'in', res = 600)
+png(paste0('../plots/hist_campaign_', path_dat,'.png'), height = 7, width = 6.5, units = 'in', res = 600)
 grid::grid.draw(hist_campaign)
 dev.off()
 
