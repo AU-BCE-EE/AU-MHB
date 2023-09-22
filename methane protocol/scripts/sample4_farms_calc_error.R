@@ -13,8 +13,9 @@ dalby$time <- dalby$days
 dalby$date <- ymd_hms(dalby$date)
 
 # select section first
-section <- 'frequentflushing'
-method <- 'preset'
+section <- 'control'
+method_name <- 'preset11_weeks_conf1'
+method_call <- 'preset'
 
 dat <- dalby[dalby$treatment == section, ]
 per <- read.csv('../dat/dalby_periods.csv')
@@ -64,7 +65,8 @@ error_fun <- function(dat, scheme, week_sets){
   if(scheme == 'preset'){
     sampled_weeks <- week_sets
     unique_batches <- unique(sampled_weeks$batch)
-    random_order <- rep(sample(unique_batches), each = 3)
+    count_batches <- count(sampled_weeks, batch)
+    random_order <- rep(sample(unique_batches), times = count_batches$n)
     sampled_weeks$batch <- random_order
   }
     
@@ -101,15 +103,25 @@ for (i in 1:length(farms)){
 }
 
 # if we want specific weeks to be sampled it has to be passed as argument
-predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4), 
-                            weeks = c(1, 5, 9, 4, 8, 12, 3, 7, 11, 2, 6, 10))
+# 12 weeks/batch
+#predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4), 
+#                            weeks = c(1, 5, 9, 4, 8, 12, 3, 7, 11, 2, 6, 10))
+# 10 weeks/batch first config 
+#predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 4, 4, 4), 
+#                               weeks = c(1, 5, 9, 4, 8, 3, 7, 2, 6, 10))
+# 10 weeks/batch second config 
+#predefined_weeks <- data.frame(batch = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
+#                               weeks = c(5, 9, 4, 8, 3, 7, 11, 2, 6, 10))
+# 11 weeks/batch first config
+predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
+                               weeks = c(1, 5, 9, 4, 8, 3, 7, 11, 2, 6, 10))
 
 # simulate the four farms and get outputs in sim
 sim <- NULL
 
 for(i in 1:4){
   farm <- eval(parse(text = paste0('dat',i)))
-  sim <- rbind(sim, error_fun(dat = farm, scheme = method, week_sets = predefined_weeks))
+  sim <- rbind(sim, error_fun(dat = farm, scheme = method_call, week_sets = predefined_weeks))
 }
 
 # bind sim and a simulation index
@@ -131,7 +143,7 @@ stats_overall <- output %>% summarise(CH4_part = mean(meas_part_dat),
                                              error_sd = sd(abs(error)),
                                              bias = mean(error))
 
-path_dat <- paste0(section,'_',method)
+path_dat <- paste0(section,'_',method_name)
 
 write.xlsx(output, paste0('../output/full_output_',path_dat,'.xlsx'))
 write.xlsx(stats_campaign, paste0('../output/stats_campaign_',path_dat,'.xlsx'))
