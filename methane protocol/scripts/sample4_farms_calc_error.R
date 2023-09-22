@@ -13,8 +13,8 @@ dalby$time <- dalby$days
 dalby$date <- ymd_hms(dalby$date)
 
 # select section first
-section <- 'control'
-method_name <- 'preset11_weeks_conf1'
+section <- 'frequentflushing'
+method_name <- 'preset10_weeks_conf4'
 method_call <- 'preset'
 
 dat <- dalby[dalby$treatment == section, ]
@@ -113,8 +113,17 @@ for (i in 1:length(farms)){
 #predefined_weeks <- data.frame(batch = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
 #                               weeks = c(5, 9, 4, 8, 3, 7, 11, 2, 6, 10))
 # 11 weeks/batch first config
-predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
-                               weeks = c(1, 5, 9, 4, 8, 3, 7, 11, 2, 6, 10))
+#predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
+#                               weeks = c(1, 5, 9, 4, 8, 3, 7, 11, 2, 6, 10))
+# 10 weeks/batch third config
+#predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 3, 4, 4), 
+#                                weeks = c(1, 5, 9, 4, 8, 3, 7, 11, 2, 10))
+# 10 weeks/batch fourth config
+#predefined_weeks <- data.frame(batch = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
+#                               weeks = c(1, 9, 4, 8, 3, 7, 11, 2, 6, 10))
+predefined_weeks <- data.frame(batch = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
+                               weeks = c(1, 9, 4, 8, 3, 7, 11, 2, 6, 10))
+
 
 # simulate the four farms and get outputs in sim
 sim <- NULL
