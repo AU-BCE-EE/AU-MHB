@@ -14,7 +14,7 @@ dalby$date <- ymd_hms(dalby$date)
 
 # select section first
 section <- 'frequentflushing'
-method_name <- 'preset10_weeks_conf4'
+method_name <- 'preset'
 method_call <- 'preset'
 
 dat <- dalby[dalby$treatment == section, ]
@@ -41,17 +41,12 @@ dat <- dat %>% mutate(weeks = days/7) %>% filter(!is.na(batch)) %>% group_by(bat
   mutate(midbatch = round(max(week_of_batch)/2)) %>% 
   mutate(phase = ceiling(week_of_batch/midbatch)) %>% ungroup()
 
-# create four different farms by scaling "dat" to emissions from a dataset of emission factors
-# import reference emission sets, keep only Finisher pig data
-ref <- read_excel('../dat/ref_emis.xlsx') %>% filter(animal == 'Finisher')
-
-output <- data.frame()
-
 error_fun <- function(dat, scheme, week_sets){
   
   # if we have random selection, two weeks per batch is chosen. 
   # one week in first and last half of each bath. The week is randomly picked:
   # that is for phase one it is picked between 1-6, and phase two 7-11.
+  
   if(scheme == 'random'){
   sampled_weeks <- dat %>% 
     group_by(batch, phase) %>% 
@@ -69,43 +64,37 @@ error_fun <- function(dat, scheme, week_sets){
     random_order <- rep(sample(unique_batches), times = count_batches$n)
     sampled_weeks$batch <- random_order
   }
-    
+  
+  #meas_part_dat <- dat %>% group_by(batch, week_of_batch) %>%
+  #    summarise(CH4 = mean(CH4_rate/pigs, na.rm = T)) %>% group_by(batch) %>% 
+  #    filter(week_of_batch %in% sampled_weeks$weeks[sampled_weeks$batch == batch]) %>% 
+  #    summarise(CH4 = mean(CH4, na.rm = T))
+  
   meas_part_dat <- dat %>% group_by(batch, week_of_batch) %>%
     summarise(CH4 = mean(CH4_rate/pigs, na.rm = T)) %>% 
     group_by(batch) %>% 
     filter(week_of_batch %in% sampled_weeks$weeks[sampled_weeks$batch == batch]) %>% ungroup() %>%
     summarise(CH4 = mean(CH4, na.rm = T), week = mean(week_of_batch))
   
+  #meas_full_dat <- dat %>% group_by(batch) %>% summarise(CH4 = mean(CH4_rate/pigs, na.rm = T))
   meas_full_dat <- dat %>% ungroup() %>% summarise(CH4 = mean(CH4_rate/pigs, na.rm = T))
   
   error <- (meas_part_dat$CH4/meas_full_dat$CH4 - 1) * 100 
   
   return(list(meas_part_dat = meas_part_dat$CH4, meas_full_dat = meas_full_dat$CH4,
-              error = error, mean_week = meas_part_dat$week))
+              error = error, mean_week = meas_part_dat$week, sampled_weeks = sampled_weeks))
   
 }
 
 # repeat simulation 
 
-n_sim <- 1000
+n_sim <- 100
+output <- NULL
 
-for(campaign in 1:n_sim){
+for(i in 1:n_sim){
 
-farms <- sample(ref$CH4, 4) # sample four emissions factors
-dat_emis <- dat %>% summarise(emis = mean(CH4_rate/pigs, na.rm = T)) # get real measured emission for scaling dataset to farms
-dat.scale <- dat # intermediate dataset
-
-# create 4 datasets representing four farms 
-for (i in 1:length(farms)){
-  scale <- farms[i]/dat_emis$emis
-  dat.scale$CH4_rate <- scale * (dat$CH4_rate)
-  assign(paste0('dat', i), dat.scale)
-}
-
-# if we want specific weeks to be sampled it has to be passed as argument
-# 12 weeks/batch
 #predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4), 
-#                            weeks = c(1, 5, 9, 4, 8, 12, 3, 7, 11, 2, 6, 10))
+#                            weeks = c(2, 6, 10, 3, 7, 11, 1, 5, 9, 4, 8, 12))
 # 10 weeks/batch first config 
 #predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 4, 4, 4), 
 #                               weeks = c(1, 5, 9, 4, 8, 3, 7, 2, 6, 10))
@@ -118,65 +107,37 @@ for (i in 1:length(farms)){
 # 10 weeks/batch third config
 #predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 3, 3, 3, 4, 4), 
 #                                weeks = c(1, 5, 9, 4, 8, 3, 7, 11, 2, 10))
-# 10 weeks/batch fourth config
-#predefined_weeks <- data.frame(batch = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
-#                               weeks = c(1, 9, 4, 8, 3, 7, 11, 2, 6, 10))
+#10 weeks/batch fourth config
 predefined_weeks <- data.frame(batch = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4), 
                                weeks = c(1, 9, 4, 8, 3, 7, 11, 2, 6, 10))
 
 
+#test week set1
+#predefined_weeks <- data.frame(batch = c(1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4), 
+#                            weeks = c(2, 6, 10, 2, 6, 10, 2, 6, 10, 2, 6, 10))
+
 # simulate the four farms and get outputs in sim
-sim <- NULL
 
-for(i in 1:4){
-  farm <- eval(parse(text = paste0('dat',i)))
-  sim <- rbind(sim, error_fun(dat = farm, scheme = method_call, week_sets = predefined_weeks))
-}
-
-# bind sim and a simulation index
-output1 <- cbind(sim, campaign)
-output <- rbind(output, output1)
+output <- rbind(output, error_fun(dat = dat, scheme = method_call, week_sets = predefined_weeks))
 
 }
 
-output <- as.data.frame(lapply(output, as.numeric))
+output <- as.list(output)
 
-stats_campaign <- output %>% group_by(campaign) %>% summarise(CH4_part = mean(meas_part_dat), 
-                                              CH4_full = mean(meas_full_dat),
-                                              error_mean = mean(abs(error)), 
-                                              error_sd = sd(abs(error)), bias = mean(error))
+error <-  as.numeric(output[,'error'])
+uni.rows <- which(!duplicated(round(error,4)))
 
-stats_overall <- output %>% summarise(CH4_part = mean(meas_part_dat), 
-                                             CH4_full = mean(meas_full_dat), 
-                                             error_mean = mean(abs(error)), 
-                                             error_sd = sd(abs(error)),
-                                             bias = mean(error))
+hist(error[uni.rows], xlab = "error (%)", main = "")
 
-path_dat <- paste0(section,'_',method_name)
+#png('../plots/fig_hist_frequent.png', height = 3.5, width = 4, units = 'in', res = 600)
+#hist(error[uni.rows], xlab = "error (%)", main = "")
+#dev.off()
 
-write.xlsx(output, paste0('../output/full_output_',path_dat,'.xlsx'))
-write.xlsx(stats_campaign, paste0('../output/stats_campaign_',path_dat,'.xlsx'))
-write.xlsx(stats_overall, paste0('../output/stats_overall_',path_dat,'.xlsx'))
+mean(error[uni.rows])
+sd(error[uni.rows])
 
-output <- read_excel(paste0('../output/full_output_',path_dat,'.xlsx')) 
-stats_campaign <- read_excel(paste0('../output/stats_campaign_',path_dat,'.xlsx'))
-stats_overall <- read_excel(paste0('../output/stats_overall_',path_dat,'.xlsx'))
+uni.output <- output[uni.rows,]
 
-hist_full_output <- ggplot(output, aes(x = error)) +
-  geom_histogram(binwidth = 1) + 
-  theme_bw() + labs(x = "error, % from actual", y = "") + 
-  theme(text = element_text(size = 14))
+test <- error[uni.rows]
 
-png(paste0('../plots/hist_all_', path_dat,'.png'), height = 7, width = 6.5, units = 'in', res = 600)
-grid::grid.draw(hist_full_output)
-dev.off()
-
-hist_campaign <- ggplot(stats_campaign, aes(x = bias)) +
-  geom_histogram(binwidth = 1) + 
-  theme_bw() + labs(x = "mean error, % from actual", y = "") + 
-  theme(text = element_text(size = 14))
-
-png(paste0('../plots/hist_campaign_', path_dat,'.png'), height = 7, width = 6.5, units = 'in', res = 600)
-grid::grid.draw(hist_campaign)
-dev.off()
-
+write.csv(test, '../output/unirows_C.csv', row.names = F)
