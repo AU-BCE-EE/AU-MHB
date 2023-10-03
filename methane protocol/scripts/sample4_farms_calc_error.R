@@ -39,7 +39,8 @@ for (i in 1:4){
 dat <- dat %>% mutate(weeks = days/7) %>% filter(!is.na(batch)) %>% group_by(batch) %>%
   mutate(week_of_batch = floor(weeks - weeks[1]) + 1) %>%
   mutate(midbatch = round(max(week_of_batch)/2)) %>% 
-  mutate(phase = ceiling(week_of_batch/midbatch)) %>% ungroup()
+  mutate(phase = ceiling(week_of_batch/midbatch)) %>% ungroup() %>% 
+  select(CH4_rate, days, weeks, week_of_batch, midbatch, batch, pigs)
 
 error_fun <- function(dat, scheme, week_sets){
   
