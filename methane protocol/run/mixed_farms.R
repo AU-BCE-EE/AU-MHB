@@ -51,16 +51,17 @@ error_fun <- function(dat, scheme){
     
     for (o in unique(sampled_weeks$batch_arrangement)){
     
-    meas_part_dat1 <- dat[dat$section == i,] %>% group_by(subdat, batch, week_of_batch) %>% filter(pigs != 0) %>%
-    summarise(CH4 = mean(CH4_rate/pigs, na.rm = T)) %>% 
-    group_by(batch, subdat) %>% 
-    filter(week_of_batch %in% sampled_weeks$weeks[sampled_weeks$batch == batch & sampled_weeks$section == i & sampled_weeks$batch_arrangement == o]) %>% group_by(subdat) %>%
-    summarise(CH4 = mean(CH4, na.rm = T), section = i, batch_arrangement = o, weeks = paste(scheme$weeks, collapse = ","))
-    meas_full_dat1 <- dat[dat$section == i,] %>% group_by(subdat) %>% filter(pigs != 0) %>% summarise(CH4 = mean(CH4_rate/pigs, na.rm = T), section = i)
-    
-    # bind data from different batch arrangements
-    meas_part_dat2 <- rbind(meas_part_dat2, meas_part_dat1)
-    meas_full_dat2 <- rbind(meas_full_dat2, meas_full_dat1)
+      meas_part_dat1 <- dat[dat$section == i,] %>% group_by(subdat, batch, week_of_batch) %>% filter(pigs != 0) %>%
+                        summarise(CH4 = mean(CH4_rate/pigs, na.rm = T)) %>% 
+                        group_by(batch, subdat) %>% 
+                        filter(week_of_batch %in% sampled_weeks$weeks[sampled_weeks$batch == batch & sampled_weeks$section == i & sampled_weeks$batch_arrangement == o]) %>% group_by(subdat) %>%
+                        summarise(CH4 = mean(CH4, na.rm = T), section = i, batch_arrangement = o, weeks = paste(scheme$weeks, collapse = ","))
+
+      meas_full_dat1 <- dat[dat$section == i,] %>% group_by(subdat) %>% filter(pigs != 0) %>% summarise(CH4 = mean(CH4_rate/pigs, na.rm = T), section = i)
+      
+      # bind data from different batch arrangements
+      meas_part_dat2 <- rbind(meas_part_dat2, meas_part_dat1)
+      meas_full_dat2 <- rbind(meas_full_dat2, meas_full_dat1)
     
     }
     
