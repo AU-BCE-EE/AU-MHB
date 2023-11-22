@@ -35,6 +35,10 @@ ggsave('../plots/overall_emis_factors.png', height = 4.8, width = 6.9)
 
 # For JP presentation 231128
 
+
+
+
+
 dats$app.timing.num <- as.integer(dats$app.timing) + as.numeric(dats$EF.type)/10 - 0.2
 dats$highest <- pmax(dats$high, dats$high2)
 ggplot(dats, aes(app.timing.num, mid, shape = EF.type, colour = EF.type)) +
@@ -49,5 +53,5 @@ ggplot(dats, aes(app.timing.num, mid, shape = EF.type, colour = EF.type)) +
   scale_shape_manual(values = c(19, 24, 6, 20, 1)) +
   scale_x_continuous(breaks = unique(as.integer(dat$app.timing)), labels= unique(dat$app.timing)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), legend.position = 'top')
-ggsave('../plots/overall_emis_factorsA.png', height = 4.8, width = 6.9)
+ggsave('../plots/overall_emis_factorsA.png', height = 3.3, width = 5.3)
 
