@@ -1,0 +1,3 @@
+FertiliserType,rdNH3.min,rdNH3.max,rdNH3.mean,rdNH3.med,rdNH3.sd,rdNH3.cv,rdNH3.n
+AS,0,100,39,32,29,74,15
+Urea,-69,100,55,67,37,67,60

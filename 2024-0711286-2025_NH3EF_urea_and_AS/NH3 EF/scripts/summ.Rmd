@@ -1,0 +1,53 @@
+---
+title: 'Summary of ammonia emission measurements'
+output: pdf_document
+classoption: landscape
+author: AU-BCE-EE 
+date: "`r format(Sys.time(), '%d %B, %Y %h:%m')`"
+---
+
+```{r}
+unique(df$Ref)
+```
+
+Counts
+
+```{r}
+nrow(df[df$FertiliserType == 'zUrea', ])
+nrow(df[df$FertiliserType == 'AS', ])
+
+nrow(df[df$FertiliserType == 'zUrea' & df$Method == 'Micromet', ])
+length(unique(df[df$FertiliserType == 'zUrea' & df$Method == 'Micromet', ]$Ref))
+nrow(df[df$FertiliserType == 'AS' & df$Method == 'Micromet', ])
+length(unique(df[df$FertiliserType == 'AS' & df$Method == 'Micromet', ]$Ref))
+```
+
+```{r}
+table(df$FertiliserType)
+```
+
+```{r}
+dfuan <- df[FertiliserType == 'UAN', ]
+table(dfuan$Method, dfuan$Application)
+
+```
+
+```{r}
+table(df$Method)
+```
+
+```{r}
+table(df$Country)
+table(df$FertiliserType)
+```
+
+
+
+
+
+
+
+
+
+
+
