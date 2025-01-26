@@ -1,0 +1,178 @@
+---
+title: 'Linear models for temperature effect'
+output: pdf_document
+author: Sasha D. Hafner
+date: "`r format(Sys.time(), '%d %B, %Y %h:%m')`"
+---
+
+```{r}
+library(lme4)
+```
+
+# Main subset all micromet
+Subset with air temperature.
+
+```{r}
+dd <- df[!is.na(AirTemperature), ]
+```
+
+```{r}
+dfsumm(df[, .(Ref, NH3loss, AirTemperature, FertiliserType)])
+```
+
+```{r}
+dfsumm(dd[, .(Ref, NH3loss, AirTemperature, FertiliserType)])
+```
+
+```{r}
+ggplot(dd, aes(AirTemperature, NH3loss, color = FertiliserType, shape = Application)) + geom_point()
+```
+
+```{r}
+m1 <- lm(NH3loss ~ AirTemperature * FertiliserType, data = dd)
+summary(m1)
+```
+
+```{r}
+m2 <- lmer(NH3loss ~ AirTemperature * FertiliserType + (1|Ref), data = dd)
+summary(m2)
+```
+
+```{r}
+m3 <- lmer(NH3loss ~ AirTemperature + FertiliserType + (1|Ref), data = dd)
+m3n <- update(m3, ~ . - AirTemperature)
+summary(m3)
+summary(m3n)
+anova(m3, m3n)
+```
+
+```{r}
+confint(m3)
+coef(m3)
+```
+
+Try without new German data.
+
+```{r}
+dnd <- dd[!grepl('Kemmann', Ref), ]
+m3 <- lmer(NH3loss ~ AirTemperature + FertiliserType + (1|Ref), data = dnd)
+m3n <- update(m3, ~ . - AirTemperature)
+summary(m3)
+summary(m3n)
+anova(m3, m3n)
+```
+
+```{r}
+confint(m3)
+coef(m3)
+```
+
+
+
+# DK smaller subset
+
+```{r}
+dds <- droplevels(df.sub[!is.na(AirTemperature), ])
+```
+
+```{r}
+dfsumm(dds[, .(Ref, NH3loss, AirTemperature, FertiliserType)])
+```
+
+```{r}
+ggplot(dds, aes(AirTemperature, NH3loss, color = FertiliserType, shape = Application)) + geom_point()
+```
+
+```{r}
+m1 <- lm(NH3loss ~ AirTemperature * FertiliserType, data = dds)
+summary(m1)
+```
+
+```{r}
+m2 <- lmer(NH3loss ~ AirTemperature * FertiliserType + (1|Ref), data = dds)
+summary(m2)
+```
+
+```{r}
+m3 <- lmer(NH3loss ~ AirTemperature + FertiliserType + (1|Ref), data = dds)
+m3n <- update(m3, ~ . - AirTemperature)
+summary(m3)
+summary(m3n)
+anova(m3, m3n)
+```
+
+# For clay, larger dataset
+
+```{r}
+dd <- df[!is.na(Clay), ]
+```
+
+```{r}
+dfsumm(df[, .(Ref, NH3loss, Clay, FertiliserType)])
+```
+
+```{r}
+dfsumm(dd[, .(Ref, NH3loss, Clay, FertiliserType)])
+```
+
+```{r}
+ggplot(dd, aes(Clay, NH3loss, color = FertiliserType, shape = Application)) + geom_point()
+```
+
+```{r}
+m1 <- lm(NH3loss ~ Clay * FertiliserType, data = dd)
+summary(m1)
+```
+
+```{r}
+m2 <- lmer(NH3loss ~ Clay * FertiliserType + (1|Ref), data = dd)
+summary(m2)
+```
+
+```{r}
+m3 <- lmer(NH3loss ~ Clay + FertiliserType + (1|Ref), data = dd)
+m3n <- update(m3, ~ . - Clay)
+summary(m3)
+summary(m3n)
+anova(m3, m3n)
+```
+
+```{r}
+confint(m3)
+coef(m3)
+```
+
+
+# DK smaller subset, clay
+
+```{r}
+dds <- droplevels(df.sub[!is.na(Clay), ])
+```
+
+```{r}
+dfsumm(dds[, .(Ref, NH3loss, Clay, FertiliserType)])
+```
+
+```{r}
+ggplot(dds, aes(Clay, NH3loss, color = FertiliserType, shape = Application)) + geom_point()
+```
+
+```{r}
+m1 <- lm(NH3loss ~ Clay * FertiliserType, data = dds)
+summary(m1)
+```
+
+```{r}
+m2 <- lmer(NH3loss ~ Clay * FertiliserType + (1|Ref), data = dds)
+summary(m2)
+```
+
+```{r}
+m3 <- lmer(NH3loss ~ Clay + FertiliserType + (1|Ref), data = dds)
+m3n <- update(m3, ~ . - Clay)
+summary(m3)
+summary(m3n)
+anova(m3, m3n)
+```
+
+

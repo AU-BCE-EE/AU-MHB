@@ -1,0 +1,9 @@
+FertiliserType,group,NH3loss.min,NH3loss.max,NH3loss.mean,NH3loss.med,NH3loss.sd,NH3loss.cv,NH3loss.n
+AS,All micromet,0.2,34,7.7,6.2,8.2,110,20
+UAN,All micromet,0,33,10,12,6.6,63,31
+Urea,All micromet,0,60,14,10,13,92,193
+AS,noKemmann,0.2,34,7.7,6.2,8.2,110,20
+UAN,noKemmann,0,33,10,12,6.6,63,31
+Urea,noKemmann,0,60,16,12,13,86,142
+UAN,Subset,0,17,6.7,3.1,9.1,140,3
+Urea,Subset,0,48,10,6.5,11,100,66
