@@ -36,7 +36,7 @@ Database used for plots and summary. Original from Hutchings et al. (in preparat
 Summary of incorporation data
 ### `plots`
 Plots showing data for incorporation. Script that produces the plots is in `scripts/plots.R`. 
-### `scripts`' 
+### `scripts`
 R scripts for processing data on effect of incorporation or injection on ammonia emissions. 
 `main.R` calls the others to do the complete dataload, subsetting, and save.
 ### `stats`
