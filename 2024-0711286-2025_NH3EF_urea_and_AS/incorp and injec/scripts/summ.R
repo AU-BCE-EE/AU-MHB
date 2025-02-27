@@ -1,11 +1,11 @@
 
 
 # Long data frame for use below
-dl <- melt(df, id.vars = c('Ref', 'set', 'Application', 'id', 'FertiliserType', 'Depth', 'Clay'), 
+dl <- melt(df, id.vars = c('Ref', 'Country', 'set', 'Application', 'id', 'FertiliserType', 'Depth', 'Clay'), 
            measure.vars = c('NH3loss'), na.rm = TRUE)
 
 # Spread out ref and treat
-dw <- dcast(dl, Ref + set + FertiliserType + Depth + Clay ~ variable + id, value.var = 'value')
+dw <- dcast(dl, Ref + Country + set + FertiliserType + Depth + Clay ~ variable + id, value.var = 'value')
 
 # Relative reduction in NH3 due to incorporation
 dw[, rdNH3 := 100 * (1 - NH3loss_treat/ NH3loss_ref)]
