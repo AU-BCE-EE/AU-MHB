@@ -34,6 +34,7 @@ df.noK <- df[Ref != 'Kemmann et al. 2025', ]
 df.noK[, group := 'noKemmann']
 
 # Country restriction:
+df[, Country := factor(Country)]
 df.sub <- df[Country %in% c('Denmark', 'Germany', 'Ireland', 'UK'), ]
 df.sub[, group := 'Subset']
 

@@ -5,10 +5,8 @@
 dw[, interact := factor(interaction(FertiliserType, DepthCat, sep = ' '), 
                         levels = c('AS Unknown', 'Urea Unknown', 'AS 1 - 5 cm', 
 				   'Urea 1 - 5 cm', 'AS 5 - 10 cm', 'Urea 5 - 10 cm'))]
-unique(dw$ClayCat)
-
-dw$ClayCat1 <- factor(dw$ClayCat, levels = c('5 - 9 %', '10 - 19 %', '20 - 39 %', '40 - 70 %'))
-dw$FertiliserType1 <- factor(dw$FertiliserType, levels = c('Urea', 'AS'))
+dw[, ClayCat1 := factor(ClayCat, levels = c('5 - 9 %', '10 - 19 %', '20 - 39 %', '40 - 70 %'))]
+dw[, FertiliserType1 := factor(dw$FertiliserType, levels = c('Urea', 'AS'))]
 
 set.seed(1)
 ggplot(dw, aes(DepthCat, rdNH3)) + 
@@ -36,15 +34,17 @@ setorder(mm, mn)
 ll <- unique(mm$Ref)
 dw[, RefKey := as.integer(factor(Ref, levels = ll))]
 xlabs <- unique(dw[, .(RefKey, Ref)])
+dw[, n.sets := .N, by = Ref]
 set.seed(1)
-dw[, xr := RefKey + runif(.N, min = -0.8, max = 0.8)]
+dw[, xr := RefKey + runif(.N, min = -0.5, max = 0.5)]
+dw[n.sets == 1, xr := RefKey]
 
-ggplot(dw, aes(xr, NH3loss_ref, colour = Ref, shape = factor(rdNH3 < 0))) + 
-  geom_segment(aes(x = xr, xend = xr, y = NH3loss_ref, yend = NH3loss_treat)) +
+ggplot(dw, aes(xr, NH3loss_ref, colour = Country)) + 
+  geom_segment(aes(x = xr, xend = xr, y = NH3loss_ref, yend = NH3loss_treat), arrow = arrow(length = unit(0.2, 'cm')), show.legend = FALSE) +
   geom_point(alpha = 0.4, size = 3) +
   labs(x = '', y = 'Emis. factor (% applied N)') +
   scale_x_continuous(breaks = xlabs$RefKey, labels = xlabs$Ref) +
   theme_bw() +
   coord_flip() +
-  theme(legend.position = 'none')
-ggsave2x('../plots/incorp_red_line', height = 4, width = 5.5)
+  theme(legend.position = 'right')
+ggsave2x('../plots/incorp_red_line', height = 4, width = 6.5)
