@@ -1,0 +1,151 @@
+;ID;Ref;Year;Country;Place;AirTemperature;Rainfall;irrigation;SoilType;Clay;SoilpH;SoilCEC;Crop;FertiliserType;Application;Depth;Method;set;id;WaterPerDay;NH3loss;SD;Reps;Application.rate;Duration;SOC;Rain.72h;Wind.7d;Temp.7d;Residues;chk;NBPT.dose;NBPT.NH3loss;NBPT.dose.1;NBPT.NH3loss.1;NBPT.dose.2;NBPT.NH3loss.2;NBPT.dose.3;NBPT.NH3loss.3;NBPT.dose.4;NBPT.NH3loss.4;inhibitor;inhibitor.NH3.loss;inhibitor.dose;Notes;Fertiliser
+29;29;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Silt loam;10.8;6.9;9;None;zUrea;Broadcast;;Ventilated chambers;1;ref;NA;12.9;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+30;30;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Silt loam;10.8;6.9;9;None;zUrea;Broadcast;;Ventilated chambers;2;ref;NA;16.8;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+31;31;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Silt loam;10.8;6.9;9;None;zUrea;Broadcast;;Ventilated chambers;3;ref;NA;22.6;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+32;32;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Silt loam;10.8;6.9;9;None;zUrea;Incorporated;;Ventilated chambers;1;treat;NA;2;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+33;33;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Silt loam;10.8;6.9;9;None;zUrea;Incorporated;;Ventilated chambers;2;treat;NA;2.7;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+34;34;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Silt loam;10.8;6.9;9;None;zUrea;Incorporated;;Ventilated chambers;3;treat;NA;8.4;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+38;38;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;22;7.95;12.7;None;zUrea;Broadcast;;Ventilated chambers;4;ref;NA;3.2;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+39;39;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;22;7.95;12.7;None;zUrea;Broadcast;;Ventilated chambers;5;ref;NA;3.3;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+40;40;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;22;7.95;12.7;None;zUrea;Broadcast;;Ventilated chambers;6;ref;NA;4.5;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+41;41;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;22;7.95;12.7;None;zUrea;Incorporated;;Ventilated chambers;4;treat;NA;1;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+42;42;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;22;7.95;12.7;None;zUrea;Incorporated;;Ventilated chambers;5;treat;NA;1.2;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+43;43;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;22;7.95;12.7;None;zUrea;Incorporated;;Ventilated chambers;6;treat;NA;1.5;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+47;47;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;18;8.1;11.3;None;zUrea;Broadcast;;Ventilated chambers;7;ref;NA;4;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+48;48;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;18;8.1;11.3;None;zUrea;Broadcast;;Ventilated chambers;8;ref;NA;6.8;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+49;49;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;18;8.1;11.3;None;zUrea;Broadcast;;Ventilated chambers;9;ref;NA;12;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+50;50;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;18;8.1;11.3;None;zUrea;Incorporated;;Ventilated chambers;7;treat;NA;0.2;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+51;51;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;18;8.1;11.3;None;zUrea;Incorporated;;Ventilated chambers;8;treat;NA;0.2;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+52;52;Abdul-Mehdi and Stroehlein (1991);1991;USA;Lab;NA;NA;NA;Loamy sand;18;8.1;11.3;None;zUrea;Incorporated;;Ventilated chambers;9;treat;NA;0.3;NA;1;NA;30;NA;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+138;138;Al-Kanani et al. (1994);1994;Canada;Lab;23.1;NA;NA;Clay;50;5.2;NA;None;zUrea;Incorporated;2;Ventilated chambers;1;treat;NA;9.9;NA;1;387;15;16;NA;NA;NA;n;y;0.005;0.5;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+140;140;Al-Kanani et al. (1994);1994;Canada;Lab;23.1;NA;NA;Clay;50;5.2;NA;None;zUrea;Broadcast;2;Ventilated chambers;1;ref;NA;20.6;NA;1;387;15;16;NA;NA;NA;n;y;0.005;4;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+171;171;Bacon et al. (1986);1986;Australia;Outdoor;NA;NA;0;Clay loam;37;5.3;NA;Cereal;zUrea;Broadcast;1;Ventilated chambers;1;ref;NA;36.3;NA;1;100;8;12;NA;NA;NA;y;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Fertilizaion technique experiment  6 t/ha of rice stubble;Urea+
+172;172;Bacon et al. (1986);1986;Australia;Outdoor;NA;NA;0;Clay loam;37;5.3;NA;Cereal;zUrea;Incorporated;1;Ventilated chambers;1;treat;NA;6.7;NA;1;100;8;12;NA;NA;NA;y;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Fertilizaion technique experiment  6 t/ha of rice stubble;Urea+
+255;257;Black et al. (1989);1989;New Zealand;Outdoor;11;NA;0;silt loam;20.6;6.1;NA;Cereal;zUrea;Broadcast;;Ventilated chambers;1;ref;NA;21;NA;4;100;10;41;NA;NA;7;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+256;258;Black et al. (1989);1989;New Zealand;Outdoor;11;NA;0;silt loam;20.6;6.1;NA;Cereal;zUrea;Incorporated;;Ventilated chambers;1;treat;NA;1;NA;4;100;10;41;NA;NA;7;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+275;277;Bouwmeester et al. (1985);1985;USA;Lab;25;16;NA;silty clay;47;7.4;30;Cereal;zUrea;Broadcast;2.5;Windtunnel;1;ref;2.13;19;NA;1;50;8;10;16;1.74;25;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+276;278;Bouwmeester et al. (1985);1985;USA;Lab;25;16;NA;silty clay;47;7.4;30;Cereal;zUrea;Incorporated;2.5;Windtunnel;1;treat;2.13;3;NA;1;50;8;10;16;1.8;25;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+328;330;Cai et al. 2002;2002;China;Outdoor;27.7;120;0;Sandy loam;45;8.6;7.7;Maize;zUrea;Incorporated;7.5;Micromet;1;treat;12;11;NA;2;200;10;10;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+329;331;Cai et al. 2002;2002;China;Outdoor;27.7;120;0;Sandy loam;45;8.6;7.7;Maize;zUrea;Broadcast;7.5;Micromet;1;ref;10.91;48;NA;2;200;11;10;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+330;332;Cai et al. 2002;2002;China;Outdoor;22.3;4.3;0;Sandy loam;45;8.6;7.7;Maize;zUrea;Incorporated;7.5;Micromet;2;treat;0.36;12;NA;2;150;12;10;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+331;333;Cai et al. 2002;2002;China;Outdoor;22.3;4.3;0;Sandy loam;45;8.6;7.7;Maize;zUrea;Broadcast;7.5;Micromet;2;ref;0.36;26;NA;2;150;12;10;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+332;334;Cai et al. 2002;2002;China;Outdoor;17;3.3;0;Sandy loam;45;8.6;7.7;None;zUrea;Incorporated;7.5;Micromet;3;treat;0.03;2.3;NA;2;120;100;10;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+333;335;Cai et al. 2002;2002;China;Outdoor;17;3.3;0;Sandy loam;45;8.6;7.7;None;zUrea;Broadcast;7.5;Micromet;3;ref;0.03;2;NA;2;120;100;10;NA;NA;NA;NA;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+721;763;Ernst and Massey (1960);1960;USA;Lab;NA;NA;NA;Silt loam;15;6.5;NA;None;zUrea;Broadcast;1;Ventilated chambers;1;ref;NA;17;NA;2;112;12;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+726;768;Ernst and Massey (1960);1960;USA;Lab;NA;NA;NA;Silt loam;15;6.5;NA;None;zUrea;Incorporated;1;Ventilated chambers;1;treat;NA;14.5;NA;2;112;12;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+721;763;Ernst and Massey (1960);1960;USA;Lab;NA;NA;NA;Silt loam;15;6.5;NA;None;zUrea;Broadcast;1.3;Ventilated chambers;2;ref;NA;17;NA;2;112;12;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+727;769;Ernst and Massey (1960);1960;USA;Lab;NA;NA;NA;Silt loam;15;6.5;NA;None;zUrea;Incorporated;1.3;Ventilated chambers;2;treat;NA;11.5;NA;2;112;12;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+721;763;Ernst and Massey (1960);1960;USA;Lab;NA;NA;NA;Silt loam;15;6.5;NA;None;zUrea;Broadcast;4;Ventilated chambers;3;ref;NA;17;NA;2;112;12;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+728;770;Ernst and Massey (1960);1960;USA;Lab;NA;NA;NA;Silt loam;15;6.5;NA;None;zUrea;Incorporated;4;Ventilated chambers;3;treat;NA;5;NA;2;112;12;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+763;805;Fenn and Kissel (1976);1976;USA;Lab;32;NA;NA;Clay;70;7.6;58;None;AS;Incorporated;2.5;Ventilated chambers;1;treat;NA;18;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+765;807;Fenn and Kissel (1976);1976;USA;Lab;32;NA;NA;Clay;70;7.6;58;None;AS;Broadcast;2.5;Ventilated chambers;1;ref;NA;50;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+773;815;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Incorporated;7.5;Ventilated chambers;7;treat;NA;26;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+782;824;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Broadcast;7.5;Ventilated chambers;7;ref;NA;66;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+774;816;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Incorporated;7.5;Ventilated chambers;2;treat;NA;29;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+782;824;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Broadcast;7.5;Ventilated chambers;2;ref;NA;66;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+776;818;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Incorporated;5;Ventilated chambers;3;treat;NA;35;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+782;824;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Broadcast;5;Ventilated chambers;3;ref;NA;66;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+777;819;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Incorporated;5;Ventilated chambers;4;treat;NA;45;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+782;824;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Broadcast;5;Ventilated chambers;4;ref;NA;66;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+779;821;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Incorporated;2.5;Ventilated chambers;5;treat;NA;52;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+782;824;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Broadcast;2.5;Ventilated chambers;5;ref;NA;66;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+780;822;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Incorporated;10;Ventilated chambers;6;treat;NA;60;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+782;824;Fenn and Kissel (1976);1976;USA;Lab;30;NA;NA;silty clay loam;35;7.6;22;None;AS;Broadcast;10;Ventilated chambers;6;ref;NA;66;NA;1;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1022;1068;Hamid and Mahler (1994);1994;USA;Lab;25;NA;NA;Silt loam;15;5.8;NA;None;zUrea;Broadcast;;Ventilated chambers;1;ref;NA;18.7;NA;5;200;16;20;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1023;1069;Hamid and Mahler (1994);1994;USA;Lab;25;NA;NA;Silt loam;15;7.1;NA;None;zUrea;Broadcast;;Ventilated chambers;2;ref;NA;37.8;NA;5;200;16;58;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1024;1070;Hamid and Mahler (1994);1994;USA;Lab;25;NA;NA;Silt loam;15;7.7;NA;None;zUrea;Broadcast;;Ventilated chambers;3;ref;NA;4.9;NA;5;200;16;29;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1025;1071;Hamid and Mahler (1994);1994;USA;Lab;25;NA;NA;Silt loam;15;5.8;NA;None;zUrea;Incorporated;;Ventilated chambers;1;treat;NA;2;NA;5;200;16;20;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1026;1072;Hamid and Mahler (1994);1994;USA;Lab;25;NA;NA;Silt loam;15;7.1;NA;None;zUrea;Incorporated;;Ventilated chambers;2;treat;NA;6;NA;5;200;16;58;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1027;1073;Hamid and Mahler (1994);1994;USA;Lab;25;NA;NA;Silt loam;15;7.7;NA;None;zUrea;Incorporated;;Ventilated chambers;3;treat;NA;2;NA;5;200;16;29;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1119;1171;Ismail et al (1990);1990;USA;Lab;27.5;NA;NA;loamy sand;10;7.03;NA;None;zUrea;Broadcast;10;Ventilated chambers;1;ref;NA;59.2;NA;2;486;15;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1120;1172;Ismail et al (1990);1990;USA;Lab;27.5;NA;NA;loamy sand;10;7;NA;None;zUrea;Incorporated;10;Ventilated chambers;1;treat;NA;0;NA;2;486;15;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1119;1171;Ismail et al (1990);1990;USA;Lab;27.5;NA;NA;loamy sand;10;7.03;NA;None;zUrea;Broadcast;5;Ventilated chambers;2;ref;NA;59.2;NA;2;486;15;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1121;1173;Ismail et al (1990);1990;USA;Lab;27.5;NA;NA;loamy sand;10;7.02;NA;None;zUrea;Incorporated;5;Ventilated chambers;2;treat;NA;4.3;NA;2;486;15;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1422;1484;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;AS;Broadcast;;Ventilated chambers;1;ref;NA;2.5;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1423;1485;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;AS;Broadcast;;Ventilated chambers;2;ref;NA;5.1;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1424;1486;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;AS;Incorporated;;Ventilated chambers;1;treat;NA;1.9;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1425;1487;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;AS;Incorporated;;Ventilated chambers;2;treat;NA;2.5;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1426;1488;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;AS;Broadcast;;Ventilated chambers;3;ref;NA;0.7;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1427;1489;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;AS;Broadcast;;Ventilated chambers;4;ref;NA;1.4;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1428;1490;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;AS;Incorporated;;Ventilated chambers;3;treat;NA;0;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1429;1491;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;AS;Incorporated;;Ventilated chambers;4;treat;NA;1.3;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1430;1492;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;AS;Broadcast;;Ventilated chambers;5;ref;NA;0.1;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1431;1493;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;AS;Broadcast;;Ventilated chambers;6;ref;NA;0.5;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1432;1494;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;AS;Incorporated;;Ventilated chambers;5;treat;NA;0.1;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1433;1495;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;AS;Incorporated;;Ventilated chambers;6;treat;NA;0.4;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1434;1496;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;AS;Broadcast;;Ventilated chambers;7;ref;NA;2.7;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1435;1497;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;AS;Broadcast;;Ventilated chambers;8;ref;NA;6.6;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1436;1498;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;AS;Incorporated;;Ventilated chambers;7;treat;NA;0.7;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1437;1499;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;AS;Incorporated;;Ventilated chambers;8;treat;NA;5.5;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Ammonium+1
+1438;1500;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;zUrea;Broadcast;;Ventilated chambers;9;ref;NA;8.1;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1439;1501;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;zUrea;Broadcast;;Ventilated chambers;10;ref;NA;11;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1440;1502;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;zUrea;Incorporated;;Ventilated chambers;9;treat;NA;3.5;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1441;1503;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;6.6;54;None;zUrea;Incorporated;;Ventilated chambers;10;treat;NA;7.2;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1442;1504;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;zUrea;Broadcast;;Ventilated chambers;11;ref;NA;3.1;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1443;1505;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;zUrea;Broadcast;;Ventilated chambers;12;ref;NA;10.1;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1444;1506;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;zUrea;Incorporated;;Ventilated chambers;11;treat;NA;4.5;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1445;1507;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;4.7;34;None;zUrea;Incorporated;;Ventilated chambers;12;treat;NA;5.3;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1446;1508;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;zUrea;Broadcast;;Ventilated chambers;13;ref;NA;0.3;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1447;1509;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;zUrea;Broadcast;;Ventilated chambers;14;ref;NA;1.2;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1448;1510;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;zUrea;Incorporated;;Ventilated chambers;13;treat;NA;0.2;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1449;1511;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Clay;65;3.6;23;None;zUrea;Incorporated;;Ventilated chambers;14;treat;NA;0.3;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1450;1512;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;zUrea;Broadcast;;Ventilated chambers;15;ref;NA;15.8;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1451;1513;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;zUrea;Broadcast;;Ventilated chambers;16;ref;NA;19;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1452;1514;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;zUrea;Incorporated;;Ventilated chambers;15;treat;NA;5.3;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1453;1515;Macrae and Ancajas (1970);1970;Phillipines;Lab;NA;NA;NA;Silt loam;15;8.1;30;None;zUrea;Incorporated;;Ventilated chambers;16;treat;NA;5.9;NA;3;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1586;1648;Nathan and Malzer (1994);1994;USA;Outdoor;22;NA;NA;sandy loam;18.3;6.5;NA;None;zUrea;Broadcast;;Ventilated chambers;1;ref;NA;0.75;NA;1;200;6;1.8;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1587;1649;Nathan and Malzer (1994);1994;USA;Outdoor;22;NA;NA;sandy loam;18.3;6.5;NA;None;zUrea;Incorporated;;Ventilated chambers;1;treat;NA;0.1;NA;1;200;6;1.8;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;Urea+
+1776;1887;Rochette 2009;2009;Canada;Outdoor;18;0;30;loam;17.5;5.4;17.3;None;zUrea;Broadcast;5;Windtunnel;1;ref;1.15;9.5;NA;3;140;26;22;0;NA;NA;n;y;NA;4.8;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;30mm irrigation (5mm 7 amd 14DAF, 20mm 21DAF)  simulated rainfall;Urea+
+1777;1888;Rochette 2009;2009;Canada;Outdoor;18;0;30;loam;17.5;5.4;17.3;None;zUrea;Incorporated;5;Windtunnel;1;treat;1.15;16.1;NA;3;140;26;22;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;30mm irrigation (5mm 7 amd 14DAF, 20mm 21DAF)  simulated rainfall;Urea+
+2582;2723;Woodley et al. 2020;2020;Canada;Outdoor;19;170;0;Clay loam;37;6.4;13.5;Maize;zUrea;Broadcast;;Windtunnel;1;ref;6.07;14.7;NA;3;180;28;23.1;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NBPT+DCD;6.3;NA;after rainfall events irrigation by hand under the wind tunnel the day after;Urea+
+2583;2724;Woodley et al. 2020;2020;Canada;Outdoor;19;170;0;Clay loam;37;6.4;13.5;Maize;zUrea;Incorporated;;Windtunnel;1;treat;6.07;5.2;NA;3;180;28;23.1;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NBPT+DCD;5.1;NA;after rainfall events irrigation by hand under the wind tunnel the day after;Urea+
+2584;2725;Woodley et al. 2020;2020;Canada;Outdoor;21;45;0;Clay loam;37;6.4;13.5;Maize;zUrea;Broadcast;;Windtunnel;2;ref;1.61;9.1;NA;3;180;28;23.1;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NBPT+DCD;5.8;NA;after rainfall events irrigation by hand under the wind tunnel the day after;Urea+
+2585;2726;Woodley et al. 2020;2020;Canada;Outdoor;21;45;0;Clay loam;37;6.4;13.5;Maize;zUrea;Incorporated;;Windtunnel;2;treat;1.61;7.9;NA;3;180;28;23.1;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NBPT+DCD;5.4;NA;after rainfall events irrigation by hand under the wind tunnel the day after;Urea+
+2586;2727;Woodley et al. 2020;2020;Canada;Outdoor;19;20;0;Clay loam;37;6.4;13.5;Maize;zUrea;Broadcast;;Windtunnel;3;ref;0.71;12;NA;3;180;28;23.1;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NBPT+DCD;4.1;NA;after rainfall events irrigation by hand under the wind tunnel the day after;Urea+
+2587;2728;Woodley et al. 2020;2020;Canada;Outdoor;19;20;0;Clay loam;37;6.4;13.5;Maize;zUrea;Incorporated;;Windtunnel;3;treat;0.71;10.7;NA;3;180;28;23.1;0;NA;NA;n;y;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NBPT+DCD;3.4;NA;after rainfall events irrigation by hand under the wind tunnel the day after;Urea+
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Broadcast;2.5;Windtunnel;1;ref;;50.3;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Incorporated;2.5;Windtunnel;1;treat;;38.4;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Broadcast;5;Windtunnel;2;ref;;50.3;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Incorporated;5;Windtunnel;2;treat;;8.6;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Broadcast;7.5;Windtunnel;3;ref;;50.3;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Incorporated;7.5;Windtunnel;3;treat;;0.4;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Broadcast;10;Windtunnel;4;ref;;50.3;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Rochette et al. 2013;2013;Canada;Outdoor;;;;Silt loam;19.1;;17.73;Weeds;zUrea;Incorporated;10;Windtunnel;4;treat;;-0.4;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Broadcast;2;Flux chamber;1;ref;;31;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Incorporated;2;Flux chamber;1;treat;;32;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Broadcast;5;Flux chamber;2;ref;;31;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Injected;5;Flux chamber;2;treat;;8;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Broadcast;5;Flux chamber;3;ref;;31;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Injected;5;Flux chamber;3;treat;;18;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Broadcast;2;Flux chamber;4;ref;;35;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Incorporated;2;Flux chamber;4;treat;;33;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Broadcast;5;Flux chamber;5;ref;;35;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Injected;5;Flux chamber;5;treat;;29;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Broadcast;5;Flux chamber;6;ref;;35;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Sandy;7.2;6.6;;None;zUrea;Injected;5;Flux chamber;6;treat;;29;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Broadcast;2;Flux chamber;7;ref;;23;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Incorporated;2;Flux chamber;7;treat;;25;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Broadcast;5;Flux chamber;8;ref;;23;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Injected;5;Flux chamber;8;treat;;11;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Broadcast;5;Flux chamber;9;ref;;23;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Injected;5;Flux chamber;9;treat;;7;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Broadcast;2;Flux chamber;10;ref;;28;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Incorporated;2;Flux chamber;10;treat;;24;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Broadcast;5;Flux chamber;11;ref;;28;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Injected;5;Flux chamber;11;treat;;4;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Broadcast;5;Flux chamber;12;ref;;28;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Loamy;13;6;;None;zUrea;Injected;5;Flux chamber;12;treat;;19;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Broadcast;2;Flux chamber;13;ref;;23;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Incorporated;2;Flux chamber;13;treat;;10;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Broadcast;5;Flux chamber;14;ref;;23;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Injected;5;Flux chamber;14;treat;;7;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Broadcast;5;Flux chamber;15;ref;;23;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Injected;5;Flux chamber;15;treat;;7;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Broadcast;2;Flux chamber;16;ref;;28;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Incorporated;2;Flux chamber;16;treat;;20;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Broadcast;5;Flux chamber;17;ref;;28;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Injected;5;Flux chamber;17;treat;;7;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Broadcast;5;Flux chamber;18;ref;;28;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2023;2023;Germany;Lab;20;;;Clayey;21.5;6.8;;None;zUrea;Injected;5;Flux chamber;18;treat;;5;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2025;2025;Germany;Lab;15;;;Sandy;7.2;6.6;7.5;None;zUrea;Broadcast;5;Flux chamber;1;ref;;46;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Gotze et al., 2025;2025;Germany;Lab;15;;;Sandy;7.2;6.6;7.5;None;zUrea;Injected;5;Flux chamber;1;treat;;10;;;;;;;;;;;;;;;;;;;;;;;;;
