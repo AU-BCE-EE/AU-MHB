@@ -1,6 +1,6 @@
 # 2025_3.42PA_NH3urea
 Data and scripts for the Public Sector Consultancy memorandum: Ammonia emissions from urea and ammonium sulfate and the effect of injection and urease inhibitors under Danish conditions.
-Link to memorandum: XXXXX (will be added once published). 
+Link to memorandum: https://pure.au.dk/ws/files/422833250/Levering_Ammonia_emissions_from_urea_and_ammonium_sulfate_application.pdf
 
 # Maintainer
 Johanna Pedersen. Contact information here: https://www.researchgate.net/profile/Johanna-Pedersen 
@@ -14,13 +14,10 @@ These packages are listed in multiple `packages.R` in `script-*` directories.
 See `scripts` for R scripts. 
 `main.R` calls the other to do the complete data loading, subsetting, calculations, plotting, saving of data (in `output` subdirectory) and plots (in `plots` subdirectory). 
 
-# Important note on data 
-The data used for the memorandum has been collected and used for a comprehensive statistical analysis which will be published as a peer-reviewed article in an international scientific journal at a later stage (Hutchings et al., in preparation). When published, the data will be publicly available through the Task Force on Emission Inventories and Projections (TFEIP) under United Nations Economic Commission for Europe (UNECE). When publicly available, the databased used for this memorandum will be uploaded to the `data` folders, and a new release of the repository will be made. 
-
 # Directory structure
 ## `incorp and inject`
 ### `data`
-Database used for plots and summary. Subset from original data from Hutchings et al. (in preparation) and updated databaser (..._edit) with additional data from new studies and with the edition of 'set' identification coupling reference and incorporated fertilizer. 
+Database used for plots and summary. Subset from original data from Hutchings et al. (2026) (https://doi.org/10.1016/j.jclepro.2025.147438) and updated databaser (..._edit) with additional data from new studies and with the edition of 'set' identification coupling reference and incorporated fertilizer. 
 ### `output`
 Summary of incorporation data
 ### `plots`
